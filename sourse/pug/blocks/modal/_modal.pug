@@ -32,15 +32,38 @@ mixin modal()
 	//- 			.h3 Скоро с Вами свяжутся
 	//- 			br 
 
-	+form-wrap()(id="modal-call" class="zoom-anim-dialog mfp-hide modal-win modal-form" )
-		.text-center
-			+e.title.h3.ttu Обратный звонок
-			p Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течении 15&nbsp;минут
-		+input("text","Ваше Имя")(required) 
-		+input("tel","Ваш телефон")(required)
-		//- +input("email","Ваше email")(required)
-		//- +text( "Комментарий")
-		+e.INPUT.btn.btn.btn-block.btn-warning.mb-4(type="submit" value="Рассчитать") 
-		+polite()
-	// #modal-call
+	+form-wrap()(id="modal-order" class="zoom-anim-dialog mfp-hide modal-win modal-form" )
+		+e.head
+			.text-center
+				+e.title.h1 записаться
+		+e.body
+			+e.text.text-primary Чтобы попасть на&nbsp;кладбище игры претсолов Вам необходимо записаться.
+			+e.text Для этого заполните следующие поля и&nbsp;мы&nbsp;вышлем электроныый билет Вам на&nbsp;почту:
+			.row
+				//- +input("text","Имя")( ) 
+				.col-md-6
+					+input("text","Имя")(required  value="Имя" class="is-valid" ) 
+				.col-md-6
+					+input("text","Фамилия")(required class='is-invalid')
+			//- +input("email","Ваше email")(required)
+			//- +text( "Комментарий")
+			+e.btn(type="submit"  )  отправить
+	// #modal-order
+	
+	+b.form-wrap(id="modal-send" class="zoom-anim-dialog mfp-hide modal-win modal-win--sm modal-form" )
+		+e.head.border-0
+			.text-center
+				+e.title.h1 поздравляем!
+		+e.body 
+			+e.text.d-none.d-md-block Ваш билет отправлен на&nbsp;указанный
+				br
+				| Вами адрес почты 
+				| 
+				strong qwejqwleuh111212@mail.ru 
+			
+			+e.text.d-md-none Ваш билет отправлен на&nbsp;указанный Вами E-mail
+			
+			+e.btn-outline(href="#" )  ок
+	// #modal-send
+
 	// modal

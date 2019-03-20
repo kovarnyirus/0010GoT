@@ -3,20 +3,20 @@ extends layout/main.pug
 
 include ../blocks/s-content/_s-content.pug
 include ../blocks/s-contact/_s-contact.pug
-include ../blocks/s-schedule/_s-schedule.pug
+include ../blocks/s-blog/_s-blog.pug
 
 block title
-	title Расписание
+	title Блог
 
 block pagecontent
 	+mob-mnu()
 	+header() 
 		+top-nav()
-	.container.page-title.text-center
-		h1 
-			span.d-none.d-md-block расписание мероприятий
-			span.d-md-none мероприятия
-	+s-schedule
+	//- .container.page-title.text-center
+	//- 	h1 
+	//- 		span.d-none.d-md-block расписание мероприятий
+	//- 		span.d-md-none мероприятия
+	+s-blog
 	//- +header-block()
 	//- +s-form()
 	//- +s-contact()

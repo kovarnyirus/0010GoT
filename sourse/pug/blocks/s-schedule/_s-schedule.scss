@@ -71,6 +71,9 @@
 		.container{
 			max-width: 970px;
 		}
+		&__row{
+			@include roww(28);
+		}
 	}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

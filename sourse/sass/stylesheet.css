@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    font-family: 'Circe Extra';
+    font-family: 'Circe';
     src: url('../fonts/Circe-ExtraLight/Circe-ExtraLight.woff2') format('woff2'),
         url('../fonts/Circe-ExtraLight/Circe-ExtraLight.woff') format('woff'),
         url('../fonts/Circe-ExtraLight/Circe-ExtraLight.ttf') format('truetype');
@@ -17,7 +17,7 @@
 }
 
 @font-face {
-    font-family: 'Circe Extra';
+    font-family: 'Circe';
     src: url('../fonts/Circe-ExtraBold/Circe-ExtraBold.woff2') format('woff2'),
         url('../fonts/Circe-ExtraBold/Circe-ExtraBold.woff') format('woff'),
         url('../fonts/Circe-ExtraBold/Circe-ExtraBold.ttf') format('truetype');

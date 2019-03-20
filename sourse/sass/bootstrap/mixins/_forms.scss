@@ -17,13 +17,13 @@
     border-color: $input-focus-border-color;
     outline: 0;
     // Avoid using mixin so we can pass custom focus shadow properly
-    @if $enable-shadows {
-      box-shadow: $input-box-shadow, $input-focus-box-shadow;
-    } @else {
-      box-shadow: $input-focus-box-shadow;
-    }
+    // @if $enable-shadows {
+    //   box-shadow: $input-box-shadow, $input-focus-box-shadow;
+    // } @else {
+    //   box-shadow: $input-focus-box-shadow;
+    // }
   }
-  @include deprecate("The `form-control-focus()` mixin", "v4.3.2", "v5", $ignore-warning);
+  // @include deprecate("The `form-control-focus()` mixin", "v4.3.2", "v5", $ignore-warning);
 }
 
 
@@ -55,10 +55,11 @@
     .was-validated &:#{$state},
     &.is-#{$state} {
       border-color: $color;
+      color: $color;
 
       @if $enable-validation-icons {
         padding-right: $input-height-inner;
-        background-image: $icon;
+        // background-image: $icon;
         background-repeat: no-repeat;
         background-position: center right $input-height-inner-quarter;
         background-size: $input-height-inner-half $input-height-inner-half;
@@ -66,7 +67,7 @@
 
       &:focus {
         border-color: $color;
-        box-shadow: 0 0 0 $input-focus-width rgba($color, .25);
+        // box-shadow: 0 0 0 $input-focus-width rgba($color, .25);
       }
 
       ~ .#{$state}-feedback,
@@ -94,7 +95,7 @@
 
       @if $enable-validation-icons {
         padding-right: $custom-select-feedback-icon-padding-right;
-        background: $custom-select-background, $icon $custom-select-bg no-repeat $custom-select-feedback-icon-position / $custom-select-feedback-icon-size;
+        // background: $custom-select-background, $icon $custom-select-bg no-repeat $custom-select-feedback-icon-position / $custom-select-feedback-icon-size;
       }
 
       &:focus {

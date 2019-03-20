@@ -14,20 +14,21 @@
   user-select: none;
   background-color: transparent;
   border: $btn-border-width solid transparent;
-  @include button-size($btn-padding-y, $btn-padding-x, rem(11), $btn-line-height, $btn-border-radius);
+  @include button-size($btn-padding-y, $btn-padding-x, 1rem, $btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
   text-transform: uppercase;
   @include hover {
     color: $body-color;
     text-decoration: none;
   }
-
+  
   &:focus,
   &.focus {
     outline: 0;
     box-shadow: $btn-focus-box-shadow;
   }
-
+  
+  padding-top: $btn-padding-y * 1.3;
   // Disabled comes first so active can properly restyle
   &.disabled,
   &:disabled {

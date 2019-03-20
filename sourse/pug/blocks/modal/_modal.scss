@@ -1,14 +1,28 @@
 .modal-win {
 	display: block;
 	position: relative;
+	max-width: 745px;
+	&--sm{
+		max-width: 560px;
+	}
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba($color: #0c141d, $alpha: .95);
+	// margin-bottom: 75px;
+	padding-bottom: rem(70px);
 	.modal-content {
 		// max-width: 485px;
 		// padding-right: 40px 15px;
 	}
 	.mfp-close {
 		color: $primary;
-		font-size: 40px;
+		font-size: rem(40px);
 		font-weight: 100;
+		@include media-breakpoint-up(md) {
+
+			top: em(3);
+		}
+		top: em(6);
 	}   
 }
 

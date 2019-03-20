@@ -1,12 +1,11 @@
 mixin form-head()
+	 
 	form.js-form-validate( data-parsley-validate="") 
 		input(type='hidden', class="order", name='order', value=`Заявка  с сайта` ) 
 		block
-mixin input(p ,  t , pl)
+mixin input(t , pl)
 	+e.input-wrap.form-group
-		label
-			+e.SPAN.title= p
-			+e.INPUT.input.form-control(type= t placeholder= pl)&attributes(attributes)
+		+e.INPUT.input.form-control(type= t placeholder= pl)&attributes(attributes)
 	// +e.input-wrap
 mixin ta(p , pl)
 	+e.input-wrap.form-group
@@ -17,7 +16,7 @@ mixin ta(p , pl)
 
 mixin form-wrap()
 	+b.form-wrap&attributes(attributes)
-		form
+		form(novalidate)
 			block
 
 mixin ci()

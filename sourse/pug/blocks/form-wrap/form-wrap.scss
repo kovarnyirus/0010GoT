@@ -1,7 +1,61 @@
 .form-wrap{
+	&__head{
+		border-bottom: 1px solid #2e3946;
+		margin-bottom: rem(67);
+		padding-left: rem(15);
+		padding-right: rem(15);
+	}
+	&__body{
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: rem(15);
+		padding-right: rem(15);
+		@include media-breakpoint-up(md) {
+
+			max-width: 555px;
+		}
+		// max-width: 650px;
+	}
+	&__title{
+		font-weight: 300;
+		text-transform: uppercase;
+		padding-top: rem(19);
+		padding-bottom: rem(19);
+		margin: 0;
+		color: $primary;
+	}
+	&__text{
+		text-align: center;
+		// @include rfc
+		@include rfs(rem(20));
+		font-weight: 300;
+		max-width: 470px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: rem(28);
+
+	}
+	&__btn-outline,
+	&__btn{
+		margin-left: auto;
+		margin-right: auto;
+		width: rem(260px);
+		display: block;
+		margin-top: 75px;
+		@extend .btn;
+	}
+	&__btn{
+		@extend .btn-primary;
+
+	}
+	&__btn-outline{
+				@extend .btn-outline-primary;
+	
+			}
+
  	&__input-wrap{
 
- 		max-width: 466px;
+ 		// max-width: 466px;
  	}
  	&__input{
 		//  outline: 0 !important;
@@ -69,7 +123,9 @@
 @include media-breakpoint-down(xs) {}
 
 
-
+.border-0{
+	border: none !important;
+}
 
 .custom-input{
 	display: block;

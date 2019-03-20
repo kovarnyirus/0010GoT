@@ -3,13 +3,17 @@
 	// @include media-breakpoint-up(lg) {}
 	padding-top: rem(12px);
 	padding-bottom: rem(12px);
-	position: absolute;
+	// position: absolute;
+	position: fixed;
+	z-index: 200;
 	left: 0;
 	top: 0;
 	width: 100%;
 	&__btn{
 		@extend .btn;
 		@extend .btn-primary;
+		@include rfs(rem(11));
+		
 		@include media-breakpoint-up(lg) {
 
 			width: 166px;
@@ -62,12 +66,16 @@
 .nav-menu{
 	display: flex;
 	// justify-content: center;
-	// justify-content: space-around;
-	justify-content: space-between;
 	text-transform: uppercase;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 580px;
+	@include media-breakpoint-up(md) {
+		
+		max-width: 580px;
+	}
+	align-items: center;
+	justify-content: space-between;
+	// justify-content: space-around;
 	padding-left: 40px;
 	&__link{
 		color: #ffffff;
@@ -80,6 +88,102 @@
 		&--current{
 			color: $primary;
 		}
+
+		.icon{
+			font-size: 60px;
+			@include mt;
+			&-map{ 
+				font-size: 60px;
+				color:  transparent;
+				stroke: #000000;
+				.path-mark{
+					color: #000000;
+					stroke:  transparent;
+				}	
+				path[stroke-width="3"]{ 
+					fill: transparent;
+				}
+			}
+			
+			&-mark{
+				// font-size: rem(60px);
+				font-size: 62px;
+				color:  transparent;
+				stroke: #000000;
+				stroke-width: rem(1);
+				path[stroke-width="3"]{
+					stroke: #FFF;
+					fill: transparent;
+				}
+			}
+			
+			&-list{
+				// font-size: rem(60px);
+				font-size: 60px;
+				color:  transparent;
+				stroke: #000000;
+				stroke-width: rem(1);
+			 
+			}
+			&-calendar{
+				.cls-1{
+				fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:17px;
+				}
+				.cls-2{fill:#000;}
+			}
+			&-camera{
+				color: #000000;
+				font-size: 72px;
+			}
+		}
+		&:hover,
+		&--current{
+			.icon{ 
+				&-map{  
+					color:  transparent;
+					stroke: #fff;
+					.path-mark{
+						color: #fff;
+						stroke:  transparent;
+					}	
+					path[stroke-width="3"]{ 
+						fill: transparent;
+					}
+				} 
+				&-mark{ 
+					stroke: #fff;
+					path[stroke-width="3"]{
+						stroke: #FFF;
+						fill: transparent;
+					}
+				} 
+				&-list{
+					// font-size: rem(60px);
+					stroke: #fff; 
+				}
+				&-calendar{
+					.cls-1{
+					fill:none;stroke:#fff;
+					}
+					.cls-2{fill:#fff;}
+				}
+				&-camera{
+					color: #fff; 
+				}
+			}
+		}
+	}
+	&--mobile{
+		background-color: #90836a;
+		position: fixed;
+		z-index: 200;
+		width: 100%;
+		left: 0;
+		bottom: 0;
+		padding-left: rem(45);
+		padding-right: rem(45);
+		padding-top: rem(10);
+		padding-bottom: rem(10);
 	}
 }
 // мобильное меню

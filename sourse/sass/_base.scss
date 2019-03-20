@@ -11,7 +11,9 @@ html {
 
 	// background-image: url(../screen/2.png);
 }
-
+a{
+	@include mt;
+}
 body {
 	// opacity: .7;
 	height: 100%;
@@ -152,6 +154,10 @@ body {
 .main-wrapper {
 	position: relative;
 	overflow: hidden;
+	@include media-breakpoint-up(md) {
+		padding-bottom: 0;
+	}
+	padding-bottom: rem(70);
 }
 
 .slick-slide img {
