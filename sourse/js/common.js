@@ -176,7 +176,23 @@ jQuery(document).ready(function ($) {
 	// / mask for input
 
    
-
+	if ($('div').is("#map")) {
+    // mapboxgl.accessToken = 'pk.eyJ1IjoieWVsZW5rYTMxOCIsImEiOiJjajc1MDRlcmUwb2o5MzNueHFoaGJyY2QyIn0.SZXLxY7HdQG456B16qSylQ#17.7/55.768593/37.59827';
+    // const map = new mapboxgl.Map({
+    // container: 'map',
+    // style: 'mapbox://styles/yelenka318/cjst3ps3v0x5r1flkcyqk2eig',
+    // center: [-71.025076, 42.366126],
+    // zoom: 10.0
+    // });
+      
+      mapboxgl.accessToken = 'pk.eyJ1IjoicGFzaGF3b2wiLCJhIjoiY2p0aGczZW5pMmVhZjN5bDY2eDhxemJxYSJ9.sss-ofubq4VzsbpQQTo2pw';
+const map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/pashawol/cjthh4sfx0yhs1fqlkz7wsja2',
+center: [-71.025076, 42.366126],
+zoom: 10.0
+});
+	}
 
 });
  

@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="libs/magnificPopup/magnific-popup.css">
     <link rel="stylesheet" href="libs/slick/slick.css">
     <link rel="stylesheet" href="css/main.min.css">
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" rel="stylesheet">
   </head>
   <body>
     <div class="main-wrapper">
@@ -52,12 +54,13 @@
       </header>
       <!-- end HEADER.header-->
       <!-- start s-map-->
-      <div class="s-map section lazy-background" id="s-map">
+      <div class="s-map">
+        <!-- карта нахождения -->
         <div class="container">
-          <div class="section-title text-center">
-            <h2>s-map</h2>
+          <iframe id="map" src="https://api.mapbox.com/styles/v1/yelenka318/cjst3ps3v0x5r1flkcyqk2eig.html?fresh=true&amp;title=true&amp;access_token=pk.eyJ1IjoieWVsZW5rYTMxOCIsImEiOiJjajc1MDRlcmUwb2o5MzNueHFoaGJyY2QyIn0.SZXLxY7HdQG456B16qSylQ#17.7/55.768593/37.59827" frameborder="0"></iframe>
+          <div class="s-map__caption">
+            <div class="ttu">Винзавод,</div>	4-й Сыромятнический пер.,<br/>	1/8 строение 6
           </div>
-          <div class="row"></div>
         </div>
       </div>
       <!-- end s-map-->
@@ -117,8 +120,6 @@
     <!-- for svg libs-->
     <script src="libs/svg4everybody-master/svg4everybody.min.js"></script>
     <!-- /for svg libs-->
-    <!-- карта нахождения--><script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
-<link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
     <script src="libs/jquery.inputmask.bundle.min.js"></script>
     <script src="js/common.js"></script>
   </body>
