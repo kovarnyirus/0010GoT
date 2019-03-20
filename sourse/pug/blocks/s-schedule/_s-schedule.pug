@@ -1,0 +1,26 @@
+mixin s-schedule()
+	// start s-schedule
+	+b.s-schedule.section#s-schedule.lazy-background&attributes(attributes)
+		.container
+			.row
+				mixin item(d,t, t1)
+					+e.col.col-md-6
+						+e.item
+							.row
+								+e.col-auto.col-auto
+									+e.date= d
+									+e.time= t
+								+e.col.col
+									+e.title= t1
+									p Краткое описание ивента, тчобы было понятно что там происходит
+					// +e.col.col-md-6
+				+item('5. 04','20:00','длинное Название проходящего ивента')
+				+item('9. 04','20:00','длинное Название проходящего ивента')
+				+item('7. 04','11:20','короткое название')
+				+item('10. 04','11:20','короткое название')
+				+item('7. 04','16:00','короткое название')
+				+item('11. 04','16:00','короткое название')
+				+item('8. 04','16:00','короткое название')
+				+item('29. 04','16:00','короткое название')
+				
+	// end s-schedule

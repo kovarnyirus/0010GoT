@@ -1,0 +1,33 @@
+
+mixin mob-mnu()
+	+b.toggle-menu-mobile--js.d-lg-none
+		span
+	+b.menu-mobile--js.d-lg-none
+		+b.toggle-menu-mobile--js
+			span
+		+e.inner
+		
+			+mnu()
+			.text-right
+	//  мобильное меню
+mixin top-nav() 
+	// start top-nav
+	+b.top-nav
+		.container
+			.row
+				.col-md-auto.col
+					+e.logo(href="#")
+						img(src="img/logo.png", alt="")
+				.col.d-none.d-md-block
+					+b.nav-menu
+						+e.link(href="#") КАРТА
+						+e.link--current(href="#") мероприятия
+						+e.link(href="#") блог
+						+e.link(href="#") местоположение
+				.col-auto
+					+e.btn(href="#") записаться
+				.col-auto.d-none.d-md-block
+					img(src="img/18+.png", alt="")
+
+					
+	// end top-nav
