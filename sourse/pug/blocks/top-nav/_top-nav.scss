@@ -9,6 +9,7 @@
 	left: 0;
 	top: 0;
 	width: 100%;
+	min-width: 750px;
 	&__btn{
 		@extend .btn;
 		@extend .btn-primary;
@@ -177,7 +178,9 @@
 		background-color: #90836a;
 		position: fixed;
 		z-index: 200;
-		width: 100%;
+		width: 100vw;
+		min-width: 750px;
+		margin-right: calc(100% - 100vw);
 		left: 0;
 		bottom: 0;
 		padding-left: rem(45);

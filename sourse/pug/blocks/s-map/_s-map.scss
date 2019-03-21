@@ -6,12 +6,12 @@
 		height: calc(100vh - 70px);
 		position: relative;
 	 
-		#map{
+		#map12{
 			position: absolute;
 			left: 0;
 			top: 0;	
-			width: 100%;
-			height: 100%;
+			width: 100% !important;
+			height: 100% !important;
 		}
 		&__inner{
 			position: absolute;
@@ -58,7 +58,10 @@
 					}
 					width: 100%;
 					height: 320px;
-					bottom: 40px;
+					@include media-breakpoint-up(md){
+						bottom: 0;
+					}
+					bottom: 90px;
 					left: 0;
 					background-image: linear-gradient(to bottom, rgba(11, 21, 32, 0) 0%, #0b1520 40%, #0b1520 100%);
 				}

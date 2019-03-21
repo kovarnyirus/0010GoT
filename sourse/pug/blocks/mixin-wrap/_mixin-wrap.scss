@@ -1,11 +1,11 @@
  
 	  
 .soc{
-	margin: 0 -5px;
+	margin: 0 rem(-10);
 	&__item{
 		display: inline-block;
 		text-decoration: none !important;
-		margin: 0 5px;
+		margin: 0 rem(10);
 		vertical-align: middle;
 		@include mt;
 		&:hover{
@@ -13,10 +13,7 @@
 			opacity: .6 ;
 		}
 	}
-	svg{
-		width: 31px;
-		height: 31px;
-	}
+ 
 	 
 
 }

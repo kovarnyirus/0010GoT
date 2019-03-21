@@ -66,4 +66,94 @@ mixin modal()
 			+e.btn-outline(href="#" )  ок
 	// #modal-send
 
+	+form-wrap()(id="modal-rate" class="zoom-anim-dialog mfp-hide modal-win modal-win--lg modal-form" )
+		+e.head
+			.text-center
+				+e.title.h1.text-white ставка на сезон
+		+e.body
+			+e.title.h1.strong.text-center.py-2 КТО УМРЕТ В ВОСЬМОМ СЕЗОНЕ?
+			.text-center.pb-3.fw-300 Выберите до&nbsp;10&nbsp;персонажей. 
+				br
+				| Сделав ставку&nbsp;Вы уже не&nbsp;сможете поменять своё решение.
+			- var pers= [ 'Дейенерис Таргариен',' Джон Сноу ','Джейме Ланнистер','Серсея Ланнистер',' Тирион Ланнистер ','Санса Старк ','Арья Старк',' Брандон Старк',' Теон Грейджой','Яра Грейджой','Бриенна Тарт','Варис','Брон','Давос Сиворт','Джорах Мормонт','Сэмвелл Тарли','Миссандея','Пёс','Лилли','Мелисандра','Даарио Нахарис','Якен Хгар (безликий)','Тормунд','Серый Червь','Король Ночи ','никто не умрёт ','все умрут' ]
+				+e.row-wrap: .row
+					each t in pers
+						.col-md-4
+							+in-ch()
+								+e.SPAN.text= t 
+			+e.foot
+				.text-center.text-white выбрано 5/10
+				+e.btn(type="submit"  ) сделать ставку
+				.text-center.pt-4
+					a.tdu.popup-with-move-anim(href="#modal-rules" ) Условия розыгрыша
+	// #modal-order
+	
+
+	+b.form-wrap(id="modal-hero" class="zoom-anim-dialog mfp-hide modal-win modal-win--hero modal-win--sm modal-form" )
+		+e.head.mb-0
+			.text-center
+				+e.title.h1 джоффри баратеон
+		+e.body
+			+b.video-wrap
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/MM5N-IIlTEI"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			+b.LABEL.choice-block
+				+e.title жаль, что убили?
+				+e.INPUT.input(type='checkbox')
+
+				+e.SPAN.text да
+					+e.SPAN.small 47 
+				+e.SPAN.lab
+				+e.SPAN.text нет
+					+e.SPAN.small 735 
+				
+			p
+				strong Первый этого имени, второй король Семи Королевств из династии Баратеонов, старший ребёнок, рождённый в браке Роберта Баратеона и Серсеи Ланнистер, брат Мирцеллы и Томмена
+			p 
+				span.fw-300 Во время свадебного пиршества Джоффри был отравлен ядом[23]. Подозрение пало на Тириона и его молодую жену Сансу, хотя позднее Мизинец в разговоре с Сансой назвал себя и Оленну Тирелл. Также есть версия, что к убийству (отравлению) Джоффри приложили руку Безликие, ибо Мизинец имеет связи с Браавосом. 
+	// #modal-hero
+
+
+	+b.form-wrap(id="modal-rate-send" class="zoom-anim-dialog mfp-hide modal-win modal-win--sm modal-form" )
+		+e.head.border-0
+			.text-center
+				+e.title.h1 ваша ставка принята!
+		+e.body 
+			+e.text Какой-то текст про то,
+				br
+				| что можно пошерить или ещё какая инфа
+			
+			+e.text.text-primary Поделиnьтся: 
+			+b.soc
+				+e.item(href="#")
+					+icon('fb')
+				
+				+e.item(href="#")
+					+icon('vk')
+				
+	// #modal-rate-send
+	
+	+b.form-wrap(id="modal-rules" class="zoom-anim-dialog mfp-hide modal-win modal-win--sm modal-win--rules modal-form" )
+		+e.head 
+			.text-center
+				+e.title Условия розыгрыша
+		+e.body 
+			+e.text.strong Угадываешь на весь сезон
+
+
+			
+			p.text-primary.strong Угадал 10&nbsp;из&nbsp;10&nbsp;или никто не&nbsp;
+				br
+				| умрет&nbsp;&mdash; подписка на&nbsp;Amediateka 1&nbsp;год
+			
+			+e.item Угадал 9 из 10 – 6 мес  
+			+e.item Угадал 8 из 10 – 3 мес
+			+e.item Угадал 7 из 10 – 2 мес
+			+e.item Угадал 6 из 10 – 1 мес
+			+e.item Угадал 5 из 10 –  14 дней
+			+e.item Угадал 4 из 10 – 7 дней
+			+e.item Угадал 3 из 10 – 3 дня
+			+e.item Угадал 2 из 10 - 2 дня
+			+e.item Угадал 1 из 10 – 1 день
+	// #modal-rules
+
 	// modal

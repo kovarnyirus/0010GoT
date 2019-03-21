@@ -3,10 +3,10 @@ extends layout/main.pug
 
 include ../blocks/s-content/_s-content.pug
 include ../blocks/s-contact/_s-contact.pug
-include ../blocks/s-map/_s-map.pug
+include ../blocks/s-cemetery/_s-cemetery.pug
 
 block title
-	title Карта
+	title Кладбище
 
 block pagecontent
 	+mob-mnu()
@@ -16,7 +16,7 @@ block pagecontent
 	//- 	h1 
 	//- 		span.d-none.d-md-block расписание мероприятий
 	//- 		span.d-md-none мероприятия
-	+s-map
+	+s-cemetery
 		
 	//- +header-block()
 	//- +s-form()
