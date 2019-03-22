@@ -1,0 +1,39 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+
+block title
+	title title
+
+block pagecontent
+	+b.s-intro
+		.container
+			+e.head
+				.row
+					+e.col-head.col-auto
+					.col
+						img(src="img/logo.png", alt="")
+					+e.col-head.col-auto.text-right
+						img(src="img/18+.png", alt="")
+			+e.body
+				.text-center
+					img.res-i.title-img(src="img/title.png", alt="")
+				+form-wrap
+					+e.text Для получения бонусов, введите e-mail
+						br
+						| или войдите через соц.сети:
+					+input("email","E-mail")(required class='is-invalid')
+					+e.btn.mt-0(href="#") зарегистрироваться
+					+b.soc
+						+e.text.text-center.mb-2.w-100 или
+						+e.item(href="#")
+							+icon('fb')
+						
+						+e.item(href="#")
+							+icon('vk')
+					+e.foot-text.text-center При входе вы соглашаетесь на 
+						|
+						a.tdu.text-white.popup-with-move-anim(href="#modal-policy") обработку персональных данных
+

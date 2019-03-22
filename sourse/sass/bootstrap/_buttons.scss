@@ -72,6 +72,9 @@ fieldset:disabled a.btn {
 .btn-primary{
   border: 2px solid #baa881;
   background-color: #9c8f71;
+  &:hover{
+    color: #ffffff;
+  }
 }
 
 

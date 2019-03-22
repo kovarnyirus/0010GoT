@@ -13,6 +13,8 @@
     <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" rel="stylesheet">
     <link rel="stylesheet" href="libs/magnificPopup/magnific-popup.css">
     <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/jQueryFormStyler/dist/jquery.formstyler.css">
+    <link rel="stylesheet" href="libs/jQueryFormStyler/dist/jquery.formstyler.theme.css">
     <link rel="stylesheet" href="css/main.min.css">
   </head>
   <body>
@@ -95,6 +97,51 @@
       </form>
     </div>
     <!-- #modal-order-->
+    <div class="form-wrap zoom-anim-dialog mfp-hide modal-win modal-form" id="modal-order2">
+      <form novalidate="novalidate">
+        <div class="form-wrap__head">
+          <div class="text-center">
+            <div class="form-wrap__title h1">записаться
+            </div>
+          </div>
+        </div>
+        <div class="form-wrap__body"> 
+          <div class="form-wrap__text">Выберите удобные для Вас<br/>дату и&nbsp;время посещения Крипты:
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-wrap__input-wrap form-group">
+                <select class="form-wrap__input form-control" name="">
+                  <option selected="selected" disabled="disabled">Выберите день</option>
+                  <option>16 апреля, вторник</option>
+                  <option>15 аперля, пн. </option>
+                  <option>16 апреля, вт.   </option>
+                  <option>17 апреля, ср. </option>
+                  <option>18 апреля, чт </option>
+                  <option>19 апреля, пт.</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-wrap__input-wrap form-group">
+                <select class="form-wrap__input form-control" name="">
+                  <option selected="selected" disabled="disabled">Выберите время</option>
+                  <option>16 апреля, вторник</option>
+                  <option>15 аперля, пн. </option>
+                  <option>16 апреля, вт.   </option>
+                  <option>17 апреля, ср. </option>
+                  <option>18 апреля, чт </option>
+                  <option>19 апреля, пт.</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <button class="form-wrap__btn" type="submit"> записаться
+          </button>
+        </div>
+      </form>
+    </div>
+    <!-- #modal-order2-->
     <div class="form-wrap zoom-anim-dialog mfp-hide modal-win modal-win modal-win--sm modal-form" id="modal-send">
       <div class="form-wrap__head border-0">
         <div class="text-center">
@@ -317,6 +364,52 @@
       </div>
     </div>
     <!-- #modal-rules-->
+    <div class="form-wrap zoom-anim-dialog mfp-hide modal-win modal-win modal-win--lg modal-form" id="modal-policy">
+      <form novalidate="novalidate">
+        <div class="form-wrap__head">
+          <div class="text-center">
+            <div class="form-wrap__title h1">пользовательское соглашение
+            </div>
+          </div>
+        </div>
+        <div class="form-wrap__body form-wrap__body--text">
+          <p class="strong text-center">Настоящее Соглашение определяет условия использования Пользователями материалов и сервисов сайта www. centery-got.amediateka.ru</p>
+          <p>1.Общие условия<br/>1.1. Использование материалов и сервисов Сайта регулируется нормами действующего законодательства Российской Федерации.<br/>1.2. Настоящее Соглашение является публичной офертой. Получая доступ к материалам Сайта Пользователь считается присоединившимся к настоящему Соглашению.<br/>1.3. Администрация Сайта вправе в любое время в одностороннем порядке изменять условия настоящего Соглашения. Такие изменения вступают в силу по истечении 3 (Трех) дней с момента размещения новой версии Соглашения на сайте. При несогласии Пользователя с внесенными изменениями он обязан отказаться от доступа к Сайту, прекратить использование материалов и сервисов Сайта.</p>
+          <p>2. Обязательства Пользователя<br/>2.1. Пользователь соглашается не предпринимать действий, которые могут рассматриваться как нарушающие российское законодательство или нормы международного права, в том числе в сфере интеллектуальной собственности, авторских и/или смежных правах, а также любых действий, которые приводят или могут привести к нарушению нормальной работы Сайта и сервисов Сайта.<br/>2.2. Использование материалов Сайта без согласия правообладателей не допускается (статья 1270 Г.К РФ). Для правомерного использования материалов Сайта необходимо заключение лицензионных договоров (получение лицензий) от Правообладателей.<br/>2.3. При цитировании материалов Сайта, включая охраняемые авторские произведения, ссылка на Сайт обязательна (подпункт 1 пункта 1 статьи 1274 Г.К РФ).<br/>2.4. Комментарии и иные записи Пользователя на Сайте не должны вступать в противоречие с требованиями законодательства Российской Федерации и общепринятых норм морали и нравственности.<br/>2.5. Пользователь предупрежден о том, что Администрация Сайта не несет ответственности за посещение и использование им внешних ресурсов, ссылки на которые могут содержаться на сайте.<br/>2.6. Пользователь согласен с тем, что Администрация Сайта не несет ответственности и не имеет прямых или косвенных обязательств перед Пользователем в связи с любыми возможными или возникшими потерями или убытками, связанными с любым содержанием Сайта, регистрацией авторских прав и сведениями о такой регистрации, товарами или услугами, доступными на или полученными через внешние сайты или ресурсы либо иные контакты Пользователя, в которые он вступил, используя размещенную на Сайте информацию или ссылки на внешние ресурсы.<br/>2.7. Пользователь принимает положение о том, что все материалы и сервисы Сайта или любая их часть могут сопровождаться рекламой. Пользователь согласен с тем, что Администрация Сайта не несет какой-либо ответственности и не имеет каких-либо обязательств в связи с такой рекламой.</p>
+          <p>3. Прочие условия<br/>3.1. Все возможные споры, вытекающие из настоящего Соглашения или связанные с ним, подлежат разрешению в соответствии с действующим законодательством Российской Федерации.<br/>3.2. Ничто в Соглашении не может пониматься как установление между Пользователем и Администрации Сайта агентских отношений, отношений товарищества, отношений по совместной деятельности, отношений личного найма, либо каких-то иных отношений, прямо не предусмотренных Соглашением.<br/>3.3. Признание судом какого-либо положения Соглашения недействительным или не подлежащим принудительному исполнению не влечет недействительности иных положений Соглашения.<br/>3.4. Бездействие со стороны Администрации Сайта в случае нарушения кем-либо из Пользователей положений Соглашения не лишает Администрацию Сайта права предпринять позднее соответствующие действия в защиту своих интересов и защиту авторских прав на охраняемые в соответствии с законодательством материалы Сайта.<br/>Пользователь подтверждает, что ознакомлен со всеми пунктами настоящего Соглашения и безусловно принимает их.</p>
+        </div>
+      </form>
+    </div>
+    <!-- / #modal-policy-->
+    <div class="form-wrap zoom-anim-dialog mfp-hide modal-win modal-win modal-win--sm modal-form" id="modal-good">
+      <div class="form-wrap__head border-0">
+        <div class="text-center">
+          <div class="form-wrap__title h1">УСПЕШНО!
+          </div>
+        </div>
+      </div>
+      <div class="form-wrap__body"> 
+        <div class="form-wrap__text">Пароль отправлен на указанный Вами адрес почты  <strong>qwejqwleuh111212@mail.ru  </strong>
+        </div><a class="form-wrap__btn-outline" href="#"> ок</a>
+      </div>
+    </div>
+    <!-- #modal-good-->
+    <div class="form-wrap zoom-anim-dialog mfp-hide modal-win modal-win modal-win--hero modal-win modal-win--sm modal-form" id="modal-blog">
+      <div class="form-wrap__head mb-0 border-0">
+        <div class="text-center">
+          <div class="form-wrap__title h1">Появились новые кадры из восьмого сезона Игры престолов
+          </div>
+        </div>
+      </div>
+      <div class="form-wrap__body">
+        <div class="video-wrap img-bg mb-3"><img class="lazy-bg" src="#" data-src="img/blog.jpg" alt=""/>
+        </div>
+        <p><strong>Первый этого имени, второй король Семи Королевств из династии Баратеонов, старший ребёнок, рождённый в браке Роберта Баратеона и Серсеи Ланнистер, брат Мирцеллы и Томмена</strong></p>
+        <p> <span class="fw-300">Во время свадебного пиршества Джоффри был отравлен ядом[23]. Подозрение пало на Тириона и его молодую жену Сансу, хотя позднее Мизинец в разговоре с Сансой назвал себя и Оленну Тирелл. Также есть версия, что к убийству (отравлению) Джоффри приложили руку Безликие, ибо Мизинец имеет связи с Браавосом.</span></p>
+        <p> <span class="fw-300">Во время свадебного пиршества Джоффри был отравлен ядом[23]. Подозрение пало на Тириона и его молодую жену Сансу, хотя позднее Мизинец в разговоре с Сансой назвал себя и Оленну Тирелл. Также есть версия, что к убийству (отравлению) Джоффри приложили руку Безликие, ибо Мизинец имеет связи с Браавосом.</span></p>
+      </div>
+    </div>
+    <!-- #modal-blog-->
     <!-- modal-->
     <script src="js/jquery.min.js"></script>
     <!-- modal libs-->
@@ -324,6 +417,7 @@
     <!-- modal libs-->
     <!-- for svg libs-->
     <script src="libs/svg4everybody-master/svg4everybody.min.js"></script>
+    <script src="libs/jQueryFormStyler/dist/jquery.formstyler.min.js"></script>
     <!-- /for svg libs-->
     <script src="libs/jquery.inputmask.bundle.min.js"></script>
     <script src="js/common.js"></script>

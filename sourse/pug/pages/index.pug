@@ -8,13 +8,23 @@ block title
 	title title
 
 block pagecontent
-	+mob-mnu()
-	+header()
-		+top-line()
-		+top-nav()
+	+b.s-intro
+		.container
+			+e.head
+				.row
+					+e.col-head.col-auto
+					.col
+						img(src="img/logo.png", alt="")
+					+e.col-head.col-auto
+						img(src="img/18+.png", alt="")
+			+e.body
+				.text-center
+					img.res-i.title-img(src="img/title.png", alt="")
+				+b.form-wrap
+					+e.text Сериал Игра Престолов известен своей кровожадностью и&nbsp;смертями. Мы&nbsp;решили почить всех персонажей, которые умерли. Приходите и&nbsp;вы.
+					+e.text.text-primary.strong Это клабище располагается по&nbsp;адресу:
+						br
+						| Винзавод, 4-й Сыромятнический пер., 1/8 строение&nbsp;6
+					+e.btn.mt-0(href="#") зарегистрироваться
 
-	//- +header-block()
-	+s-form()
-	+s-contact()
-	+footer()
 

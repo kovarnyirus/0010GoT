@@ -1,0 +1,32 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+
+block title
+	title title
+
+block pagecontent
+	+b.s-intro
+		.container
+			+e.head
+				.row
+					+e.col-head.col-auto
+					.col
+						img(src="img/logo.png", alt="")
+					+e.col-head.col-auto.text-right
+						img(src="img/18+.png", alt="")
+			+e.body
+				.text-center
+					img.res-i.title-img(src="img/title.png", alt="")
+				+form-wrap
+					+e.text Введите пароль и войдите в Крипту
+					+input("email","E-mail")(required class='is-invalid')
+					+input("password","Пароль")()
+					+e.btn.mt-0(href="#") войти
+			 
+					+e.foot-text--login.text-center При входе вы соглашаетесь на 
+						|
+						a.tdu.text-white.popup-with-move-anim(href="#modal-policy") обработку персональных данных
+

@@ -88,10 +88,7 @@
 		top: em(6);
 	}   
 
-	.soc{
-		justify-content: center;
-		display: flex;
-	}
+	
 }
 
 a {
@@ -163,7 +160,16 @@ a {
 
 @include media-breakpoint-down(xs) {}
 
-
+.soc{
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	&__text{
+		// width: 100%;
+		font-size: rem(20);
+		font-weight: 300;
+	}
+}
 .modal-win--hero{
 	
 	// max-width: 550px;
