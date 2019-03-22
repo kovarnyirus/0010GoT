@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="libs/slick/slick.css">
     <link rel="stylesheet" href="libs/jQueryFormStyler/dist/jquery.formstyler.css">
     <link rel="stylesheet" href="libs/jQueryFormStyler/dist/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="css/main.min.css">
   </head>
   <body>
@@ -165,7 +166,7 @@
           <div class="form-wrap__title h1 strong text-center py-2">КТО УМРЕТ В ВОСЬМОМ СЕЗОНЕ?
           </div>
           <div class="text-center pb-3 fw-300">Выберите до&nbsp;10&nbsp;персонажей. <br/>Сделав ставку&nbsp;Вы уже не&nbsp;сможете поменять своё решение.</div>
-          <div class="form-wrap__row-wrap">
+          <div class="form-wrap__row-wrap customscrollbar-js">
             <div class="row">
               <div class="col-md-4">
                 <label class="custom-input"><input class="custom-input__input" type="checkbox"/><span class="custom-input__lab"></span><span class="custom-input__text">Дейенерис Таргариен</span>
@@ -277,30 +278,45 @@
               </div>
             </div>
           </div>
-          <div class="form-wrap__foot">
-            <div class="text-center text-white">выбрано 5/10</div>
-            <button class="form-wrap__btn" type="submit">сделать ставку
-            </button>
-            <div class="text-center pt-4"><a class="tdu popup-with-move-anim" href="#modal-rules">Условия розыгрыша</a></div>
-          </div>
+        </div>
+        <div class="form-wrap__foot">
+          <div class="text-center text-white">выбрано 5/10</div>
+          <button class="form-wrap__btn" type="submit">сделать ставку
+          </button>
+          <div class="text-center pt-4"><a class="tdu popup-with-move-anim" href="#modal-rules">Условия розыгрыша</a></div>
         </div>
       </form>
     </div>
     <!-- #modal-order-->
     <div class="form-wrap zoom-anim-dialog mfp-hide modal-win modal-win modal-win--hero modal-win modal-win--sm modal-form" id="modal-hero">
-      <div class="form-wrap__head mb-0">
-        <div class="text-center">
-          <div class="form-wrap__title h1">джоффри баратеон
-          </div>
+      <div class="form-wrap__head mb-0 text-center d-md-none">
+        <div class="form-wrap__title h1">джоффри баратеон 
         </div>
       </div>
-      <div class="form-wrap__body">
-        <div class="video-wrap"><iframe width="560" height="315" src="https://www.youtube.com/embed/MM5N-IIlTEI"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-wrap__body form-wrap__body--left">
+            <div class="video-wrap"><iframe width="560" height="315" src="https://www.youtube.com/embed/MM5N-IIlTEI"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <label class="choice-block"><span class="choice-block__title">жаль, что убили?</span><input class="choice-block__input" type="checkbox"/><span class="choice-block__text">да<span class="choice-block__small">47 </span></span><span class="choice-block__lab"></span><span class="choice-block__text">нет<span class="choice-block__small">735 </span></span>
+            </label>
+          </div>
         </div>
-        <label class="choice-block"><span class="choice-block__title">жаль, что убили?</span><input class="choice-block__input" type="checkbox"/><span class="choice-block__text">да<span class="choice-block__small">47 </span></span><span class="choice-block__lab"></span><span class="choice-block__text">нет<span class="choice-block__small">735 </span></span>
-        </label>
-        <p><strong>Первый этого имени, второй король Семи Королевств из династии Баратеонов, старший ребёнок, рождённый в браке Роберта Баратеона и Серсеи Ланнистер, брат Мирцеллы и Томмена</strong></p>
-        <p> <span class="fw-300">Во время свадебного пиршества Джоффри был отравлен ядом[23]. Подозрение пало на Тириона и его молодую жену Сансу, хотя позднее Мизинец в разговоре с Сансой назвал себя и Оленну Тирелл. Также есть версия, что к убийству (отравлению) Джоффри приложили руку Безликие, ибо Мизинец имеет связи с Браавосом. </span></p>
+        <div class="col-md-6">
+          <div class="form-wrap__head d-none d-md-block pl-0">
+            <div class="text-md-left">
+              <div class="form-wrap__title h1">джоффри баратеон 
+              </div>
+            </div>
+          </div>
+          <div class="form-wrap__body customscrollbar-js">
+            <p><strong>Первый этого имени, второй король Семи Королевств из династии Баратеонов, старший ребёнок, рождённый в браке Роберта Баратеона и Серсеи Ланнистер, брат Мирцеллы и Томмена</strong></p>
+            <p> <span class="fw-300">Во время свадебного пиршества Джоффри был отравлен ядом[23]. Подозрение пало на Тириона и его молодую жену Сансу, хотя позднее Мизинец в разговоре с Сансой назвал себя и Оленну Тирелл. Также есть версия, что к убийству (отравлению) Джоффри приложили руку Безликие, ибо Мизинец имеет связи с Браавосом. </span></p>
+            <p> <span class="fw-300">Во время свадебного пиршества Джоффри был отравлен ядом[23]. Подозрение пало на Тириона и его молодую жену Сансу, хотя позднее Мизинец в разговоре с Сансой назвал себя и Оленну Тирелл. Также есть версия, что к убийству (отравлению) Джоффри приложили руку Безликие, ибо Мизинец имеет связи с Браавосом. </span></p>
+            <p> <span class="fw-300">Во время свадебного пиршества Джоффри был отравлен ядом[23]. Подозрение пало на Тириона и его молодую жену Сансу, хотя позднее Мизинец в разговоре с Сансой назвал себя и Оленну Тирелл. Также есть версия, что к убийству (отравлению) Джоффри приложили руку Безликие, ибо Мизинец имеет связи с Браавосом. </span></p>
+            <p> <span class="fw-300">Во время свадебного пиршества Джоффри был отравлен ядом[23]. Подозрение пало на Тириона и его молодую жену Сансу, хотя позднее Мизинец в разговоре с Сансой назвал себя и Оленну Тирелл. Также есть версия, что к убийству (отравлению) Джоффри приложили руку Безликие, ибо Мизинец имеет связи с Браавосом. </span></p>
+          </div>
+        </div>
       </div>
     </div>
     <!-- #modal-hero-->
@@ -314,7 +330,7 @@
       <div class="form-wrap__body"> 
         <div class="form-wrap__text">Какой-то текст про то,<br/>что можно пошерить или ещё какая инфа
         </div>
-        <div class="form-wrap__text text-primary">Поделитьтся: 
+        <div class="form-wrap__text text-primary">Поделиться: 
         </div>
         <div class="soc"><a class="soc__item" href="#">
           <svg class="icon icon-fb ">
@@ -411,10 +427,10 @@
     <script src="libs/magnificPopup/jquery.magnific-popup.min.js"></script>
     <!-- modal libs-->
     <!-- for svg libs-->
-    <script src="libs/svg4everybody-master/svg4everybody.min.js"></script>
-    <script src="libs/jQueryFormStyler/dist/jquery.formstyler.min.js"></script>
+    <script src="libs/svg4everybody-master/svg4everybody.min.js"> </script>
     <!-- /for svg libs-->
     <script src="libs/jquery.inputmask.bundle.min.js"></script>
+    <script src="libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/common.js"></script>
   </body>
 </html>

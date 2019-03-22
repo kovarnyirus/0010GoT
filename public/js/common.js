@@ -167,11 +167,13 @@ var JSCCommon = {
 		// mask for input
 		$('input[type="tel"]').attr("pattern", "[+]7[(][0-9]{3}[)][0-9]{3}-[0-9]{2}-[0-9]{2}").inputmask("+7(999)999-99-99");
   },
-  
-};
-
-
-
+	
+	customScrollBar : function () {
+		$(window).on("load",function(){
+			$(".customscrollbar-js").mCustomScrollbar();
+	});
+	}
+}; 
 
 JSCCommon.LazyFunction();  
 jQuery(document).ready(function ($) {
@@ -181,6 +183,7 @@ jQuery(document).ready(function ($) {
 	JSCCommon.magnificPopupCall();  
 
 	JSCCommon.inputMask(); 
+	JSCCommon.customScrollBar(); 
 
 	// для свг
 	svg4everybody({});
