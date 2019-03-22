@@ -17,6 +17,7 @@
 		padding: rem(18px) rem(18px);
 		@include rfs(rem(16));
 	}
+	padding-top: 58px;
 	//
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}

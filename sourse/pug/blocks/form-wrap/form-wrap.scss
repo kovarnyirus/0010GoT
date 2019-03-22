@@ -2,8 +2,8 @@
 	&__head{
 		border-bottom: 1px solid #2e3946;
 		margin-bottom: rem(67);
-		padding-left: rem(15);
-		padding-right: rem(15);
+		padding-left: rem(25);
+		padding-right: rem(25);
 	}
 	&__body{
 		margin-left: auto;
@@ -55,8 +55,8 @@
 			}
 
  	&__input-wrap{
-		position: relative;
-		z-index: 2000;
+		// position: relative;
+		// z-index: 2000;
 		ul{
 			max-height: none !important;
 		}

@@ -75,6 +75,7 @@
 			@include roww(28);
 		}
 	}
+	padding-top: 50px;
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}
 	@include media-breakpoint-up(sm) {}

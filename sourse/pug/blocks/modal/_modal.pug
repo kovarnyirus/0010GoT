@@ -100,6 +100,26 @@ mixin modal()
 			
 			+e.btn-outline(href="#" )  ок
 	// #modal-send
+	
+	+b.form-wrap(id="modal-send2" class="zoom-anim-dialog mfp-hide modal-win modal-win--sm modal-form" )
+		+e.head.border-0
+			.text-center
+				+e.title.h1 поздравляем!
+		+e.body 
+			+e.text.text-center Ждём Вас 
+				|
+				strong.text-primary 17 апреля в 16:30
+			+e.text.d-none.d-md-block Ваш билет отправлен на&nbsp;указанный
+				br
+				| Вами адрес почты 
+				| 
+				strong qwejqwleuh111212@mail.ru 
+			
+			+e.text.d-md-none Ваш билет отправлен на&nbsp;указанный Вами E-mail
+			
+			+e.btn-outline(href="#" )  ок
+	// #modal-send2
+
 
 	+form-wrap()(id="modal-rate" class="zoom-anim-dialog mfp-hide modal-win modal-win--lg modal-form" )
 		+e.head
@@ -157,7 +177,7 @@ mixin modal()
 				br
 				| что можно пошерить или ещё какая инфа
 			
-			+e.text.text-primary Поделиnьтся: 
+			+e.text.text-primary Поделитьтся: 
 			+b.soc
 				+e.item(href="#")
 					+icon('fb')
@@ -253,7 +273,7 @@ mixin modal()
 	+b.form-wrap(id="modal-blog" class="zoom-anim-dialog mfp-hide modal-win modal-win--hero modal-win--sm modal-form" )
 		+e.head.mb-0.border-0
 			.text-center
-				+e.title.h1 Появились новые кадры из восьмого сезона Игры престолов
+				+e.title.h1.text-white Появились новые кадры из восьмого сезона Игры престолов
 		+e.body
 			+b.video-wrap.img-bg.mb-3
 				img.lazy-bg(src="#" data-src="img/blog.jpg", alt="")
