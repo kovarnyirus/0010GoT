@@ -1,221 +1,223 @@
 
-mixin modal() 
- 
+mixin modal()
+
 	//- #modal-win.modal.fade(tabindex='-1', role='dialog', aria-labelledby='modal-win', aria-hidden='true')
-		
-	//- 	div( class="   modal-dialog  modal-dialog-centered  " role='document') 
+
+	//- 	div( class="   modal-dialog  modal-dialog-centered  " role='document')
 	//- 		+form-wrap()(class=" modal-content modal-win ")
 	//- 			button.close.mfp-close(type='button', data-dismiss='modal', aria-label='Close')  ×
-	//- 			+input("tel","Введите ваш телефон")(name="tel" required) 
-				
+	//- 			+input("tel","Введите ваш телефон")(name="tel" required)
+
 	//- 			+e.BUTTON.btn.btn.btn-accent.btn-block Отправить
 	//- 			+b.wrap-polite
 	//- 				+b.custom-input.polite
 	//- 					+b.LABEL.custom-input.polite
 	//- 						+e.INPUT.input.__input-radio(type="checkbox" checked name="polite" required value="")
 	//- 						+e.SPAN.lab
-	//- 						| Даю 
-	//- 						| 
-	//- 						span.link( data-toggle='modal', data-target='#exampleModal2') согласие 
+	//- 						| Даю
+	//- 						|
+	//- 						span.link( data-toggle='modal', data-target='#exampleModal2') согласие
 
 	//- 						| на хранение и обработку   персональных данных
-	
- 
+
+
 
 	//- #thanks.modal.fade(tabindex='-1', role='dialog', aria-labelledby='thanks', aria-hidden='true')
-	//- 	div( class=" ttext-center  modal-dialog  modal-dialog-centered  " role='document') 
+	//- 	div( class=" ttext-center  modal-dialog  modal-dialog-centered  " role='document')
 	//- 		+form-wrap()(class=" modal-content modal-win ")
 	//- 			button.close.mfp-close(type='button', data-dismiss='modal', aria-label='Close')  ×
 	//- 			br
 	//- 			.h2 Заявка принята
 	//- 			br
 	//- 			.h3 Скоро с Вами свяжутся
-	//- 			br 
+	//- 			br
 
 	+form-wrap()(id="modal-order" class="zoom-anim-dialog mfp-hide modal-win modal-form" )
 		+e.head
 			.text-center
 				+e.title.h1 записаться
 		+e.body
-			+e.text.text-primary Чтобы попасть на&nbsp;кладбище игры претсолов Вам необходимо записаться.
-			+e.text Для этого заполните следующие поля и&nbsp;мы&nbsp;вышлем электроныый билет Вам на&nbsp;почту:
+			//+e.text.text-primary Чтобы попасть на&nbsp;кладбище игры претсолов Вам необходимо записаться.
+			+e.text.pb-5 Введите Имя и Фамилию<br>  и выберете подходящую дату и время.
 			.row
-				//- +input("text","Имя")( ) 
+				//- +input("text","Имя")( )
 				.col-md-6
-					+input("text","Имя")(required  value="Имя" class="is-valid" ) 
+					+input("text","Имя")(required  value="Имя")
 				.col-md-6
-					+input("text","Фамилия")(required class='is-invalid')
+					+input("text","Фамилия")(required placeholder="Фамилия" class='form-wrap__input--red-placeholder is-invalid')
 			//- +input("email","Ваше email")(required)
 			//- +text( "Комментарий")
 			+e.btn(type="submit"  )  отправить
 	// #modal-order
-	
-	+form-wrap()(id="modal-order2" class="zoom-anim-dialog mfp-hide modal-win modal-form" )
+
+	+form-wrap()(id="modal-order2" class="zoom-anim-dialog mfp-hide modal-win modal-form modal-win--write" )
 		+e.head
 			.text-center
 				+e.title.h1 записаться
-		+e.body 
+		+e.body
 			+e.text Выберите удобные для Вас
 				br
 				| дату и&nbsp;время посещения Крипты:
 			.row
-				//- +input("text","Имя")( ) 
+				//- +input("text","Имя")( )
 				.col-md-6
 					+e.input-wrap.form-group
 						+e.SELECT.input.form-control(name="")
 							option( selected disabled) Выберите день
 							option(  ) 16 апреля, вторник
-							option(  ) 15 аперля, пн. 
-							option(  ) 16 апреля, вт.   
-							option(  ) 17 апреля, ср. 
-							option(  ) 18 апреля, чт 
+							option(  ) 15 аперля, пн.
+							option(  ) 16 апреля, вт.
+							option(  ) 17 апреля, ср.
+							option(  ) 18 апреля, чт
 							option(  ) 19 апреля, пт.
 				.col-md-6
 					+e.input-wrap.form-group
 						+e.SELECT.input.form-control(name="")
 							option( selected disabled) Выберите время
 							option(  ) 16 апреля, вторник
-							option(  ) 15 аперля, пн. 
-							option(  ) 16 апреля, вт.   
-							option(  ) 17 апреля, ср. 
-							option(  ) 18 апреля, чт 
+							option(  ) 15 аперля, пн.
+							option(  ) 16 апреля, вт.
+							option(  ) 17 апреля, ср.
+							option(  ) 18 апреля, чт
 							option(  ) 19 апреля, пт.
 			//- +input("email","Ваше email")(required)
 			//- +text( "Комментарий")
 			+e.btn(type="submit"  )  записаться
 	// #modal-order2
-	
+
 	+b.form-wrap(id="modal-send" class="zoom-anim-dialog mfp-hide modal-win modal-win--sm modal-form" )
 		+e.head.border-0
 			.text-center
 				+e.title.h1 поздравляем!
-		+e.body 
+		+e.body
 			+e.text.d-none.d-md-block Ваш билет отправлен на&nbsp;указанный
 				br
-				| Вами адрес почты 
-				| 
-				strong qwejqwleuh111212@mail.ru 
-			
+				| Вами адрес почты
+				|
+				strong qwejqwleuh111212@mail.ru
+
 			+e.text.d-md-none Ваш билет отправлен на&nbsp;указанный Вами E-mail
-			
+
 			+e.btn-outline(href="#" )  ок
 	// #modal-send
-	
-	+b.form-wrap(id="modal-send2" class="zoom-anim-dialog mfp-hide modal-win modal-win--sm modal-form" )
+
+	+b.form-wrap(id="modal-send2" class="zoom-anim-dialog mfp-hide modal-win modal-win--sm modal-form modal-win--taken" )
 		+e.head.border-0
 			.text-center
 				+e.title.h1 поздравляем!
-		+e.body 
-			+e.text.text-center Ждём Вас 
+		+e.body
+			+e.text.text-center Ждём Вас
 				|
 				strong.text-primary 17 апреля в 16:30
 			+e.text.d-none.d-md-block Ваш билет отправлен на&nbsp;указанный
 				br
-				| Вами адрес почты 
-				| 
-				strong qwejqwleuh111212@mail.ru 
-			
+				| Вами адрес почты
+				|
+				strong qwejqwleuh111212@mail.ru
+
 			+e.text.d-md-none Ваш билет отправлен на&nbsp;указанный Вами E-mail
-			
+
 			+e.btn-outline(href="#" )  ок
 	// #modal-send2
 
 
-	+form-wrap()(id="modal-rate" class="zoom-anim-dialog mfp-hide modal-win modal-win--lg modal-form" )
+	+form-wrap()(id="modal-rate" class="zoom-anim-dialog mfp-hide modal-win modal-win--lg modal-form pb-5" )
 		+e.head
 			.text-center
 				+e.title.h1.text-white ставка на сезон
 		+e.body
-			+e.title.h1.strong.text-center.py-2 КТО УМРЕТ В ВОСЬМОМ СЕЗОНЕ?
-			.text-center.pb-3.fw-300 Выберите до&nbsp;10&nbsp;персонажей. 
+			+e.title.h1.strong.text-center.py-2 КТО УМРЕТ В ФИНАЛЬНОМ СЕЗОНЕ?
+			.text-center.fw-300 Вы можете выбрать от 1 до 10 героев.
 				br
-				| Сделав ставку&nbsp;Вы уже не&nbsp;сможете поменять своё решение.
-			- var pers= [ 'Дейенерис Таргариен',' Джон Сноу ','Джейме Ланнистер','Серсея Ланнистер',' Тирион Ланнистер ','Санса Старк ','Арья Старк',' Брандон Старк',' Теон Грейджой','Яра Грейджой','Бриенна Тарт','Варис','Брон','Давос Сиворт','Джорах Мормонт','Сэмвелл Тарли','Миссандея','Пёс','Лилли','Мелисандра','Даарио Нахарис','Якен Хгар (безликий)','Тормунд','Серый Червь','Король Ночи ','никто не умрёт ','все умрут' ]
+				| Чем больше совпадений —&nbsp;
+				a.tdu.popup-with-move-anim(href="#modal-rules" ) тем больше подарок!
+				| &nbsp;Ставку можно сделать один раз
+			- var pers= [ 'Дейенерис Таргариен','Яра Грейджой','Мелисандра','Джон Сноу','Бриенна Тарт','Даарио Нахарис','Джейме Ланнистер','Варис','Якен Хгар (безликий)','Серсея Ланнистер','Брон','Тормунд','Тирион Ланнистер','Давос Сиворт','Серый Червь','Санса Старк','Джорах Мормонт','Король Ночи','Арья Старк','Сэмвелл Тарли',' Брандон Старк',' Теон Грейджой','Миссандея','никто не умрёт ','Пёс','Лилли','все умрут' ]
 				+e.row-wrap.customscrollbar-js: .row
 					each t in pers
 						.col-md-4
 							+in-ch()
-								+e.SPAN.text= t 
+								+e.SPAN.text= t
 		+e.foot
-			.text-center.text-white выбрано 5/10
+			.text-center.text-white.mt-4 выбрано 5/10
 			+e.btn(type="submit"  ) сделать ставку
-			.text-center.pt-4
-				a.tdu.popup-with-move-anim(href="#modal-rules" ) Условия розыгрыша
 	// #modal-order
-	
 
-	+b.form-wrap(id="modal-hero" class="zoom-anim-dialog mfp-hide modal-win modal-win--hero modal-win--sm modal-form" )
+
+	+b.form-wrap(id="modal-hero" class="zoom-anim-dialog mfp-hide modal-win modal-win--hero modal-win--sm modal-form pb-5" )
 		+e.head.mb-0.text-center.d-md-none
-				+e.title.h1 джоффри баратеон 
+				+e.title.h1 джоффри баратеон
 		.row
 			.col-md-6
 				+e.body--left
 					+b.video-wrap
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/MM5N-IIlTEI"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					+b.LABEL.choice-block
+					+b.LABEL.choice-block.mb-0
 						+e.title жаль, что убили?
 						+e.INPUT.input(type='checkbox')
 
 						+e.SPAN.text да
-							+e.SPAN.small 47 
+							+e.SPAN.small 47
 						+e.SPAN.lab
 						+e.SPAN.text нет
-							+e.SPAN.small 735 
+							+e.SPAN.small 735
 			.col-md-6
-				+e.head.d-none.d-md-block.pl-0
+				+e.head.d-none.d-md-block.pl-0.mb-4
 					.text-md-left
-						+e.title.h1 джоффри баратеон 
+						+e.title.h1.pb-1 джоффри баратеон
 				+e.body.customscrollbar-js
 					p
 						strong Первый этого имени, второй король Семи Королевств из династии Баратеонов, старший ребёнок, рождённый в браке Роберта Баратеона и Серсеи Ланнистер, брат Мирцеллы и Томмена
-					p 
-						span.fw-300 Во время свадебного пиршества Джоффри был отравлен ядом[23]. Подозрение пало на Тириона и его молодую жену Сансу, хотя позднее Мизинец в разговоре с Сансой назвал себя и Оленну Тирелл. Также есть версия, что к убийству (отравлению) Джоффри приложили руку Безликие, ибо Мизинец имеет связи с Браавосом. 
-					
-					p 
-						span.fw-300 Во время свадебного пиршества Джоффри был отравлен ядом[23]. Подозрение пало на Тириона и его молодую жену Сансу, хотя позднее Мизинец в разговоре с Сансой назвал себя и Оленну Тирелл. Также есть версия, что к убийству (отравлению) Джоффри приложили руку Безликие, ибо Мизинец имеет связи с Браавосом. 
-					
-					p 
-						span.fw-300 Во время свадебного пиршества Джоффри был отравлен ядом[23]. Подозрение пало на Тириона и его молодую жену Сансу, хотя позднее Мизинец в разговоре с Сансой назвал себя и Оленну Тирелл. Также есть версия, что к убийству (отравлению) Джоффри приложили руку Безликие, ибо Мизинец имеет связи с Браавосом. 
-					
-					p 
-						span.fw-300 Во время свадебного пиршества Джоффри был отравлен ядом[23]. Подозрение пало на Тириона и его молодую жену Сансу, хотя позднее Мизинец в разговоре с Сансой назвал себя и Оленну Тирелл. Также есть версия, что к убийству (отравлению) Джоффри приложили руку Безликие, ибо Мизинец имеет связи с Браавосом. 
-					
+					p
+						span.fw-300 Во время свадебного пиршества Джоффри был отравлен ядом[23]. Подозрение пало на Тириона и его молодую жену Сансу, хотя позднее Мизинец в разговоре с Сансой назвал себя и Оленну Тирелл. Также есть версия, что к убийству (отравлению) Джоффри приложили руку Безликие, ибо Мизинец имеет связи с Браавосом.
+
+					p
+						span.fw-300 Во время свадебного пиршества Джоффри был отравлен ядом[23]. Подозрение пало на Тириона и его молодую жену Сансу, хотя позднее Мизинец в разговоре с Сансой назвал себя и Оленну Тирелл. Также есть версия, что к убийству (отравлению) Джоффри приложили руку Безликие, ибо Мизинец имеет связи с Браавосом.
+
+					p
+						span.fw-300 Во время свадебного пиршества Джоффри был отравлен ядом[23]. Подозрение пало на Тириона и его молодую жену Сансу, хотя позднее Мизинец в разговоре с Сансой назвал себя и Оленну Тирелл. Также есть версия, что к убийству (отравлению) Джоффри приложили руку Безликие, ибо Мизинец имеет связи с Браавосом.
+
+					p
+						span.fw-300 Во время свадебного пиршества Джоффри был отравлен ядом[23]. Подозрение пало на Тириона и его молодую жену Сансу, хотя позднее Мизинец в разговоре с Сансой назвал себя и Оленну Тирелл. Также есть версия, что к убийству (отравлению) Джоффри приложили руку Безликие, ибо Мизинец имеет связи с Браавосом.
+
 	// #modal-hero
 
 
 	+b.form-wrap(id="modal-rate-send" class="zoom-anim-dialog mfp-hide modal-win modal-win--sm modal-form" )
-		+e.head.border-0
+		+e.head.border-0.mb-1
 			.text-center
-				+e.title.h1 ваша ставка принята!
-		+e.body 
-			+e.text Какой-то текст про то,
-				br
-				| что можно пошерить или ещё какая инфа
-			
-			+e.text.text-primary Поделиться: 
+				+e.title.h1.form-wrap__title--rate-send ставка сделана!
+		+e.body
+			+e.text.pb-3.mb-4 Расскажите о ваших прогнозах
+					br
+					| друзьям и близким! Быть может они будут
+					br
+					| не согласны и сделают свою ставку!
+
+			+e.text.text-primary.mb-3 Поделиться:
 			+b.soc
 				+e.item(href="#")
 					+icon('fb')
-				
+
 				+e.item(href="#")
 					+icon('vk')
-				
+
 	// #modal-rate-send
-	
+
 	+b.form-wrap(id="modal-rules" class="zoom-anim-dialog mfp-hide modal-win modal-win--sm modal-win--rules modal-form" )
-		+e.head 
+		+e.head
 			.text-center
 				+e.title Условия розыгрыша
-		+e.body 
+		+e.body
 			+e.text.strong Угадываешь на весь сезон
 
 
-			
+
 			p.text-primary.strong Угадал 10&nbsp;из&nbsp;10&nbsp;или никто не&nbsp;
 				br
 				| умрет&nbsp;&mdash; подписка на&nbsp;Amediateka 1&nbsp;год
-			
-			+e.item Угадал 9 из 10 – 6 мес  
+
+			+e.item Угадал 9 из 10 – 6 мес
 			+e.item Угадал 8 из 10 – 3 мес
 			+e.item Угадал 7 из 10 – 2 мес
 			+e.item Угадал 6 из 10 – 1 мес
@@ -259,7 +261,7 @@ mixin modal()
 				|2.6. Пользователь согласен с тем, что Администрация Сайта не несет ответственности и не имеет прямых или косвенных обязательств перед Пользователем в связи с любыми возможными или возникшими потерями или убытками, связанными с любым содержанием Сайта, регистрацией авторских прав и сведениями о такой регистрации, товарами или услугами, доступными на или полученными через внешние сайты или ресурсы либо иные контакты Пользователя, в которые он вступил, используя размещенную на Сайте информацию или ссылки на внешние ресурсы.
 				br
 				|2.7. Пользователь принимает положение о том, что все материалы и сервисы Сайта или любая их часть могут сопровождаться рекламой. Пользователь согласен с тем, что Администрация Сайта не несет какой-либо ответственности и не имеет каких-либо обязательств в связи с такой рекламой.
-				 
+
 			p 3. Прочие условия
 				br
 				| 3.1. Все возможные споры, вытекающие из настоящего Соглашения или связанные с ним, подлежат разрешению в соответствии с действующим законодательством Российской Федерации.
@@ -278,27 +280,27 @@ mixin modal()
 		+e.head.border-0
 			.text-center
 				+e.title.h1 УСПЕШНО!
-		+e.body 
-			+e.text Пароль отправлен на указанный Вами адрес почты  
-				strong qwejqwleuh111212@mail.ru  
-			
+		+e.body
+			+e.text Пароль отправлен на указанный Вами адрес почты
+				strong qwejqwleuh111212@mail.ru
+
 			+e.btn-outline(href="#" )  ок
 	// #modal-good
 
-	+b.form-wrap(id="modal-blog" class="zoom-anim-dialog mfp-hide modal-win modal-win--hero modal-win--sm modal-form" )
+	+b.form-wrap(id="modal-blog" class="zoom-anim-dialog mfp-hide modal-win modal-win--hero modal-win--hero-blog modal-win--sm modal-form" )
 		+e.head.mb-0.border-0
 			.text-center
-				+e.title.h1.text-white Появились новые кадры из восьмого сезона Игры престолов
-		+e.body
+				+e.title.h1.form-wrap__title--color Появились новые кадры из восьмого сезона Игры престолов
+		+e.body.form-wrap__body--pr-0
 			+b.video-wrap.img-bg.mb-3
 				img.lazy-bg(src="#" data-src="img/blog.jpg", alt="")
-		 
-			p
+
+			p.form-wrap__blog-text
 				strong Первый этого имени, второй король Семи Королевств из династии Баратеонов, старший ребёнок, рождённый в браке Роберта Баратеона и Серсеи Ланнистер, брат Мирцеллы и Томмена
-			p 
+			p.form-wrap__blog-text
 				span.fw-300 Во время свадебного пиршества Джоффри был отравлен ядом[23]. Подозрение пало на Тириона и его молодую жену Сансу, хотя позднее Мизинец в разговоре с Сансой назвал себя и Оленну Тирелл. Также есть версия, что к убийству (отравлению) Джоффри приложили руку Безликие, ибо Мизинец имеет связи с Браавосом.
 
-			p 
+			p.form-wrap__blog-text
 				span.fw-300 Во время свадебного пиршества Джоффри был отравлен ядом[23]. Подозрение пало на Тириона и его молодую жену Сансу, хотя позднее Мизинец в разговоре с Сансой назвал себя и Оленну Тирелл. Также есть версия, что к убийству (отравлению) Джоффри приложили руку Безликие, ибо Мизинец имеет связи с Браавосом.
 	// #modal-blog
 	// modal

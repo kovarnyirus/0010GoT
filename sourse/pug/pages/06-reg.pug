@@ -10,30 +10,30 @@ block title
 block pagecontent
 	+b.s-intro
 		.container
-			+e.head
+			+e.head.s-intro__head--reg
 				.row
 					+e.col-head.col-auto
 					.col
-						img(src="img/logo.png", alt="")
+						img(src="img/svg/logo.svg", width='123px' height='67px' alt="logo")
 					+e.col-head.col-auto.text-right
-						img(src="img/18+.png", alt="")
+						img(src="img/18+.png", width='58px' height='58px' alt="")
 			+e.body
 				.text-center
-					img.res-i.title-img(src="img/title.png", alt="")
+					img.res-i.title-img.title-img--reg(src="img/title.png", width='573px' alt="")
 				+form-wrap
-					+e.text Для получения бонусов, введите e-mail
+					+e.text.form-wrap__text--reg Введите e-mail
 						br
-						| или войдите через соц.сети:
-					+input("email","E-mail")(required class='is-invalid')
-					+e.btn.mt-0(href="#") зарегистрироваться
+						| или войдите через социальные сети
+					+input.pl-0.form-wrap__input--red-placeholder("email", placeholder="E-mail","E-mail")(required class='is-invalid')
+					+e.btn.mt-0.pt-2.pb-2.form-wrap__btn--bg-opacity(href="#") зарегистрироваться
 					+b.soc
 						+e.text.text-center.mb-2.w-100 или
 						+e.item(href="#")
 							+icon('fb')
-						
+
 						+e.item(href="#")
 							+icon('vk')
-					+e.foot-text.text-center При входе вы соглашаетесь на 
+					+e.foot-text.text-center При входе вы соглашаетесь на &nbsp;
 						|
 						a.tdu.text-white.d-inline-block.popup-with-move-anim(href="#modal-policy") обработку персональных данных
 

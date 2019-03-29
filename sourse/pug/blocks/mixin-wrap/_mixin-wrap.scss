@@ -1,5 +1,5 @@
- 
-	  
+
+
 .soc{
 	margin: 0 rem(-10);
 	&__item{
@@ -10,19 +10,29 @@
 		@include mt;
 		&:hover{
 		 	// box-shadow: 0 0 33px 0px rgba(255, 83, 0, 0.16);
-			opacity: .6 ;
+			//opacity: .6 ;
+			background-color: rgba(164, 156, 139, 1);
+			color: #A49C8B;
+			& .icon-vk,
+			  .icon-fb {
+				stroke:#000000;
+			}
+			&:before{
+				border: rem(2) solid;
+				transition: none;
+			}
 		}
 	}
- 
-	 
+
+
 
 }
- 
+
 
 .counter{
 	counter-reset: num;
 	&__item {
-		position: relative; 
+		position: relative;
 		&::before {
 			content: counter(num);
 			counter-increment: num;

@@ -4,10 +4,13 @@
 
 		text-align: center;
 		padding-top: rem(25);
-		padding-bottom: rem(85);
+		padding-bottom: rem(55);
+		&--reg{
+			padding-bottom: rem(37);
+		}
 	}
 	&__col-head{
-		width: rem(73);
+		width: rem(99);
 	}
 	.form-wrap__input-wrap{
 		max-width: rem(360);
@@ -16,16 +19,15 @@
 		margin-bottom: rem(34);
 	}
 	.soc{
-		margin-top: rem(33) ;
+		margin-top: rem(25) ;
 		margin-bottom: rem(33) ;
 	}
 	.form-wrap__foot-text{
 		// max-width: rem(520);
 		font-size: rem(15);
-		padding-top: rem(20);
+		padding-top: rem(8);
 		font-weight: 300;
 		&--login{
-			
 			padding-top: rem(50);
 		}
 	}
@@ -35,18 +37,18 @@
 	@include media-breakpoint-up(md) {}
 	@include media-breakpoint-up(sm) {}
 	@include media-breakpoint-up(xs) {}
-	
+
 	//
 	@include media-breakpoint-between(md, xl) { }
-	
-	
+
+
 	//
 	@include media-breakpoint-only(xs) {}
 	@include media-breakpoint-only(sm) {}
 	@include media-breakpoint-only(md) {}
 	@include media-breakpoint-only(lg) {}
 	@include media-breakpoint-only(xl) {}
-	
+
 	//
 	@include media-breakpoint-down(xl) {}
 	@include media-breakpoint-down(lg) {}
@@ -56,11 +58,14 @@
 		.form-wrap{
 
 		}
-	} 
+	}
 
 }
 
 .title-img{
 	max-width: rem(615);
-	margin-bottom: rem(52);
+	margin-bottom: rem(56);
+	&--reg{
+		margin-bottom: rem(40);
+	}
 }

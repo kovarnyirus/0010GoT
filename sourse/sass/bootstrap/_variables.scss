@@ -67,6 +67,7 @@ $colors: map-merge(
 );
 
 $primary:       #b9a783 !default;
+$blog-modal-title: #9c8e71;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -148,7 +149,11 @@ $sizes: () !default;
 $sizes: map-merge(
   (
     25: 25%,
+    40: 40%,
+    30: 30%,
+    35: 35%,
     50: 50%,
+    60: 60%,
     75: 75%,
     100: 100%,
     auto: auto

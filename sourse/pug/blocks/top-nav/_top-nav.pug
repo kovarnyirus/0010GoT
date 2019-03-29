@@ -1,40 +1,40 @@
 
 mixin mob-mnu()
 	+b.nav-menu--mobile.d-md-none
-		+e.link(href="#")  
+		+e.link(href="#")
 			+icon('IGoT_cons-05')
-			 
-		+e.link--current(href="#") 
-			+icon('IGoT_cons-04') 
-		+e.link(href="#") 
+
+		+e.link--current(href="#")
+			+icon('IGoT_cons-04')
+		+e.link(href="#")
 			+icon('IGoT_cons-01')
-		+e.link(href="#") 
+		+e.link(href="#")
 			+icon('IGoT_cons-02')
-			 
-		+e.link(href="#")  
-			+icon('IGoT_cons-03') 
-			 
+
+		+e.link(href="#")
+			+icon('IGoT_cons-03')
+
 	//  мобильное меню
-mixin top-nav() 
+mixin top-nav()
 	// start top-nav
 	+b.top-nav
 		.container
 			.row
 				.col-md-auto.col
 					+e.logo(href="#")
-						img(src="img/logo.png", alt="")
+						img(src="img/svg/logo.svg", width='82px' height='38px' alt="logo")
 				.col.d-none.d-md-block
 					+b.nav-menu
 						+e.link(href="#") КАРТА
 						+e.link--current(href="#") мероприятия
 						+e.link(href="#") блог
-						+e.link(href="#") местоположение
+						+e.link(href="#") где крипта?
 				.col-auto
-					+e.btn.popup-with-move-anim(href="#modal-order") 
-						span.d-none.d-md-block записаться 
+					+e.btn.popup-with-move-anim(href="#modal-order")
+						span.d-none.d-md-block записаться
 						span.d-md-none бесплатный билет
 				.col-auto.d-none.d-md-block
 					img(src="img/18+.png", alt="")
 
-					
+
 	// end top-nav

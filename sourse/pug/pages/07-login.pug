@@ -14,7 +14,7 @@ block pagecontent
 				.row
 					+e.col-head.col-auto
 					.col
-						img(src="img/logo.png", alt="")
+						img(src="img/svg/logo.svg", width='82px' height='38px' alt="logo")
 					+e.col-head.col-auto.text-right
 						img(src="img/18+.png", alt="")
 			+e.body
@@ -25,8 +25,8 @@ block pagecontent
 					+input("email","E-mail")(required class='is-invalid')
 					+input("password","Пароль")()
 					+e.btn.mt-0(href="#") войти
-			 
-					+e.foot-text--login.text-center При входе вы соглашаетесь на 
+
+					+e.foot-text--login.text-center При входе вы соглашаетесь на
 						|
 						a.tdu.text-white.d-inline-block.popup-with-move-anim(href="#modal-policy") обработку персональных данных
 
