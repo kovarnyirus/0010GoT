@@ -22,11 +22,11 @@ block pagecontent
 					img.res-i.title-img(src="img/title.png", alt="")
 				+form-wrap
 					+e.text Введите пароль и войдите в Крипту
-					+input("email","E-mail")(required class='is-invalid')
+					+input("email","E-mail")(required)
 					+input("password","Пароль")()
 					+e.btn.mt-0(href="#") войти
 
-					+e.foot-text--login.text-center При входе вы соглашаетесь на
+					+e.foot-text--login.text-center При входе вы соглашаетесь на&nbsp;
 						|
-						a.tdu.text-white.d-inline-block.popup-with-move-anim(href="#modal-policy") обработку персональных данных
+						a.link-underlined.text-white.d-inline-block.popup-with-move-anim(href="#modal-policy") обработку персональных данных
 

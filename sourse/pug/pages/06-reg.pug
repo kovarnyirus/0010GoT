@@ -24,7 +24,7 @@ block pagecontent
 					+e.text.form-wrap__text--reg Введите e-mail
 						br
 						| или войдите через социальные сети
-					+input.pl-0.form-wrap__input--red-placeholder("email", placeholder="E-mail","E-mail")(required class='is-invalid')
+					+input.pl-0("email","E-mail")(required placeholder="E-mail")
 					+e.btn.mt-0.pt-2.pb-2.form-wrap__btn--bg-opacity(href="#") зарегистрироваться
 					+b.soc
 						+e.text.text-center.mb-2.w-100 или
@@ -35,5 +35,5 @@ block pagecontent
 							+icon('vk')
 					+e.foot-text.text-center При входе вы соглашаетесь на &nbsp;
 						|
-						a.tdu.text-white.d-inline-block.popup-with-move-anim(href="#modal-policy") обработку персональных данных
+						a.link-underlined.text-white.d-inline-block.popup-with-move-anim(href="#modal-policy") обработку персональных данных
 

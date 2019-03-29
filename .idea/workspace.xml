@@ -2,410 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c5bd15a-2d66-4765-b958-73e803ce6790" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.bowerrc" beforeDir="false" afterPath="$PROJECT_DIR$/.bowerrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintignore" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.htmlhintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.htmlhintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block.js" beforeDir="false" afterPath="$PROJECT_DIR$/block.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp/config/tasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulp/config/tasks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp/tasks/file.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulp/tasks/file.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp/tasks/pug.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulp/tasks/pug.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp/tasks/sass.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulp/tasks/sass.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp/tasks/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulp/tasks/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp/tasks/serv.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulp/tasks/serv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp/tasks/svg.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulp/tasks/svg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp/tasks/watch.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulp/tasks/watch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/02-schedule.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/02-schedule.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/03-blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/03-blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/04-map.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/04-map.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/05-cemetery.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/05-cemetery.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/06-reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/06-reg.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/07-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/07-login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/svg/_sprite.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/svg/_sprite.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/svg/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/svg/sprite.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/scripts.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/scripts.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/Easy-Responsive-Tab-Accordion-Control-Plugin-For-jQuery/easy-responsive-tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/Easy-Responsive-Tab-Accordion-Control-Plugin-For-jQuery/easy-responsive-tabs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/Easy-Responsive-Tab-Accordion-Control-Plugin-For-jQuery/easy-responsive-tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/Easy-Responsive-Tab-Accordion-Control-Plugin-For-jQuery/easy-responsive-tabs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/animate.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/animate.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/bootstrap/alert.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/bootstrap/alert.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/bootstrap/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/bootstrap/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/bootstrap/button.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/bootstrap/button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/bootstrap/carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/bootstrap/carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/bootstrap/collapse.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/bootstrap/collapse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/bootstrap/dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/bootstrap/dropdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/bootstrap/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/bootstrap/modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/bootstrap/popover.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/bootstrap/popover.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/bootstrap/scrollspy.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/bootstrap/scrollspy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/bootstrap/tab.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/bootstrap/tab.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/bootstrap/tooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/bootstrap/tooltip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/bootstrap/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/bootstrap/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/dropzone.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/dropzone.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/gijgo-combined-1.9.11/css/gijgo.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/gijgo-combined-1.9.11/css/gijgo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/gijgo-combined-1.9.11/fonts/gijgo-material.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/gijgo-combined-1.9.11/fonts/gijgo-material.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/gijgo-combined-1.9.11/js/gijgo.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/gijgo-combined-1.9.11/js/gijgo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/gijgo-combined-1.9.11/js/messages/messages.bg-bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/gijgo-combined-1.9.11/js/messages/messages.bg-bg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/gijgo-combined-1.9.11/js/messages/messages.de-de.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/gijgo-combined-1.9.11/js/messages/messages.de-de.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/gijgo-combined-1.9.11/js/messages/messages.es-es.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/gijgo-combined-1.9.11/js/messages/messages.es-es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/gijgo-combined-1.9.11/js/messages/messages.fr-fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/gijgo-combined-1.9.11/js/messages/messages.fr-fr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/gijgo-combined-1.9.11/js/messages/messages.it-it.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/gijgo-combined-1.9.11/js/messages/messages.it-it.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/gijgo-combined-1.9.11/js/messages/messages.pt-br.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/gijgo-combined-1.9.11/js/messages/messages.pt-br.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/gijgo-combined-1.9.11/js/messages/messages.ru-ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/gijgo-combined-1.9.11/js/messages/messages.ru-ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/gijgo-combined-1.9.11/js/messages/messages.tr-tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/gijgo-combined-1.9.11/js/messages/messages.tr-tr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/imagesloaded.pkgd.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/imagesloaded.pkgd.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/ion.rangeSlider/css/ion.rangeSlider.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/ion.rangeSlider/css/ion.rangeSlider.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/ion.rangeSlider/css/ion.rangeSlider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/ion.rangeSlider/css/ion.rangeSlider.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/ion.rangeSlider/css/ion.rangeSlider.skinFlat.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/ion.rangeSlider/css/ion.rangeSlider.skinFlat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/ion.rangeSlider/css/ion.rangeSlider.skinHTML5.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/ion.rangeSlider/css/ion.rangeSlider.skinHTML5.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/ion.rangeSlider/css/ion.rangeSlider.skinHTML5.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/ion.rangeSlider/css/ion.rangeSlider.skinHTML5.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/ion.rangeSlider/css/ion.rangeSlider.skinModern.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/ion.rangeSlider/css/ion.rangeSlider.skinModern.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/ion.rangeSlider/css/ion.rangeSlider.skinNice.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/ion.rangeSlider/css/ion.rangeSlider.skinNice.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/ion.rangeSlider/css/ion.rangeSlider.skinSimple.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/ion.rangeSlider/css/ion.rangeSlider.skinSimple.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/ion.rangeSlider/css/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/ion.rangeSlider/css/normalize.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/ion.rangeSlider/js/ion-rangeSlider/ion.rangeSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/ion.rangeSlider/js/ion-rangeSlider/ion.rangeSlider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/ion.rangeSlider/js/ion-rangeSlider/ion.rangeSlider.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/ion.rangeSlider/js/ion-rangeSlider/ion.rangeSlider.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/ion.rangeSlider/js/ion.rangeSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/ion.rangeSlider/js/ion.rangeSlider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/ion.rangeSlider/js/ion.rangeSlider.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/ion.rangeSlider/js/ion.rangeSlider.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/ion.rangeSlider/js/vendor/jquery-1.12.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/ion.rangeSlider/js/vendor/jquery-1.12.3.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/jquery-imagefill.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/jquery-imagefill.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/jquery.inputmask.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/jquery.inputmask.bundle.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/jquery.mask.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/jquery.mask.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/jquery.touchSwipe.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/jquery.touchSwipe.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/magnificPopup/jquery.magnific-popup.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/magnificPopup/jquery.magnific-popup.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/magnificPopup/magnific-popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/magnificPopup/magnific-popup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/magnificPopup/magnific-popup.sass" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/magnificPopup/magnific-popup.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/bower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/ajax.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/ajax.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/ajax_example.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/ajax_example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/auto_hide_scrollbar_demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/auto_hide_scrollbar_demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/auto_scrolling_example.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/auto_scrolling_example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/bootstrap_examples-extended.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/bootstrap_examples-extended.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/bootstrap_examples.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/bootstrap_examples.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/callbacks_example.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/callbacks_example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/colorbox/colorbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/colorbox/colorbox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/colorbox/jquery.colorbox-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/colorbox/jquery.colorbox-min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/colorbox_demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/colorbox_demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/complete_examples.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/complete_examples.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/disable_destroy_example.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/disable_destroy_example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/fluid_scrollbar_example.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/fluid_scrollbar_example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/full_page_demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/full_page_demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/grid_and_snap_while_scrolling_example.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/grid_and_snap_while_scrolling_example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/iframe_example.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/iframe_example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/infinite_scroll_example.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/infinite_scroll_example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/init_hidden_example.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/init_hidden_example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/init_position_example.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/init_position_example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/jquery_ui_accordion_example.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/jquery_ui_accordion_example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/jquery_ui_autocomplete_example.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/jquery_ui_autocomplete_example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/jquery_ui_dialog_example.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/jquery_ui_dialog_example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/jquery_ui_resizable_example.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/jquery_ui_resizable_example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/jquery_ui_sortable_example.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/jquery_ui_sortable_example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/jquery_ui_tabs_example.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/jquery_ui_tabs_example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/keyboard_nav_example.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/keyboard_nav_example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/loading_each_script_separately.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/loading_each_script_separately.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/loading_each_script_separately_via_cdn.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/loading_each_script_separately_via_cdn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/loading_scripts_via_cdn.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/loading_scripts_via_cdn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/max-height_example.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/max-height_example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/max-width_example.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/max-width_example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/multiple_scrollbars_example.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/multiple_scrollbars_example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/nested_scrollbars_demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/nested_scrollbars_demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/nested_scrollbars_demo_alt.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/nested_scrollbars_demo_alt.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/nested_scrollbars_demo_alt_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/nested_scrollbars_demo_alt_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/rtl_direction_demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/rtl_direction_demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/scrollTo_demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/scrollTo_demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/scroll_buttons_and_snap_scrolling_examples.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/scroll_buttons_and_snap_scrolling_examples.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/scrollbar_themes_demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/scrollbar_themes_demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/simple_example.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/simple_example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/simple_example_all_params.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/simple_example_all_params.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/textarea_example.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/examples/textarea_example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/js/minified/jquery-1.11.0.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/js/minified/jquery-1.11.0.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/js/minified/jquery-1.9.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/js/minified/jquery-1.9.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/js/minified/jquery-2.1.0.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/js/minified/jquery-2.1.0.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/js/minified/jquery-ui-1.10.4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/js/minified/jquery-ui-1.10.4.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/js/minified/jquery.mCustomScrollbar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/js/minified/jquery.mCustomScrollbar.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/js/minified/jquery.mousewheel-3.0.6.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/js/minified/jquery.mousewheel-3.0.6.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/js/minified/jquery.mousewheel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/js/minified/jquery.mousewheel.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/js/uncompressed/jquery.mCustomScrollbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/js/uncompressed/jquery.mCustomScrollbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/js/uncompressed/jquery.mousewheel-3.0.6.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/js/uncompressed/jquery.mousewheel-3.0.6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/js/uncompressed/jquery.mousewheel.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/js/uncompressed/jquery.mousewheel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/malihu-custom-scrollbar-plugin/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/popper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/Gruntfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/Gruntfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/bower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/docs/api.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/docs/api.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/docs/events.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/docs/events.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/docs/plugins.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/docs/plugins.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/docs/usage.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/docs/usage.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/examples/api.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/examples/api.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/examples/basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/examples/basic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/examples/cities.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/examples/cities.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/examples/confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/examples/confirm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/examples/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/examples/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/examples/create-filter.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/examples/create-filter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/examples/css/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/examples/css/normalize.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/examples/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/examples/css/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/examples/customization.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/examples/customization.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/examples/dynamic.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/examples/dynamic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/examples/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/examples/events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/examples/github.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/examples/github.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/examples/js/es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/examples/js/es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/examples/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/examples/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/examples/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/examples/js/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/examples/js/jqueryui.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/examples/js/jqueryui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/examples/lock.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/examples/lock.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/examples/movies.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/examples/movies.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/examples/optgroups.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/examples/optgroups.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/examples/performance.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/examples/performance.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/examples/plugins.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/examples/plugins.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/examples/required.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/examples/required.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/examples/rtl.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/examples/rtl.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/karma.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/selectize.jquery.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/selectize.jquery.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/src/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/src/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/src/contrib/highlight.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/src/contrib/highlight.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/src/contrib/microevent.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/src/contrib/microevent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/src/defaults.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/src/defaults.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/src/less/selectize.bootstrap2.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/src/less/selectize.bootstrap2.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/src/less/selectize.bootstrap3.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/src/less/selectize.bootstrap3.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/src/less/selectize.default.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/src/less/selectize.default.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/src/less/selectize.legacy.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/src/less/selectize.legacy.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/src/less/selectize.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/src/less/selectize.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/src/plugins/drag_drop/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/src/plugins/drag_drop/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/src/plugins/drag_drop/plugin.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/src/plugins/drag_drop/plugin.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/src/plugins/dropdown_header/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/src/plugins/dropdown_header/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/src/plugins/dropdown_header/plugin.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/src/plugins/dropdown_header/plugin.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/src/plugins/optgroup_columns/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/src/plugins/optgroup_columns/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/src/plugins/optgroup_columns/plugin.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/src/plugins/optgroup_columns/plugin.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/src/plugins/remove_button/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/src/plugins/remove_button/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/src/plugins/remove_button/plugin.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/src/plugins/remove_button/plugin.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/src/plugins/restore_on_backspace/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/src/plugins/restore_on_backspace/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/src/selectize.jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/src/selectize.jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/src/selectize.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/src/selectize.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/src/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/src/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/test/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/test/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/test/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/test/events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/test/events_dom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/test/events_dom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/test/interaction.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/test/interaction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/test/setup.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/test/setup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/test/support/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/test/support/base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/test/support/syn.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/test/support/syn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/test/xss.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/test/xss.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/selectize.js/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/selectize.js/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/slick/slick.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/slick/slick.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/slick/slick.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/slick/slick.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/slick/slick.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/slick/slick.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/slick/slick.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/slick/slick.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/swiper-4.2.0/swiper.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/swiper-4.2.0/swiper.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/swiper-4.2.0/swiper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/swiper-4.2.0/swiper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/swiper/swiper.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/swiper/swiper.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/swiper/swiper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/swiper/swiper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/libs/wow.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/libs/wow.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/js/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/js/scripts.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/js/scripts.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/Easy-Responsive-Tab-Accordion-Control-Plugin-For-jQuery/easy-responsive-tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/Easy-Responsive-Tab-Accordion-Control-Plugin-For-jQuery/easy-responsive-tabs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/Easy-Responsive-Tab-Accordion-Control-Plugin-For-jQuery/easy-responsive-tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/Easy-Responsive-Tab-Accordion-Control-Plugin-For-jQuery/easy-responsive-tabs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/animate.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/animate.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/bootstrap/alert.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/bootstrap/alert.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/bootstrap/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/bootstrap/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/bootstrap/button.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/bootstrap/button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/bootstrap/carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/bootstrap/carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/bootstrap/collapse.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/bootstrap/collapse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/bootstrap/dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/bootstrap/dropdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/bootstrap/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/bootstrap/modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/bootstrap/popover.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/bootstrap/popover.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/bootstrap/scrollspy.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/bootstrap/scrollspy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/bootstrap/tab.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/bootstrap/tab.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/bootstrap/tooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/bootstrap/tooltip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/bootstrap/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/bootstrap/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/dropzone.css" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/dropzone.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/gijgo-combined-1.9.11/css/gijgo.css" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/gijgo-combined-1.9.11/css/gijgo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/gijgo-combined-1.9.11/fonts/gijgo-material.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/gijgo-combined-1.9.11/fonts/gijgo-material.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/gijgo-combined-1.9.11/js/gijgo.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/gijgo-combined-1.9.11/js/gijgo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/gijgo-combined-1.9.11/js/messages/messages.bg-bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/gijgo-combined-1.9.11/js/messages/messages.bg-bg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/gijgo-combined-1.9.11/js/messages/messages.de-de.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/gijgo-combined-1.9.11/js/messages/messages.de-de.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/gijgo-combined-1.9.11/js/messages/messages.es-es.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/gijgo-combined-1.9.11/js/messages/messages.es-es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/gijgo-combined-1.9.11/js/messages/messages.fr-fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/gijgo-combined-1.9.11/js/messages/messages.fr-fr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/gijgo-combined-1.9.11/js/messages/messages.it-it.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/gijgo-combined-1.9.11/js/messages/messages.it-it.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/gijgo-combined-1.9.11/js/messages/messages.pt-br.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/gijgo-combined-1.9.11/js/messages/messages.pt-br.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/gijgo-combined-1.9.11/js/messages/messages.ru-ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/gijgo-combined-1.9.11/js/messages/messages.ru-ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/gijgo-combined-1.9.11/js/messages/messages.tr-tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/gijgo-combined-1.9.11/js/messages/messages.tr-tr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/imagesloaded.pkgd.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/imagesloaded.pkgd.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/ion.rangeSlider/js/ion.rangeSlider.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/ion.rangeSlider/js/ion.rangeSlider.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/jquery-imagefill.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/jquery-imagefill.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/jquery.inputmask.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/jquery.inputmask.bundle.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/jquery.mask.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/jquery.mask.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/jquery.touchSwipe.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/jquery.touchSwipe.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/magnificPopup/jquery.magnific-popup.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/magnificPopup/jquery.magnific-popup.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/magnificPopup/magnific-popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/magnificPopup/magnific-popup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/magnificPopup/magnific-popup.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/magnificPopup/magnific-popup.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/popper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/slick/slick.css" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/slick/slick.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/slick/slick.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/slick/slick.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/slick/slick.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/slick/slick.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/swiper/swiper.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/swiper/swiper.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/swiper/swiper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/swiper/swiper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/libs/wow.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/libs/wow.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/_assets/bemto/bemto.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/_assets/bemto/bemto.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/_assets/bemto/lib/bemto.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/_assets/bemto/lib/bemto.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/_assets/bemto/lib/bemto_custom_tag.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/_assets/bemto/lib/bemto_custom_tag.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/_assets/bemto/lib/bemto_tag.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/_assets/bemto/lib/bemto_tag.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/_assets/bemto/lib/helpers.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/_assets/bemto/lib/helpers.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/_assets/bemto/lib/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/_assets/bemto/lib/index.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/_assets/bemto/lib/settings.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/_assets/bemto/lib/settings.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/_assets/bemto/lib/tag_metadata.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/_assets/bemto/lib/tag_metadata.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/footer/_footer.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/footer/_footer.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/footer/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/footer/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/form-wrap/form-wrap.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/form-wrap/form-wrap.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/form-wrap/form-wrap.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/form-wrap/form-wrap.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/header-block/_header-block.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/header-block/_header-block.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/header-block/_header-block.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/header-block/_header-block.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/header/_header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/header/_header.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/header/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/header/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/_mixin-wrap.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/_mixin-wrap.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/mixin-wrap.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/mixin-wrap.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/modal/_modal.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/modal/_modal.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/modal/_modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/modal/_modal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/s-blog/_s-blog.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/s-blog/_s-blog.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/s-blog/_s-blog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/s-blog/_s-blog.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/s-cemetery/_s-cemetery.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/s-cemetery/_s-cemetery.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/s-cemetery/_s-cemetery.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/s-cemetery/_s-cemetery.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/s-contact/_s-contact.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/s-contact/_s-contact.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/s-contact/_s-contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/s-contact/_s-contact.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/s-content/_s-content.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/s-content/_s-content.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/s-content/_s-content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/s-content/_s-content.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/s-form/_s-form.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/s-form/_s-form.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/s-form/_s-form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/s-form/_s-form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/s-intro/_s-intro.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/s-intro/_s-intro.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/s-intro/_s-intro.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/s-intro/_s-intro.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/s-map/_s-map.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/s-map/_s-map.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/s-map/_s-map.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/s-map/_s-map.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/s-schedule/_s-schedule.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/s-schedule/_s-schedule.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/s-schedule/_s-schedule.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/s-schedule/_s-schedule.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/top-line/_top-line.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/top-line/_top-line.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/top-line/_top-line.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/top-line/_top-line.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/top-nav/_top-nav.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/top-nav/_top-nav.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/top-nav/_top-nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/top-nav/_top-nav.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/pages/02-schedule.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/pages/02-schedule.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/pages/03-blog.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/pages/03-blog.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/pages/04-map.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/pages/04-map.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/pages/05-cemetery.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/pages/05-cemetery.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/pug/pages/06-reg.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/pages/06-reg.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/pug/pages/07-login.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/pages/07-login.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/pages/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/pages/index.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/pages/layout/main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/pages/layout/main.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/sass/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/_media.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/_media.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/_vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/_vars.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_alert.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_alert.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_badge.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_badge.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_breadcrumb.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_breadcrumb.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_button-group.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_button-group.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_card.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_carousel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_carousel.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_close.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_close.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_code.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_code.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_custom-forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_custom-forms.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_dropdown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_dropdown.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_forms.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_functions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_functions.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_grid.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_images.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_images.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_input-group.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_input-group.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_jumbotron.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_jumbotron.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_list-group.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_list-group.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_media.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_media.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_modal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_nav.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_navbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_pagination.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_pagination.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_popover.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_popover.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_print.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_print.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_progress.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_progress.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_reboot.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_reboot.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_root.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_root.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_spinners.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_spinners.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_tables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_tables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_toasts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_toasts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_tooltip.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_tooltip.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_transitions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_transitions.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_type.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_type.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_utilities.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_utilities.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/bootstrap-grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/bootstrap-grid.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/bootstrap-reboot.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/bootstrap-reboot.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/bootstrap.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/bootstrap.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_alert.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_alert.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_background-variant.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_background-variant.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_border-radius.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_border-radius.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_box-shadow.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_box-shadow.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_breakpoints.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_breakpoints.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_caret.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_caret.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_clearfix.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_clearfix.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_deprecate.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_deprecate.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_forms.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_gradients.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_gradients.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_grid-framework.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_grid-framework.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_grid.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_hover.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_hover.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_image.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_image.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_list-group.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_list-group.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_lists.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_lists.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_nav-divider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_nav-divider.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_pagination.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_pagination.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_reset-text.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_reset-text.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_resize.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_resize.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_screen-reader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_screen-reader.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_table-row.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_table-row.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_text-emphasis.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_text-emphasis.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_text-truncate.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_text-truncate.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_transition.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_transition.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_align.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_align.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_background.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_background.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_borders.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_borders.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_clearfix.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_clearfix.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_display.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_display.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_embed.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_embed.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_flex.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_flex.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_float.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_float.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_overflow.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_overflow.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_position.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_position.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_screenreaders.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_screenreaders.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_shadows.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_shadows.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_sizing.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_sizing.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_spacing.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_spacing.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_stretched-link.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_stretched-link.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_text.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_text.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_visibility.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/utilities/_visibility.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/bootstrap/vendor/_rfs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/bootstrap/vendor/_rfs.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/templates/_sprite_template.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/templates/_sprite_template.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/svg/fb.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/svg/fb.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/svg/vk.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/svg/vk.svg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -415,25 +23,81 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/modal/_modal.pug">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sourse/sass/bootstrap/_forms.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="40" column="74" selection-start-line="40" selection-start-column="74" selection-end-line="40" selection-end-column="74" />
+            <state relative-caret-position="636">
+              <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/modal/_modal.scss">
+        <entry file="file://$PROJECT_DIR$/sourse/sass/bootstrap/_variables.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="123" selection-start-line="123" selection-end-line="123" />
-              <folding>
-                <element signature="e#939#1373#0" />
-              </folding>
+            <state relative-caret-position="260">
+              <caret line="490" column="46" selection-start-line="490" selection-start-column="46" selection-end-line="490" selection-end-column="46" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sourse/pug/pages/06-reg.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="619">
+              <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sourse/sass/_base.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="433">
+              <caret line="57" column="16" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sourse/pug/pages/07-login.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="467">
+              <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sourse/pug/pages/02-schedule.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/s-schedule/_s-schedule.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/s-schedule/_s-schedule.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/s-content/_s-content.pug">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -450,9 +114,19 @@
       <find>Дейенерис Таргариен</find>
       <find>безликий</find>
       <find>form-wrap</find>
+      <find>placeholder=&quot;E-mail&quot;</find>
+      <find>placeholder</find>
+      <find>form-control</find>
+      <find>обработку персональных данных</find>
+      <find>Введите Имя и Фамилию</find>
+      <find>s-schedule</find>
+      <find>длинное Название проходящего ивента</find>
+      <find>__item</find>
+      <find>tdu</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\kova\Desktop\GitHub\0010GoT</dir>
+      <dir>C:\Users\kova\Desktop\GitHub\0010GoT\sourse\pug\pages</dir>
       <dir>C:\Users\kova\Desktop\GitHub\0010GoT\sourse</dir>
     </dirStrings>
   </component>
@@ -467,12 +141,22 @@
         <option value="$PROJECT_DIR$/sourse/libs/magnificPopup/magnific-popup.css" />
         <option value="$PROJECT_DIR$/sourse/pug/blocks/modal/_modal.scss" />
         <option value="$PROJECT_DIR$/sourse/pug/blocks/modal/_modal.pug" />
+        <option value="$PROJECT_DIR$/../../wellagn/sklad.pw/html/index.html" />
+        <option value="$PROJECT_DIR$/sourse/pug/blocks/form-wrap/form-wrap.scss" />
+        <option value="$PROJECT_DIR$/sourse/sass/bootstrap/_variables.scss" />
+        <option value="$PROJECT_DIR$/sourse/sass/bootstrap/_forms.scss" />
+        <option value="$PROJECT_DIR$/sourse/sass/_base.scss" />
+        <option value="$PROJECT_DIR$/public/06-reg.html" />
+        <option value="$PROJECT_DIR$/sourse/pug/pages/06-reg.pug" />
+        <option value="$PROJECT_DIR$/sourse/pug/pages/07-login.pug" />
+        <option value="$PROJECT_DIR$/sourse/pug/blocks/s-schedule/_s-schedule.pug" />
+        <option value="$PROJECT_DIR$/sourse/pug/blocks/s-schedule/_s-schedule.scss" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="231" />
-    <option name="y" value="-19" />
+    <option name="x" value="-1288" />
+    <option name="y" value="46" />
     <option name="width" value="1296" />
     <option name="height" value="1000" />
   </component>
@@ -491,24 +175,35 @@
             <path>
               <item name="0010GoT" type="b2602c69:ProjectViewProjectNode" />
               <item name="0010GoT" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="0010GoT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="0010GoT" type="462c0819:PsiDirectoryNode" />
               <item name="sourse" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="0010GoT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="0010GoT" type="462c0819:PsiDirectoryNode" />
-              <item name="sourse" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="0010GoT" type="b2602c69:ProjectViewProjectNode" />
               <item name="0010GoT" type="462c0819:PsiDirectoryNode" />
               <item name="sourse" type="462c0819:PsiDirectoryNode" />
               <item name="pug" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="0010GoT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="0010GoT" type="462c0819:PsiDirectoryNode" />
+              <item name="sourse" type="462c0819:PsiDirectoryNode" />
+              <item name="pug" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="0010GoT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="0010GoT" type="462c0819:PsiDirectoryNode" />
+              <item name="sourse" type="462c0819:PsiDirectoryNode" />
+              <item name="pug" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="s-schedule" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="0010GoT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="0010GoT" type="462c0819:PsiDirectoryNode" />
+              <item name="sourse" type="462c0819:PsiDirectoryNode" />
+              <item name="pug" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -547,21 +242,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553848812913</updated>
-      <workItem from="1553848814672" duration="7001000" />
+      <workItem from="1553848814672" duration="11928000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7001000" />
+    <option name="totallyTimeSpent" value="11928000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-1288" y="46" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Gulp" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -592,9 +287,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/sass/_base.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/sourse/sass/stylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -609,20 +301,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/modal/_modal.scss">
+    <entry file="file://$PROJECT_DIR$/../../wellagn/sklad.pw/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
-          <caret line="123" selection-start-line="123" selection-end-line="123" />
+          <caret line="384" column="169" selection-start-line="384" selection-start-column="169" selection-end-line="384" selection-end-column="169" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#2;n#div#0;n#div#0;n#section#9;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/modal/_modal.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
           <folding>
             <element signature="e#939#1373#0" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/form-wrap/form-wrap.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="84" column="13" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sourse/sass/bootstrap/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="490" column="46" selection-start-line="490" selection-start-column="46" selection-end-line="490" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sourse/sass/_base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="57" column="16" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/modal/_modal.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="40" column="74" selection-start-line="40" selection-start-column="74" selection-end-line="40" selection-end-column="74" />
+        <state relative-caret-position="1472">
+          <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sourse/sass/bootstrap/_forms.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/06-reg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="46" column="66" selection-start-line="46" selection-start-column="66" selection-end-line="46" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sourse/pug/pages/06-reg.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sourse/pug/pages/07-login.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/s-content/_s-content.pug">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/s-contact/_s-contact.pug">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sourse/pug/pages/02-schedule.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/s-schedule/_s-schedule.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/s-schedule/_s-schedule.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="50" />
         </state>
       </provider>
     </entry>
