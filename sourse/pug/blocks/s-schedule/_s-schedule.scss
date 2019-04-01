@@ -2,9 +2,14 @@
 		&.visible{
 
 		}
+
+		&__last-event-day{
+			border-bottom: rem(1px) solid #808080;
+		}
+
 		&__item{
 
-			border-bottom: rem(1px) solid #808080;
+
 			margin-bottom: rem(32px);
 			@include media-breakpoint-up(md) {
 

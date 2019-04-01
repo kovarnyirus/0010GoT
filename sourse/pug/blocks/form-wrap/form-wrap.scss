@@ -150,7 +150,16 @@
 
 @include media-breakpoint-down(sm) {}
 
-@include media-breakpoint-down(xs) {}
+@include media-breakpoint-down(xs) {
+	//.form-wrap__text{
+	//	max-width: 80%;
+	//}
+
+	.form-wrap__blog-text{
+		padding-left: rem(15);
+		padding-right: rem(15);
+	}
+}
 
 
 .border-0{

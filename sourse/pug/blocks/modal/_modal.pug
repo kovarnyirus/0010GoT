@@ -32,25 +32,25 @@ mixin modal()
 	//- 			.h3 Скоро с Вами свяжутся
 	//- 			br
 
-	+form-wrap()(id="modal-order" class="zoom-anim-dialog mfp-hide modal-win modal-form" )
+	+form-wrap()(id="modal-order" class="zoom-anim-dialog mfp-hide modal-win modal-form modal-win--write")
 		+e.head
 			.text-center
 				+e.title.h1 записаться
 		+e.body
 			//+e.text.text-primary Чтобы попасть на&nbsp;кладбище игры претсолов Вам необходимо записаться.
-			+e.text.pb-5 Введите Имя и Фамилию<br>  и выберете подходящую дату и время.
+			+e.text Введите Имя и Фамилию<br>  и выберете подходящую дату и время.
 			.row
 				//- +input("text","Имя")( )
 				.col-md-6
-					+input("text","Имя")(required  value="Имя")
+					+input("text","Имя")(required placeholder="Имя")
 				.col-md-6
-					+input("text","Фамилия")(required placeholder="Фамилия" class='form-wrap__input--red-placeholder is-invalid')
+					+input("text","Фамилия")(required placeholder="Фамилия")
 			//- +input("email","Ваше email")(required)
 			//- +text( "Комментарий")
 			+e.btn(type="submit"  )  отправить
 	// #modal-order
 
-	+form-wrap()(id="modal-order2" class="zoom-anim-dialog mfp-hide modal-win modal-form modal-win--write" )
+	+form-wrap()(id="modal-order2" class="zoom-anim-dialog mfp-hide modal-win modal-form modal-win--write-time" )
 		+e.head
 			.text-center
 				+e.title.h1 записаться
@@ -108,7 +108,7 @@ mixin modal()
 		+e.body
 			+e.text.text-center Ждём Вас
 				|
-				strong.text-primary 17 апреля в 16:30
+				strong.text-primary  17 апреля в 16:30 &nbsp;
 			+e.text.d-none.d-md-block Ваш билет отправлен на&nbsp;указанный
 				br
 				| Вами адрес почты
@@ -152,7 +152,7 @@ mixin modal()
 				+e.body--left
 					+b.video-wrap
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/MM5N-IIlTEI"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					+b.LABEL.choice-block.mb-0
+					+b.LABEL.choice-block.mb-md-0
 						+e.title жаль, что убили?
 						+e.INPUT.input(type='checkbox')
 
@@ -209,13 +209,9 @@ mixin modal()
 			.text-center
 				+e.title Условия розыгрыша
 		+e.body
-			+e.text.strong Угадываешь на весь сезон
+			+e.text.strong.mb-2 Угадываешь на весь сезон
 
-
-
-			p.text-primary.strong Угадал 10&nbsp;из&nbsp;10&nbsp;или никто не&nbsp;
-				br
-				| умрет&nbsp;&mdash; подписка на&nbsp;Amediateka 1&nbsp;год
+			p.text-primary.pt-0 Чем больше совпадение — тем больше подписка в подарок!
 
 			+e.item Угадал 9 из 10 – 6 мес
 			+e.item Угадал 8 из 10 – 3 мес
@@ -226,6 +222,12 @@ mixin modal()
 			+e.item Угадал 3 из 10 – 3 дня
 			+e.item Угадал 2 из 10 - 2 дня
 			+e.item Угадал 1 из 10 – 1 день
+
+			p.tex.pt-4 Если же вы поставили «никто не умрет» и в финальном
+				br
+				|  сезоне действительно никто не умрет, что ж, это будет неожиданность
+				br
+				|  для всех нас, и тогда мы подарим вам годовую подписку.
 	// #modal-rules
 
 
@@ -292,7 +294,7 @@ mixin modal()
 			.text-center
 				+e.title.h1.form-wrap__title--color Появились новые кадры из восьмого сезона Игры престолов
 		+e.body.form-wrap__body--pr-0
-			+b.video-wrap.img-bg.mb-3
+			+b.video-wrap.img-bg.mb-5.mb-md-3
 				img.lazy-bg(src="#" data-src="img/blog.jpg", alt="")
 
 			p.form-wrap__blog-text

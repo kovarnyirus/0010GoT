@@ -1,0 +1,25 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-map-cemetery/_s-map-cemetery.pug
+
+block title
+    title Карта кладбище
+
+block pagecontent
+    +mob-mnu()
+    +header()
+        +top-nav()
+    //- .container.page-title.text-center
+    //- 	h1
+    //- 		span.d-none.d-md-block расписание мероприятий
+    //- 		span.d-md-none мероприятия
+    +s-map-cemetery
+
+    //- +header-block()
+    //- +s-form()
+    //- +s-contact()
+    //- +footer()
+
