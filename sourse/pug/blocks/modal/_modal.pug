@@ -62,7 +62,7 @@ mixin modal()
 				//- +input("text","Имя")( )
 				.col-md-6
 					+e.input-wrap.form-group
-						+e.SELECT.input.form-control(name="")
+						+e.SELECT.input.form-control.js-select-date(name="" style="width: 100%")
 							option( selected disabled) Выберите день
 							option(  ) 16 апреля, вторник
 							option(  ) 15 аперля, пн.
@@ -72,7 +72,7 @@ mixin modal()
 							option(  ) 19 апреля, пт.
 				.col-md-6
 					+e.input-wrap.form-group
-						+e.SELECT.input.form-control(name="")
+						+e.SELECT.input.form-control.js-select-time(name="" style="width: 100%")
 							option( selected disabled) Выберите время
 							option(  ) 16 апреля, вторник
 							option(  ) 15 аперля, пн.

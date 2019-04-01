@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="libs/jQueryFormStyler/dist/jquery.formstyler.css">
     <link rel="stylesheet" href="libs/jQueryFormStyler/dist/jquery.formstyler.theme.css">
     <link rel="stylesheet" href="libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="libs/select2/select2.min.css">
     <link rel="stylesheet" href="css/main.min.css">
   </head>
   <body class="page-body">
@@ -115,7 +116,7 @@
           <div class="row">
             <div class="col-md-6">
               <div class="form-wrap__input-wrap form-group">
-                <select class="form-wrap__input form-control" name="">
+                <select class="form-wrap__input form-control js-select-date" name="" style="width: 100%">
                   <option selected="selected" disabled="disabled">Выберите день</option>
                   <option>16 апреля, вторник</option>
                   <option>15 аперля, пн.</option>
@@ -128,7 +129,7 @@
             </div>
             <div class="col-md-6">
               <div class="form-wrap__input-wrap form-group">
-                <select class="form-wrap__input form-control" name="">
+                <select class="form-wrap__input form-control js-select-time" name="" style="width: 100%">
                   <option selected="selected" disabled="disabled">Выберите время</option>
                   <option>16 апреля, вторник</option>
                   <option>15 аперля, пн.</option>
@@ -493,6 +494,7 @@
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
     <script src="libs/graveyard/graveyard.js"></script>
+    <script src="libs/select2/select2.min.js"></script>
     <script src="js/common.js"></script>
   </body>
 </html>

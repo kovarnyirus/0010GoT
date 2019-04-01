@@ -224,3 +224,11 @@ if ($("div").is("#s-map-cemetery")) {
 		onGraveClick: function (d) { window.alert(d.CODE) },//onGraveClick: console.log,
 	});
 }
+if ($("div").is("#modal-order2")) {
+
+	$(".js-select-date").select2({
+		minimumResultsForSearch: -1
+	});$(".js-select-time").select2({
+		minimumResultsForSearch: -1
+	});
+}
