@@ -50,7 +50,7 @@ var JSCCommon = {
 		});
 
 
-		// лэзи 
+		// лэзи
 		document.addEventListener("DOMContentLoaded", function () {
 			let lazyImages = [].slice.call(document.querySelectorAll(".lazy-bg"));
 			let active = false;
@@ -156,39 +156,39 @@ var JSCCommon = {
 		})
 		// /modal галерея
 	},
- 
+
 	inputMask: function () {
 		// mask for input
 		$('input[type="tel"]').attr("pattern", "[+]7[(][0-9]{3}[)][0-9]{3}-[0-9]{2}-[0-9]{2}").inputmask("+7(999)999-99-99");
 	},
- 
+
 
 	inputMask: function () {
 		// mask for input
 		$('input[type="tel"]').attr("pattern", "[+]7[(][0-9]{3}[)][0-9]{3}-[0-9]{2}-[0-9]{2}").inputmask("+7(999)999-99-99");
   },
-	
+
 	customScrollBar : function () {
 		$(window).on("load",function(){
 			$(".customscrollbar-js").mCustomScrollbar();
 	});
 	}
-}; 
+};
 
-JSCCommon.LazyFunction();  
+JSCCommon.LazyFunction();
 jQuery(document).ready(function ($) {
 
 
   	// вызов magnificPopupCall
-	JSCCommon.magnificPopupCall();  
+	JSCCommon.magnificPopupCall();
 
-	JSCCommon.inputMask(); 
-	JSCCommon.customScrollBar(); 
+	JSCCommon.inputMask();
+	JSCCommon.customScrollBar();
 
 	// для свг
 	svg4everybody({});
 	// Custom JS
- 
+
 
 });
 
@@ -206,8 +206,21 @@ if ($("div").is("#map12")) {
       center: [37.667439, 55.755439],
       zoom: 15.0
     });
-    
+
   })
+}
 
-
+if ($("div").is("#s-map-cemetery")) {
+	$(".page-body").css('background-image', 'none');
+	graveyard({
+		containerSelector: '#s-map-cemetery',
+		//resetButtonSelector: 'button',
+		mapUrl: 'img/map-cemetery.jpg',
+		jsonUrl: '../libs/graveyard/graveyard.json',
+		minZoom: 1,
+		maxZoom: 1,
+		mapWidth: 1920,
+		mapHeight: 601,
+		onGraveClick: function (d) { window.alert(d.CODE) },//onGraveClick: console.log,
+	});
 }

@@ -101,6 +101,23 @@ mixin modal()
 			+e.btn-outline(href="#" )  ок
 	// #modal-send
 
+	+b.form-wrap(id="modal-warning" class="zoom-anim-dialog mfp-hide modal-win modal-win--sm modal-form modal-win--warning" )
+		+e.head.border-0.mb-0
+			.text-center
+				+e.title.h1 предупреждение!
+		+e.body
+			+e.text Страницы, которые Вы собираетесь просматривать, могут содержать материалы, предназначенны
+				br
+				| для лиц, достигших совершеннолетия.
+				br
+				| Чтобы продолжить подтвердите, что вам есть 18 лет
+			+e.btn-wrap.row.justify-content-between
+				.col-6
+					+e.btn-outline(href="#" )  Мне есть 18 лет
+				.col-6
+					+e.btn-outline(href="#" )  Мне нет 18 лет
+	// #modal-send
+
 	+b.form-wrap(id="modal-send2" class="zoom-anim-dialog mfp-hide modal-win modal-win--sm modal-form modal-win--taken" )
 		+e.head.border-0
 			.text-center

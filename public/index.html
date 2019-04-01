@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="css/main.min.css">
   </head>
-  <body>
+  <body class="page-body">
     <div class="main-wrapper">
       <div class="s-intro">
         <div class="container">
@@ -131,6 +131,25 @@
         </div>
         <div class="form-wrap__text d-md-none">Ваш билет отправлен на&nbsp;указанный Вами E-mail
         </div><a class="form-wrap__btn-outline" href="#"> ок</a>
+      </div>
+    </div>
+    <!-- #modal-send-->
+    <div class="form-wrap zoom-anim-dialog mfp-hide modal-win modal-win modal-win--sm modal-form modal-win modal-win--warning" id="modal-warning">
+      <div class="form-wrap__head border-0 mb-0">
+        <div class="text-center">
+          <div class="form-wrap__title h1">предупреждение!
+          </div>
+        </div>
+      </div>
+      <div class="form-wrap__body">
+        <div class="form-wrap__text">Страницы, которые Вы собираетесь просматривать, могут содержать материалы, предназначенны<br/>для лиц, достигших совершеннолетия.<br/>Чтобы продолжить подтвердите, что вам есть 18 лет
+        </div>
+        <div class="form-wrap__btn-wrap row justify-content-between">
+          <div class="col-6"><a class="form-wrap__btn-outline" href="#"> Мне есть 18 лет</a>
+          </div>
+          <div class="col-6"><a class="form-wrap__btn-outline" href="#"> Мне нет 18 лет</a>
+          </div>
+        </div>
       </div>
     </div>
     <!-- #modal-send-->
@@ -426,10 +445,13 @@
     <script src="libs/magnificPopup/jquery.magnific-popup.min.js"></script>
     <!-- modal libs-->
     <!-- for svg libs-->
-    <script src="libs/svg4everybody-master/svg4everybody.min.js"> </script>
+    <script src="libs/svg4everybody-master/svg4everybody.min.js"></script>
     <!-- /for svg libs-->
     <script src="libs/jquery.inputmask.bundle.min.js"></script>
     <script src="libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+    <script src="libs/graveyard/graveyard.js"></script>
     <script src="js/common.js"></script>
   </body>
 </html>

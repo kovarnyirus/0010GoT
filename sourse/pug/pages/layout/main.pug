@@ -5,10 +5,10 @@ include ../../blocks/mixin-wrap/mixin-wrap.pug
 include ../../blocks/form-wrap/form-wrap.pug
 
 include ../../blocks/header/_header.pug
-include ../../blocks/footer/_footer.pug 
+include ../../blocks/footer/_footer.pug
 include ../../blocks/modal/_modal.pug
 include ../../blocks/top-line/_top-line.pug
-include ../../blocks/top-nav/_top-nav.pug 
+include ../../blocks/top-nav/_top-nav.pug
 include ../../blocks/header-block/_header-block.pug
 include ../../blocks/s-form/_s-form.pug
 
@@ -24,10 +24,10 @@ html(lang="ru")
 		meta(name="viewport", content="width=750, shrink-to-fit=no")
 		meta(property='og:image', content='path/to/image.jpg')
 		link(rel='shortcut icon',   type="image/png",  href='img/favicon/favicon.png')
-		
+
 		// Custom Browsers Color
 		meta(name='theme-color', content='#b9a783')
-		
+
 		//- script(src='')
 		link(href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css', rel='stylesheet')
 		link(rel="stylesheet", href="libs/magnificPopup/magnific-popup.css")
@@ -40,7 +40,7 @@ html(lang="ru")
 
 		//- link(rel="stylesheet", href="css/main.css")
 		link(rel="stylesheet", href="css/main.min.css")
-	body
+	body.page-body
 		.main-wrapper
 			block pagecontent
 				h3 content
@@ -58,19 +58,25 @@ html(lang="ru")
 		// modal libs
 		script(src="libs/magnificPopup/jquery.magnific-popup.min.js")
 		// modal libs
-	 
+
 		// for svg libs
-		script(src="libs/svg4everybody-master/svg4everybody.min.js") 
+		script(src="libs/svg4everybody-master/svg4everybody.min.js")
 		// /for svg libs
-	
-		
 
 
-		//- mask for  input  libs 
+
+
+		//- mask for  input  libs
 		script(src="libs/jquery.inputmask.bundle.min.js")
 		script(src="libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js")
 		//- / mask for  input  libs
 
 		//- script(src="js/scripts.min.js")
+
+
+		script(src="https://d3js.org/d3.v4.min.js")
+		script(src="https://d3js.org/d3-fetch.v1.min.js")
+		script(src="libs/graveyard/graveyard.js")
+
 
 		script(src="js/common.js")

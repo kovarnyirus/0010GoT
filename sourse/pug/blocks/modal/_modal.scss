@@ -144,6 +144,27 @@
 		}
 	}
 
+	&--warning{
+		@include media-breakpoint-up(md) {
+			padding-bottom: rem(45);
+			max-width: 615px;
+			padding-left: rem(57);
+			padding-right: rem(57);
+		}
+		& .form-wrap__btn-outline{
+			max-width: 100%;
+			width: 100%;
+			margin-top: rem(20);
+		}
+		& .mfp-close{
+			display: none;
+		}
+		& .form-wrap__title{
+			padding-top: rem(40);
+			padding-bottom: rem(40);
+		}
+	}
+
 	.modal-content {
 		// max-width: 485px;
 		// padding-right: 40px 15px;
