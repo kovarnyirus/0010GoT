@@ -116,7 +116,17 @@ mixin modal()
 					+e.btn-outline(href="#" )  Мне есть 18 лет
 				.col-6
 					+e.btn-outline(href="#" )  Мне нет 18 лет
-	// #modal-send
+	// #modal-warning
+
+
+	+b.form-wrap(id="modal-dragon" class="zoom-anim-dialog mfp-hide modal-win modal-win--sm modal-form modal-win--dragon" )
+		+e.head.border-0.mb-0
+			.text-center
+				+e.title.h1 Клетка с драконом
+		+e.body
+			+e.img(src="img/dragon.jpg")
+			+e.text Один абзац из двух-трех предложений про то, что утт находится. Интерактива и перехода на др, страницы нет
+	// #modal-map-dragon
 
 	+b.form-wrap(id="modal-send2" class="zoom-anim-dialog mfp-hide modal-win modal-win--sm modal-form modal-win--taken" )
 		+e.head.border-0

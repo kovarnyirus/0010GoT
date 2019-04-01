@@ -165,6 +165,14 @@
 		}
 	}
 
+	&--dragon{
+		padding-bottom: rem(45);
+		.form-wrap__img{
+			max-width: 100%;
+			margin-bottom: rem(35);
+		}
+	}
+
 	.modal-content {
 		// max-width: 485px;
 		// padding-right: 40px 15px;
