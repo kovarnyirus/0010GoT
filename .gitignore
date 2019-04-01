@@ -4,6 +4,7 @@
 
 *.pydevproject
 .project
+.idea
 .metadata
 bin/
 tmp/
@@ -216,7 +217,7 @@ pip-log.txt
 .mr.developer.cfg
 
 izo/
-.vscode/ 
+.vscode/
 node_modules/
 screen/
 
