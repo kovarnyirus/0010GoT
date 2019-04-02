@@ -31,26 +31,26 @@
     height: 69px;
     opacity: .37;
     &--right-top{
-      right: 120px;
-      top: 300px;
+      right: rem(62);
+      top: rem(150);
       border-right: 10px solid #ffffff;
       border-top: 10px solid #ffffff;
     }
     &--left-top{
-      left: 120px;
-      top: 300px;
+      left: rem(62);
+      top: rem(150);
       border-left: 10px solid #ffffff;
       border-top: 10px solid #ffffff;
     }
     &--right-bottom{
-      right: 120px;
-      bottom: 387px;
+      right: rem(62);
+      bottom: rem(217);
       border-right: 10px solid #ffffff;
       border-bottom: 10px solid #ffffff;
     }
 
     &--left-bottom{
-      left: 120px;
+      left: rem(62);
       bottom: rem(217);
       border-left: 10px solid #ffffff;
       border-bottom: 10px solid #ffffff;
