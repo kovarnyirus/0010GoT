@@ -203,6 +203,21 @@ jQuery(document).ready(function ($) {
 			onGraveClick: function (d) { window.alert(d.CODE) },//onGraveClick: console.log,
 		});
 	}
+    if ($("div").is("#map12")) {
+        console.log('adasds');
+        $.getScript('//api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js', function(){
+            console.log('adasdssdsd');
+            mapboxgl.accessToken = 'pk.eyJ1IjoieWVsZW5rYTMxOCIsImEiOiJjajc1MDRlcmUwb2o5MzNueHFoaGJyY2QyIn0.SZXLxY7HdQG456B16qSylQ';
+            const map = new mapboxgl.Map({
+                container: 'map12',
+                style: 'mapbox://styles/yelenka318/cjst3ps3v0x5r1flkcyqk2eig',
+                center: [37.667439, 55.755439],
+                zoom: 15.0
+            });
+
+        })
+    }
+
 	if ($("div").is("#modal-order2")) {
 
 		$(".js-select-date").select2({
@@ -214,21 +229,61 @@ jQuery(document).ready(function ($) {
 	}
 	if ($("div").is(".s-qr")) {
 		$(".main-wrapper").css('padding-bottom', '0');
-	}
+
+        var video = document.createElement("video");
+        var canvasElement = document.getElementById("canvas");
+        var canvas = canvasElement.getContext("2d");
+        var loadingMessage = document.getElementById("loadingMessage");
+        var outputContainer = document.getElementById("output");
+        var outputMessage = document.getElementById("outputMessage");
+        var outputData = document.getElementById("outputData");
+        function drawLine(begin, end, color) {
+            canvas.beginPath();
+            canvas.moveTo(begin.x, begin.y);
+            canvas.lineTo(end.x, end.y);
+            canvas.lineWidth = 4;
+            canvas.strokeStyle = color;
+            canvas.stroke();
+        }
+// Use facingMode: environment to attemt to get the front camera on phones
+        navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } }).then(function(stream) {
+            video.srcObject = stream;
+            video.setAttribute("playsinline", true); // required to tell iOS safari we don't want fullscreen
+            video.play();
+            requestAnimationFrame(tick);
+        });
+        function tick() {
+            loadingMessage.innerText = "⌛ Loading video..."
+            if (video.readyState === video.HAVE_ENOUGH_DATA) {
+                loadingMessage.hidden = true;
+                canvasElement.hidden = false;
+                outputContainer.hidden = false;
+                canvasElement.height = video.videoHeight;
+                canvasElement.width = video.videoWidth;
+                canvas.drawImage(video, 0, 0, canvasElement.width, canvasElement.height);
+                var imageData = canvas.getImageData(0, 0, canvasElement.width, canvasElement.height);
+                var code = jsQR(imageData.data, imageData.width, imageData.height, {
+                    inversionAttempts: "dontInvert",
+                });
+                if (code) {
+                    drawLine(code.location.topLeftCorner, code.location.topRightCorner, "#FF3B58");
+                    drawLine(code.location.topRightCorner, code.location.bottomRightCorner, "#FF3B58");
+                    drawLine(code.location.bottomRightCorner, code.location.bottomLeftCorner, "#FF3B58");
+                    drawLine(code.location.bottomLeftCorner, code.location.topLeftCorner, "#FF3B58");
+                    outputMessage.hidden = true;
+                    outputData.parentElement.hidden = false;
+                    outputData.innerText = code.data;
+                } else {
+                    outputMessage.hidden = false;
+                    outputData.parentElement.hidden = true;
+                }
+            }
+            requestAnimationFrame(tick);
+        }
+
+
+    }
 });
 
-if ($("div").is("#map12")) {
-  console.log('adasds');
-  $.getScript('//api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js', function(){
-    console.log('adasdssdsd');
-    mapboxgl.accessToken = 'pk.eyJ1IjoieWVsZW5rYTMxOCIsImEiOiJjajc1MDRlcmUwb2o5MzNueHFoaGJyY2QyIn0.SZXLxY7HdQG456B16qSylQ';
-    const map = new mapboxgl.Map({
-      container: 'map12',
-      style: 'mapbox://styles/yelenka318/cjst3ps3v0x5r1flkcyqk2eig',
-      center: [37.667439, 55.755439],
-      zoom: 15.0
-    });
 
-  })
-}
 

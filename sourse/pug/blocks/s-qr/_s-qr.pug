@@ -3,6 +3,14 @@ mixin s-qr()
     +b.s-qr
 
         .container
+            #loadingMessage
+            canvas#canvas(hidden='')
+            #output(hidden='')
+                #outputMessage No QR code detected.
+                 div(hidden='')
+                    b Data:
+                    span#outputData
+            canvas#canvas(hidden)
             +e.corner.s-qr__corner--left-top
             +e.corner.s-qr__corner--right-top
             +e.corner.s-qr__corner--left-bottom
@@ -13,3 +21,4 @@ mixin s-qr()
                     |    чтобы увидеть смерть персонажа
 
     // end s-qr
+
