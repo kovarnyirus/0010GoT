@@ -300,7 +300,6 @@ a {
 .modal-win--hero {
 	background-repeat: no-repeat;
 	background-position: right bottom;
-	//background-image: url(../img/logo_house.png);
 	@include media-breakpoint-up(md) {
 	max-width: 946px;
 	.form-wrap__head{
@@ -328,6 +327,12 @@ a {
 
 		padding-left: rem(15);
 		padding-right: rem(15);
+	}
+
+	@include media-breakpoint-down(xs) {
+		background-size: 70%;
+		background-position-x: 140%;
+		background-position-y: center;
 	}
 }
 
