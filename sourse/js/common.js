@@ -189,11 +189,33 @@ jQuery(document).ready(function ($) {
 	svg4everybody({});
 	// Custom JS
 
+	if ($("div").is("#s-map-cemetery")) {
+		$(".page-body").css('background-image', 'none');
+		graveyard({
+			containerSelector: '#s-map-cemetery',
+			//resetButtonSelector: 'button',
+			mapUrl: 'img/map-cemetery.jpg',
+			jsonUrl: '../libs/graveyard/graveyard.json',
+			minZoom: 1,
+			maxZoom: 1,
+			mapWidth: 1920,
+			mapHeight: 601,
+			onGraveClick: function (d) { window.alert(d.CODE) },//onGraveClick: console.log,
+		});
+	}
+	if ($("div").is("#modal-order2")) {
 
+		$(".js-select-date").select2({
+			minimumResultsForSearch: -1
+		});
+		$(".js-select-time").select2({
+			minimumResultsForSearch: -1
+		});
+	}
+	if ($("div").is(".s-qr")) {
+		$(".main-wrapper").css('padding-bottom', '0');
+	}
 });
-
-
-
 
 if ($("div").is("#map12")) {
   console.log('adasds');
@@ -210,25 +232,3 @@ if ($("div").is("#map12")) {
   })
 }
 
-if ($("div").is("#s-map-cemetery")) {
-	$(".page-body").css('background-image', 'none');
-	graveyard({
-		containerSelector: '#s-map-cemetery',
-		//resetButtonSelector: 'button',
-		mapUrl: 'img/map-cemetery.jpg',
-		jsonUrl: '../libs/graveyard/graveyard.json',
-		minZoom: 1,
-		maxZoom: 1,
-		mapWidth: 1920,
-		mapHeight: 601,
-		onGraveClick: function (d) { window.alert(d.CODE) },//onGraveClick: console.log,
-	});
-}
-if ($("div").is("#modal-order2")) {
-
-	$(".js-select-date").select2({
-		minimumResultsForSearch: -1
-	});$(".js-select-time").select2({
-		minimumResultsForSearch: -1
-	});
-}

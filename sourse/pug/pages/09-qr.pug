@@ -1,0 +1,22 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-qr/_s-qr.pug
+
+block title
+    title qr
+
+block pagecontent
+    +mob-mnu()
+    +header()
+        +top-nav()
+
+    +s-qr
+
+    //- +header-block()
+    //- +s-form()
+    //- +s-contact()
+    //- +footer()
+
