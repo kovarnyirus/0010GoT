@@ -3,8 +3,8 @@
 	&__head{
 
 		text-align: center;
-		padding-top: rem(25);
-		padding-bottom: rem(55);
+		padding-top: rem(23);
+		padding-bottom: rem(45);
 		&--reg{
 			padding-bottom: rem(37);
 		}
@@ -31,6 +31,11 @@
 			padding-top: rem(50);
 		}
 	}
+
+	&__head-logo{
+		margin-top: 20px;
+	}
+
 	//
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
@@ -47,6 +52,10 @@
 		&__head-logo{
 			width: 222px;
 			height: auto;
+			margin-top: 0;
+		}
+		&__col-head{
+			width: rem(50);
 		}
 	}
 	@include media-breakpoint-only(sm) {}
