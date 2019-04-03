@@ -436,3 +436,14 @@ input::-webkit-inner-spin-button {
 	background-color: $primary;
 	color: #ffffff;
  }
+
+.spark {
+	background-color: #DE4A00;
+	font-family: 'Helvetica', sans-serif;
+	visibility: hidden;
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	border-radius: 100%;
+	box-shadow: 0 0 10px 3px #AB000B;
+}
