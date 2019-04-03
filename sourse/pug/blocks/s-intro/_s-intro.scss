@@ -43,7 +43,12 @@
 
 
 	//
-	@include media-breakpoint-only(xs) {}
+	@include media-breakpoint-only(xs) {
+		&__head-logo{
+			width: 222px;
+			height: auto;
+		}
+	}
 	@include media-breakpoint-only(sm) {}
 	@include media-breakpoint-only(md) {}
 	@include media-breakpoint-only(lg) {}
@@ -54,11 +59,7 @@
 	@include media-breakpoint-down(lg) {}
 	@include media-breakpoint-down(md) {}
 	@include media-breakpoint-down(sm) {}
-	@include media-breakpoint-down(xs) {
-		.form-wrap{
-
-		}
-	}
+	@include media-breakpoint-down(xs) {}
 
 }
 

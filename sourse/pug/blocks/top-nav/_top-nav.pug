@@ -22,7 +22,9 @@ mixin top-nav()
 			.row
 				.col-md-auto.col
 					+e.logo(href="#")
-						img(src="img/svg/logo.svg", width='82px' height='38px' alt="logo")
+						picture
+							source(media='(min-width: 768px)', src="img/desktop-logo.png")
+							img(src="img/mobile-inner-logo.png", alt="logo")
 				.col.d-none.d-md-block
 					+b.nav-menu
 						+e.link(href="#") КАРТА

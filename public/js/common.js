@@ -196,9 +196,9 @@ jQuery(document).ready(function ($) {
 			//resetButtonSelector: 'button',
 			mapUrl: 'img/map-cemetery.jpg',
 			jsonUrl: '../libs/graveyard/graveyard.json',
-			minZoom: 1,
-			maxZoom: 1,
-			mapWidth: 1920,
+			minZoom: 8,
+			maxZoom: 6,
+			mapWidth: 1100,
 			mapHeight: 601,
 			onGraveClick: function (d) { window.alert(d.CODE) },//onGraveClick: console.log,
 		});
