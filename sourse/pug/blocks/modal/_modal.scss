@@ -352,13 +352,15 @@ a {
 
 .choice-block {
 	text-align: center;
-	display: block;
-	margin-top: rem(40);
-	// margin-bottom: rem(10);
 	display: flex !important;
-	justify-content: center;
 	flex-wrap: wrap;
 	margin-bottom: rem(30);
+	margin-top: rem(40);
+	width: rem(270);
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: space-between;
+	position: relative;
 
 	span {
 		display: block;
@@ -376,18 +378,53 @@ a {
 
 	&__input {
 		@extend .invisible;
+		visibility: hidden;
+		&--neutral:checked{
+			&~.choice-block__lab {
+				&:before {
+					left: 50%;
+					transform: translate(-50%, -50%);
+					background-color: #828385;
+					box-shadow: 0 0 0 rem(3) #828385;
+				}
+			}
+		}
+
+		&--yes:checked {
+			&~.choice-block__lab {
+				&:before {
+					left: 0;
+				}
+			}
+			&~.choice-block__label--yes{
+				color: $primary;
+			}
+		}
+
+		&--no:checked {
+			& ~ .choice-block__lab {
+				&:before {
+					left: 100%;
+					transform: translate(-100%, -50%);
+				}
+			}
+			&~.choice-block__label--no{
+				color: $primary;
+			}
+		}
 	}
 
 	&__lab {
 		width: rem(90px);
 		height: rem(21px);
 		background-color: rgba($color: #969696, $alpha: .51);
-		margin-left: rem(25);
-		margin-right: rem(25);
-		position: relative;
 		cursor: pointer;
-
 		margin-top: rem(9);
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 35px;
+		pointer-events: none;
 
 		&::before {
 			content: '';
@@ -401,23 +438,29 @@ a {
 			box-shadow: 0 0 0 rem(3) $primary;
 			@include mt;
 		}
+
+		@include media-breakpoint-down(md) {
+			margin-top: rem(25);
+		}
+
 	}
 
-	&__text {
+	&__label {
+		width: rem(70)!important;
 		text-transform: uppercase;
 		color: #5d5e61;
 		@include rfs(rem(32));
 		font-weight: 400;
 		line-height: 1.2;
-		text-transform: uppercase;
 		// Text style for "д, а"
 		letter-spacing: rem(3.51px);
 		@include mt;
-		width: auto;
+		transition: all .36s;
+		cursor: pointer;
 
-		&:nth-child(3) {
-			color: $primary;
-		}
+		//&:nth-child(3) {
+		//	color: $primary;
+		//}
 	}
 
 	//&__input:checked~&__lab {
@@ -487,85 +530,4 @@ a {
 
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
 	background-color: $primary;
-}
-
-
-.form-wrap{
-	.switcher-label{
-		width: rem(70);
-		color: #5d5e61;
-		font-size: 2.28571rem;
-		font-weight: 400;
-		line-height: 1.2;
-		text-transform: uppercase;
-		letter-spacing: .25071rem;
-		-webkit-transition: all .36s;
-		-o-transition: all .36s;
-		transition: all .36s;
-		cursor: pointer;
-
-		&--no {
-
-		}
-		&--yes{
-		}
-	}
-
-
-	.switcher-input {
-		visibility: hidden;
-		&--neutral:checked{
-			&~.choice-block__lab {
-				&:before {
-					left: 50%;
-					transform: translate(-50%, -50%);
-					background-color: #828385;
-					box-shadow: 0 0 0 rem(3) #828385;
-				}
-			}
-		}
-
-		&--yes:checked {
-			&~.choice-block__lab {
-				&:before {
-					left: 0;
-				}
-			}
-			&~.switcher-label--yes{
-				color: $primary;
-			}
-		}
-
-		&--no:checked {
-			& ~ .choice-block__lab {
-				&:before {
-					left: 100%;
-					transform: translate(-100%, -50%);
-				}
-			}
-			&~.switcher-label--no{
-				color: $primary;
-			}
-		}
-	}
-
-	.choice-block{
-		width: rem(270);
-		margin-left: auto;
-		margin-right: auto;
-		justify-content: space-between;
-		position: relative;
-	}
-
-	.choice-block__lab{
-		margin-left: 0;
-		margin-right: 0;
-		position: absolute;
-		left: 50%;
-		transform: translateX(-50%);
-		top: 35px;
-		pointer-events: none;
-
-	}
-
 }

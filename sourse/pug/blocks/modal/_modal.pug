@@ -182,13 +182,13 @@ mixin modal()
 
 					+b.FORM.choice-block.mb-md-0
 						+e.title жаль, что убили?
-						+e.INPUT#yes.input.switcher-input--yes(type='radio' value='yes' name="choice")
-						+e.LABEL.text.switcher-label--yes(for='yes') да
+						+e.INPUT#yes.input--yes(type='radio' value='yes' name="choice")
+						+e.LABEL.label--yes(for='yes') да
 							+e.SPAN.small 47
-						+e.LABEL.text.switcher-label--neutral(for='neutral')
-						+e.INPUT#neutral.input.switcher-input--neutral(type='radio' value='neutral' name="choice" checked)
-						+e.INPUT#no.input.switcher-input--no(type='radio' value='no' name="choice")
-						+e.LABEL.text.switcher-label--no(for='no') нет
+						+e.LABEL.label--neutral(for='neutral')
+						+e.INPUT#neutral.input--neutral(type='radio' value='neutral' name="choice" checked)
+						+e.INPUT#no.input--no(type='radio' value='no' name="choice")
+						+e.LABEL.label--no(for='no') нет
 							+e.SPAN.small 735
 						+e.SPAN.lab
 
