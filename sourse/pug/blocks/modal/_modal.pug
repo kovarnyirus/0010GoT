@@ -179,15 +179,28 @@ mixin modal()
 				+e.body--left
 					+b.video-wrap
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/MM5N-IIlTEI"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					+b.LABEL.choice-block.mb-md-0
-						+e.title жаль, что убили?
-						+e.INPUT.input(type='checkbox')
 
-						+e.SPAN.text да
+					+b.FORM.choice-block.mb-md-0
+						+e.title жаль, что убили?
+						+e.INPUT#yes.input.switcher-input--yes(type='radio' value='yes' name="choice")
+						+e.LABEL.text.switcher-label--yes(for='yes') да
 							+e.SPAN.small 47
-						+e.SPAN.lab
-						+e.SPAN.text нет
+						+e.LABEL.text.switcher-label--neutral(for='neutral')
+						+e.INPUT#neutral.input.switcher-input--neutral(type='radio' value='neutral' name="choice" checked)
+						+e.INPUT#no.input.switcher-input--no(type='radio' value='no' name="choice")
+						+e.LABEL.text.switcher-label--no(for='no') нет
 							+e.SPAN.small 735
+						+e.SPAN.lab
+
+
+
+						//+e.INPUT.input(type='checkbox')
+						//
+						//+e.SPAN.text да
+						//	+e.SPAN.small 47
+						//+e.SPAN.lab
+						//+e.SPAN.text нет
+						//	+e.SPAN.small 735
 			.col-md-6
 				+e.head.d-none.d-md-block.pl-0.mb-4
 					.text-md-left

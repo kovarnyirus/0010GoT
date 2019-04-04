@@ -98,6 +98,9 @@
 		padding-left: rem(70);
 		padding-right: rem(70);
 	}
+	& .choice-block__text{
+		width: inherit;
+	}
 }
 
 
