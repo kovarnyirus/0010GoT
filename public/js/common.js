@@ -196,13 +196,13 @@ jQuery(document).ready(function ($) {
 			//resetButtonSelector: 'button',
 			mapUrl: 'img/graveyard.jpg',
 			jsonUrl: '../libs/graveyard/graveyard.json',
-			// minZoom: 1/8,
+			minZoom: 1/2,// minZoom: 1/8,
 			maxZoom: 2,//maxZoom: 8,
-			initialZoom: 5/9,//initialZoom: 1,
+			initialZoom: 10/20,//initialZoom: 1,
 			mapWidth: 4000,//mapWidth: 1600,
 			mapHeight: 2512,//mapHeight: 1200,
 			//centerOffsetX: 0,
-			centerOffsetY: -1200,
+			centerOffsetY: -1050,
 			onGraveClick: function (d) { window.alert(d.CODE) },//onGraveClick: console.log,
 		});
 		// graveyard({
