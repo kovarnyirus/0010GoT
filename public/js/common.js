@@ -190,8 +190,7 @@ jQuery(document).ready(function ($) {
 	// Custom JS
 
 	if ($("div").is("#s-map-cemetery")) {
-		$(".page-body").css({'background-image': 'none',
-		'overflow': 'hidden'});
+		$(".page-body").css({'background-image': 'none'});
 		graveyard({
 			containerSelector: '#s-map-cemetery',
 			//resetButtonSelector: 'button',
