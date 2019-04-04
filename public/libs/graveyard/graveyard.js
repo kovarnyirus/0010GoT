@@ -1,12 +1,16 @@
 function graveyard ( config ) {
+
 	var containerSelector   = 'containerSelector'   in config ? config.containerSelector   : '#graveyard';
 	var resetButtonSelector = 'resetButtonSelector' in config ? config.resetButtonSelector : 'button';
 	var mapUrl              = 'mapUrl'              in config ? config.mapUrl              : 'graveyard.jpg';
 	var jsonUrl             = 'jsonUrl'             in config ? config.jsonUrl             : 'graveyard.json';
 	var minZoom             = 'minZoom'             in config ? config.minZoom             : 1/8;
 	var maxZoom             = 'maxZoom'             in config ? config.maxZoom             : 8;
+	var initialZoom         = 'initialZoom'         in config ? config.initialZoom         : 1;
 	var mapWidth            = 'mapWidth'            in config ? config.mapWidth            : 1600;
 	var mapHeight           = 'mapHeight'           in config ? config.mapHeight           : 1200;
+	var centerOffsetX       = 'centerOffsetX'       in config ? config.centerOffsetX       : 0;
+	var centerOffsetY       = 'centerOffsetY'       in config ? config.centerOffsetY       : 0;
 	var onGraveClick        = 'onGraveClick'        in config ? config.onGraveClick        : console.log;
 
 	var zoom = d3.zoom()
@@ -19,12 +23,16 @@ function graveyard ( config ) {
 		.call(zoom);
 
 	var button = d3.select(resetButtonSelector)
-		.attr('disabled', '')
 		.on('click', resetted);
 
 	var content = container.append('div')
-		.style('transform-origin', '0 0')
-		.style('transform', 'scale(1)');
+		.style('transform-origin', '0 0');
+
+	var initialX = (container.property('clientWidth') - mapWidth * initialZoom) /2 - centerOffsetX * initialZoom;
+	var initialY = (container.property('clientHeight') - mapHeight * initialZoom) /2 - centerOffsetY * initialZoom;
+	var initialTransform = d3.zoomIdentity.translate(initialX, initialY).scale(initialZoom);
+
+	container.call(zoom.transform, initialTransform);
 
 	content.append('img')
 		.attr('src', mapUrl);
@@ -55,10 +63,10 @@ function graveyard ( config ) {
 
 		content.style('transform', 'translate('+xf.x+'px,'+xf.y+'px) scale('+xf.k+')');
 
-		button.attr('disabled', xf == d3.zoomIdentity ? '' : null);
+		button.attr('disabled', xf.toString() == initialTransform.toString() ? '' : null);
 	}
 
 	function resetted () {
-		container.transition().duration(500).call(zoom.transform, d3.zoomIdentity);
+		container.transition().duration(500).call(zoom.transform, initialTransform);
 	}
 }

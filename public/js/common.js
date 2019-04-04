@@ -190,18 +190,33 @@ jQuery(document).ready(function ($) {
 	// Custom JS
 
 	if ($("div").is("#s-map-cemetery")) {
-		$(".page-body").css('background-image', 'none');
+		$(".page-body").css({'background-image': 'none',
+		'overflow': 'hidden'});
 		graveyard({
 			containerSelector: '#s-map-cemetery',
 			//resetButtonSelector: 'button',
-			mapUrl: 'img/map-cemetery.jpg',
+			mapUrl: 'img/graveyard.jpg',
 			jsonUrl: '../libs/graveyard/graveyard.json',
-			minZoom: 8,
-			maxZoom: 6,
-			mapWidth: 1100,
-			mapHeight: 601,
+			// minZoom: 1/8,
+			maxZoom: 2,//maxZoom: 8,
+			initialZoom: 1/4,//initialZoom: 1,
+			mapWidth: 4000,//mapWidth: 1600,
+			mapHeight: 2512,//mapHeight: 1200,
+			//centerOffsetX: 0,
+			//centerOffsetY: 0,
 			onGraveClick: function (d) { window.alert(d.CODE) },//onGraveClick: console.log,
 		});
+		// graveyard({
+		// 	containerSelector: '#s-map-cemetery',
+		// 	//resetButtonSelector: 'button',
+		// 	mapUrl: 'img/map-cemetery.jpg',
+		// 	jsonUrl: '../libs/graveyard/graveyard.json',
+		// 	minZoom: 8,
+		// 	maxZoom: 6,
+		// 	mapWidth: 1100,
+		// 	mapHeight: 601,
+		// 	onGraveClick: function (d) { window.alert(d.CODE) },//onGraveClick: console.log,
+		// });
 	}
     if ($("div").is("#map12")) {
         console.log('adasds');
