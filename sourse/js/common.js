@@ -198,11 +198,11 @@ jQuery(document).ready(function ($) {
 			jsonUrl: '../libs/graveyard/graveyard.json',
 			// minZoom: 1/8,
 			maxZoom: 2,//maxZoom: 8,
-			initialZoom: 1/4,//initialZoom: 1,
+			initialZoom: 5/9,//initialZoom: 1,
 			mapWidth: 4000,//mapWidth: 1600,
 			mapHeight: 2512,//mapHeight: 1200,
 			//centerOffsetX: 0,
-			centerOffsetY: -1500,
+			centerOffsetY: -1200,
 			onGraveClick: function (d) { window.alert(d.CODE) },//onGraveClick: console.log,
 		});
 		// graveyard({
