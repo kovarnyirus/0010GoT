@@ -2,7 +2,8 @@
   max-height: calc(100vh - 67px);
   min-height: 100%;
   overflow: hidden;
-  & .container{
+
+  & .container {
     position: relative;
   }
 }
@@ -13,39 +14,55 @@
   bottom: 0;
 }
 
-.s-map-cemetery__zoom-btns{
+.s-map-cemetery__zoom-btns {
   width: 30px;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: rem(-80);
+}
+
+.s-map-cemetery__zoom-btn {
+  background-color: inherit;
+  outline: none;
+  background: rgba(0, 0, 0, .2);
+  border: 1px solid rgba(185, 167, 131, 0.67);
+  margin-bottom: 5px;
+  color: $primary;
+  line-height: 1.7;
+  height: rem(30);
+  width: rem(30);
+  &:last-child{
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 1;
+  }
 }
 
 
-
-
-
-
-
-.s-map #map12::before {
-  display: none!important;
-}
-
-.s-map__caption{
-  display: none!important;
-}
-
-.s-map .container::after, .s-map .container::before {
-  display: none;
-}
-
-.s-map .container {
-  max-width: 100%;
-}
-header{
-  display: none;
-}
-
-.s-map {
-
-  height: 100vh!important;
-
-}
+//
+//.s-map #map12::before {
+//  display: none!important;
+//}
+//
+//.s-map__caption{
+//  display: none!important;
+//}
+//
+//.s-map .container::after, .s-map .container::before {
+//  display: none;
+//}
+//
+//.s-map .container {
+//  max-width: 100%;
+//}
+//header{
+//  display: none;
+//}
+//
+//.s-map {
+//
+//  height: 100vh!important;
+//
+//}
