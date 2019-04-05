@@ -1,6 +1,34 @@
-.s-map-cemetery{
+.s-map-cemetery {
   max-height: calc(100vh - 67px);
   min-height: 100%;
   overflow: hidden;
+  & .container{
+    position: relative;
+  }
 }
 
+.s-map-cemetery__bottom-logo {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.s-map-cemetery__zoom-btns{
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.s-map #map12::before {
+  display: none!important;
+}
+
+.s-map__caption{
+  display: none!important;
+}
+
+.s-map .container::after, .s-map .container::before {
+  display: none;
+}

@@ -19,6 +19,10 @@
 
 			width: 166px;
 		}
+		&-out{
+			cursor: pointer;
+			padding-left: rem(30);
+		}
 	}
 	.row{
 		align-items: center;
@@ -27,8 +31,8 @@
 	@include media-breakpoint-up(xl) {}
 
 	@include media-breakpoint-up(lg) {
-		&__logo{
-			width: 69px;
+		&__logo-img{
+			width: 165px;
 		}
 	}
 

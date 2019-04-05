@@ -23,18 +23,19 @@ mixin top-nav()
 				.col-md-auto.col
 					+e.logo(href="#")
 						picture
-							source(media='(min-width: 768px)', srcset="img/desktop-logo.png")
-							img(src="img/mobile-inner-logo.png", alt="logo")
+							source(media='(min-width: 768px)', srcset="img/desktop-logo.png" width='165')
+							+e.logo-img(src="img/mobile-inner-logo.png", alt="logo")
 				.col.d-none.d-md-block
 					+b.nav-menu
-						+e.link(href="#") КАРТА
+						+e.link(href="#") КАРТА КРИПТЫ
 						+e.link--current(href="#") мероприятия
 						+e.link(href="#") блог
-						+e.link(href="#") где ?
+						+e.link(href="#") как найти?
 				.col-auto
 					+e.btn.popup-with-move-anim(href="#modal-order")
 						span.d-none.d-md-block записаться
 						span.d-md-none бесплатный билет
+					a.top-nav__btn-out.text-primary(href="#") Выйти
 				.col-auto.d-none.d-md-block
 					img(src="img/18+.png", width="43" heighi="43" alt="")
 
