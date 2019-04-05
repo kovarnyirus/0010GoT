@@ -283,8 +283,6 @@ jQuery(document).ready(function ($) {
             }
             requestAnimationFrame(tick);
         }
-
-
     }
 });
 

@@ -5,22 +5,16 @@ mixin s-qr()
         .container
             #loadingMessage
             canvas#canvas(hidden='')
-            #output(hidden='')
-                #outputMessage No QR code detected.
-                 div(hidden='')
-                    b Data:
+            +e.caption#output(hidden="true")
+                p#outputMessage.text-center.mb-0 Наведите на надгробие,
+                    br
+                    |    чтобы увидеть смерть персонажа
+                div(hidden="true")
                     span#outputData
-            canvas#canvas(hidden)
             +e.corner.s-qr__corner--left-top
             +e.corner.s-qr__corner--right-top
             +e.corner.s-qr__corner--left-bottom
             +e.corner.s-qr__corner--right-bottom
-            +e.caption
-                p#loadingMessage.text-center.mb-0 Наведите на надгробие,
-                    br
-                    |    чтобы увидеть смерть персонажа
-                #output
-                    #outputMessage No QR code detected
-                    span#outputData
+
     // end s-qr
 
