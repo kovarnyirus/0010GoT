@@ -21,6 +21,10 @@
 
 
 
+
+
+
+
 .s-map #map12::before {
   display: none!important;
 }
@@ -31,4 +35,8 @@
 
 .s-map .container::after, .s-map .container::before {
   display: none;
+}
+
+.s-map .container {
+  max-width: 100%;
 }
