@@ -83,7 +83,10 @@
           <div class="s-qr__corner s-qr__corner s-qr__corner--right-bottom">
           </div>
           <div class="s-qr__caption">
-            <p class="text-center mb-0">Наведите на надгробие,<br/>   чтобы увидеть смерть персонажа</p>
+            <p class="text-center mb-0" id="loadingMessage">Наведите на надгробие,<br/>   чтобы увидеть смерть персонажа</p>
+            <div id="output">
+              <div id="outputMessage">No QR code detected</div><span id="outputData"></span>
+            </div>
           </div>
         </div>
       </div>
@@ -527,8 +530,8 @@
     <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
     <script src="libs/graveyard/graveyard.js"></script>
     <script src="libs/jsQR/jsQR.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-    <script src="libs/sparks/sparks.js"></script>
+    <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js")-->
+    <!--script(src="libs/sparks/sparks.js")-->
     <script src="libs/select2/select2.min.js"></script>
     <script src="js/common.js"></script>
   </body>

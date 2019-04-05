@@ -16,9 +16,11 @@ mixin s-qr()
             +e.corner.s-qr__corner--left-bottom
             +e.corner.s-qr__corner--right-bottom
             +e.caption
-                p.text-center.mb-0 Наведите на надгробие,
+                p#loadingMessage.text-center.mb-0 Наведите на надгробие,
                     br
                     |    чтобы увидеть смерть персонажа
-
+                #output
+                    #outputMessage No QR code detected
+                    span#outputData
     // end s-qr
 

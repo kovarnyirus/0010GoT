@@ -194,7 +194,7 @@ jQuery(document).ready(function ($) {
 		graveyard({
 			containerSelector: '#s-map-cemetery',
 			//resetButtonSelector: 'button',
-			mapUrl: 'img/graveyard.jpg',
+			mapUrl: 'img/map-cemetery.jpg',
 			jsonUrl: '../libs/graveyard/graveyard.json',
 			minZoom: 1/2,// minZoom: 1/8,
 			maxZoom: 2,//maxZoom: 8,
@@ -205,17 +205,6 @@ jQuery(document).ready(function ($) {
 			centerOffsetY: -1050,
 			onGraveClick: function (d) { window.alert(d.CODE) },//onGraveClick: console.log,
 		});
-		// graveyard({
-		// 	containerSelector: '#s-map-cemetery',
-		// 	//resetButtonSelector: 'button',
-		// 	mapUrl: 'img/map-cemetery.jpg',
-		// 	jsonUrl: '../libs/graveyard/graveyard.json',
-		// 	minZoom: 8,
-		// 	maxZoom: 6,
-		// 	mapWidth: 1100,
-		// 	mapHeight: 601,
-		// 	onGraveClick: function (d) { window.alert(d.CODE) },//onGraveClick: console.log,
-		// });
 	}
     if ($("div").is("#map12")) {
         console.log('adasds');
