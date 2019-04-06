@@ -41,28 +41,28 @@
 }
 
 
-//
-//.s-map #map12::before {
-//  display: none!important;
-//}
-//
-//.s-map__caption{
-//  display: none!important;
-//}
-//
-//.s-map .container::after, .s-map .container::before {
-//  display: none;
-//}
-//
-//.s-map .container {
-//  max-width: 100%;
-//}
-//header{
-//  display: none;
-//}
-//
-//.s-map {
-//
-//  height: 100vh!important;
-//
-//}
+
+.s-map #map12::before {
+  display: none!important;
+}
+
+.s-map__caption{
+  display: none!important;
+}
+
+.s-map .container::after, .s-map .container::before {
+  display: none;
+}
+
+.s-map .container {
+  max-width: 100%;
+}
+header{
+  display: none;
+}
+
+.s-map {
+
+  height: 100vh!important;
+
+}
