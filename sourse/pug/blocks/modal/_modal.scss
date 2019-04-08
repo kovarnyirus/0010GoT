@@ -236,6 +236,30 @@
 		}
 	}
 
+	&--good{
+		@include media-breakpoint-down(md) {
+			padding-left: rem(40);
+			padding-right: rem(40);
+			margin-left: rem(50);
+			margin-right: rem(50);
+			padding-bottom: rem(40);
+			.form-wrap__btn-outline{
+				width: rem(130);
+				margin-top: rem(40);
+			}
+			.form-wrap__head{
+				margin-bottom: rem(20);
+			}
+			.form-wrap__title{
+				padding-top: rem(35);
+				padding-bottom: rem(0);
+			}
+		}
+		.mfp-close{
+			display: none;
+		}
+	}
+
 	.modal-content {
 		// max-width: 485px;
 		// padding-right: 40px 15px;

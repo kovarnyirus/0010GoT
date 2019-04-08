@@ -321,13 +321,14 @@ mixin modal()
 
 	// / #modal-policy
 
-	+b.form-wrap(id="modal-good" class="zoom-anim-dialog mfp-hide modal-win modal-win--sm modal-form" )
+	+b.form-wrap(id="modal-good" class="zoom-anim-dialog mfp-hide modal-win modal-win--sm modal-form modal-win--good" )
 		+e.head.border-0
 			.text-center
 				+e.title.h1 УСПЕШНО!
 		+e.body
-			+e.text Пароль отправлен на указанный Вами адрес почты&nbsp;
-				strong qwejqwleuh111212@mail.ru
+			+e.text Пароль отправлен на указанный Вами адрес почты&ensp;
+				strong
+					| qwejqwleuh111212@mail.ru
 
 			+e.btn-outline(href="#" )  ок
 	// #modal-good
