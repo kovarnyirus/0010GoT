@@ -1,5 +1,5 @@
 .s-map-cemetery {
-  max-height: calc(100vh - 91px - 137px);
+  max-height: calc(100vh - 91px);
   min-height: 100%;
   overflow: hidden;
 
@@ -7,6 +7,7 @@
     position: relative;
   }
   @include media-breakpoint-down(md) {
+    max-height: calc(100vh - 91px - 137px);
     .s-cemetery__foot{
       bottom: 85px;
     }

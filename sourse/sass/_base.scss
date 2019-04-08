@@ -87,11 +87,10 @@ body {
 
 .section {
 	 position: relative;
-	 @include media-breakpoint-up(md) {
-
+	 @include media-breakpoint-down(md) {
 		 min-height: calc(100vh - 70px - 97px - 70px);
 		}
-		min-height: calc(100vh - 91px);
+	min-height: calc(100vh - 91px);
 }
 
 .section-title {
