@@ -429,6 +429,9 @@ input::-webkit-inner-spin-button {
 		color: $primary;
 		letter-spacing: rem(2.1px);
 		padding-top: em(14);
+		@include media-breakpoint-up(lg) {
+			padding-top: em(25);
+		}
 	}
 }
 
