@@ -32,11 +32,22 @@
 	&__head-logo{
 		margin-top: 20px;
 	}
+	&--login{
+		.form-wrap__text{
+			margin-bottom: rem(50);
+		}
+	}
 
 	//
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
-	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(md) {
+		&--login{
+			.form-wrap__text{
+				margin-bottom: rem(80);
+			}
+		}
+	}
 	@include media-breakpoint-up(sm) {}
 	@include media-breakpoint-up(xs) {}
 
@@ -71,7 +82,7 @@
 
 .title-img{
 	max-width: rem(615);
-	margin-bottom: rem(56);
+	margin-bottom: rem(60);
 	&--reg{
 		margin-bottom: rem(40);
 	}
