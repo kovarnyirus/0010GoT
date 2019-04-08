@@ -57,14 +57,13 @@
 	padding-bottom: rem(70px);
 
 	&--rules {
-		background-color: #ffffff;
-		color: #000000;
+		background-color: rgba(14,22,31,.85);
 		text-align: center;
 
 		.form-wrap__title {
-			@include rfs(rem(12));
+			@include rfs(rem(20));
 
-			font-weight: bold;
+			font-weight: 300;
 			padding-top: rem(25);
 		}
 
@@ -106,6 +105,18 @@
 		.mfp-close{
 			right: 22px;
 		}
+		@include media-breakpoint-down(md) {
+			.form-wrap__body{
+				padding-left: rem(60);
+				padding-right: rem(60);
+			}
+			.form-group{
+				margin-bottom: rem(40);
+			}
+			.form-wrap__btn{
+				margin-top: rem(20);
+			}
+		}
 	}
 
 	&--write-time{
@@ -125,6 +136,19 @@
 		.mfp-close{
 			right: 10px;
 		}
+		@include media-breakpoint-down(md) {
+			.form-wrap__body{
+				padding-left: rem(75);
+				padding-right: rem(75);
+			}
+			.form-group{
+				margin-bottom: rem(40);
+			}
+			.form-wrap__btn{
+				margin-top: rem(25);
+			}
+		}
+
 	}
 
 	&--taken{
@@ -145,26 +169,51 @@
 		.form-wrap__text{
 			margin-bottom: rem(10);
 		}
+		@include media-breakpoint-down(md) {
+			.form-wrap__text{
+				margin-bottom: rem(20);
+			}
+			.form-wrap__btn-outline{
+				margin-top: rem(45);
+			}
+		}
 	}
 
 	&--warning{
-		@include media-breakpoint-up(md) {
-			padding-bottom: rem(45);
-			max-width: 615px;
-			padding-left: rem(57);
-			padding-right: rem(57);
-		}
 		& .form-wrap__btn-outline{
-			max-width: 100%;
+			max-width: rem(250);
 			width: 100%;
 			margin-top: rem(20);
+
 		}
 		& .mfp-close{
 			display: none;
 		}
 		& .form-wrap__title{
 			padding-top: rem(40);
-			padding-bottom: rem(40);
+			padding-bottom: rem(30);
+		}
+		@include media-breakpoint-up(md) {
+			padding-bottom: rem(45);
+			max-width: 615px;
+			padding-left: rem(57);
+			padding-right: rem(57);
+			.form-wrap__btn-outline{
+				max-width: 100%;
+				width: 100%;
+				margin-top: rem(20);
+			}
+		}
+		@include media-breakpoint-down(md) {
+			.form-wrap__btn-outline {
+				background-color: rgba(156, 142, 115, 0.75);
+				color: #000000;
+				border: 1px solid #9c8e73;
+				&:hover{
+					color: #FFFFFF;
+					background-color: rgba(156, 142, 115, 0.70);
+				}
+			}
 		}
 	}
 
@@ -172,7 +221,18 @@
 		padding-bottom: rem(45);
 		.form-wrap__img{
 			max-width: 100%;
-			margin-bottom: rem(35);
+			margin-bottom: rem(20);
+		}
+	}
+
+	&--rate{
+		.form-wrap__title{
+			font-size: 30px;
+		}
+		@include media-breakpoint-up(md) {
+			.form-wrap__title{
+				font-size: 18px;
+			}
 		}
 	}
 

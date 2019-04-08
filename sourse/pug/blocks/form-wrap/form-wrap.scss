@@ -65,9 +65,9 @@
 		}
 	}
 	&__btn-outline{
-				@extend .btn-outline-primary;
+		@extend .btn-outline-primary;
 
-			}
+	}
 
  	&__input-wrap{
 		// position: relative;
@@ -145,7 +145,11 @@
 
 @include media-breakpoint-down(lg) {}
 
-@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(md) {
+	.form-wrap__btn-outline:hover{
+		color: #FFFFFF;
+	}
+}
 
 @include media-breakpoint-down(sm) {}
 

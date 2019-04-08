@@ -111,11 +111,12 @@ mixin modal()
 				br
 				| для лиц, достигших совершеннолетия.
 				br
+				br
 				| Чтобы продолжить подтвердите, что вам есть 18 лет
 			+e.btn-wrap.row.justify-content-between
-				.col-6
+				.col-12.col-md-6
 					+e.btn-outline(href="#" )  Мне есть 18 лет
-				.col-6
+				.col-12.col-md-6
 					+e.btn-outline(href="#" )  Мне нет 18 лет
 	// #modal-warning
 
@@ -137,20 +138,20 @@ mixin modal()
 			+e.text.text-center Ждём Вас
 				|
 				strong.text-primary  17 апреля в 16:30 &nbsp;
-			+e.text.d-none.d-md-block Ваш билет отправлен на&nbsp;указанный
+			+e.text Ваш билет отправлен на&nbsp;указанный
 				br
 				| Вами адрес почты
 				br
 				|
 				strong qwejqwleuh111212@mail.ru
 
-			+e.text.d-md-none Ваш билет отправлен на&nbsp;указанный Вами E-mail
+			//+e.text.d-md-none Ваш билет отправлен на&nbsp;указанный Вами E-mail
 
 			+e.btn-outline(href="#" )  ок
 	// #modal-send2
 
 
-	+form-wrap()(id="modal-rate" class="zoom-anim-dialog mfp-hide modal-win modal-win--lg modal-form pb-5" )
+	+form-wrap()(id="modal-rate" class="zoom-anim-dialog mfp-hide modal-win modal-win--lg modal-form modal-win--rate pb-5" )
 		+e.head
 			.text-center
 				+e.title.h1.text-white ставка на сезон
@@ -159,8 +160,8 @@ mixin modal()
 			.text-center.fw-300 Вы можете выбрать от 1 до 10 героев.
 				br
 				| Чем больше совпадений —&nbsp;
-				a.tdu.popup-with-move-anim(href="#modal-rules" ) тем больше подарок!
-				| &nbsp;Ставку можно сделать один раз
+				a.tdu.popup-with-move-anim(href="#modal-rules" ) тем больше подарок
+				| !&nbsp;Ставку можно сделать один раз
 			- var pers= [ 'Дейенерис Таргариен','Яра Грейджой','Мелисандра','Джон Сноу','Бриенна Тарт','Даарио Нахарис','Джейме Ланнистер','Варис','Якен Хгар (безликий)','Серсея Ланнистер','Брон','Тормунд','Тирион Ланнистер','Давос Сиворт','Серый Червь','Санса Старк','Джорах Мормонт','Король Ночи','Арья Старк','Сэмвелл Тарли',' Брандон Старк',' Теон Грейджой','Миссандея','никто не умрёт ','Пёс','Лилли','все умрут' ]
 				+e.row-wrap.customscrollbar-js: .row
 					each t in pers
@@ -251,7 +252,7 @@ mixin modal()
 			.text-center
 				+e.title Условия розыгрыша
 		+e.body
-			+e.text.strong.mb-2 Угадываешь на весь сезон
+			+e.text.mb-2 Угадываешь на весь сезон
 
 			p.text-primary.pt-0 Чем больше совпадение — тем больше подписка в подарок!
 
