@@ -4,7 +4,7 @@
 		position: relative;
 	}
 	&__col{
-		margin-bottom: 30px;
+		margin-bottom: 60px;
 	}
 	&__item{
 		display: block;
@@ -24,7 +24,11 @@
 	//
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
-	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(md) {
+		&__col{
+			margin-bottom: 30px;
+		}
+	}
 	@include media-breakpoint-up(sm) {}
 	@include media-breakpoint-up(xs) {}
 
@@ -42,7 +46,12 @@
 	//
 	@include media-breakpoint-down(xl) {}
 	@include media-breakpoint-down(lg) {}
-	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(md) {
+		&__col{
+			padding-right: 35px;
+			padding-left: 35px;
+		}
+	}
 	@include media-breakpoint-down(sm) {}
 	@include media-breakpoint-down(xs) {}
 

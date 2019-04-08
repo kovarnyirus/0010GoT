@@ -456,6 +456,12 @@ input::-webkit-inner-spin-button {
 	left: 0;
 	bottom: 0;
 	margin-left: 15px;
+	&--map{
+		margin-bottom: 70px;
+	}
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
 }
 .container{
 	position: relative;
