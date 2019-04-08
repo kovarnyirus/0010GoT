@@ -1,10 +1,21 @@
 .s-map-cemetery {
-  max-height: calc(100vh - 67px);
+  max-height: calc(100vh - 91px - 137px);
   min-height: 100%;
   overflow: hidden;
 
   & .container {
     position: relative;
+  }
+  @include media-breakpoint-down(md) {
+    .s-cemetery__foot{
+      bottom: 85px;
+    }
+  }
+  &-title{
+    position: absolute;
+    z-index: 3;
+    top: 90px;
+    pointer-events: none;
   }
 }
 
@@ -17,6 +28,9 @@
   position: absolute;
   right: 0;
   top: rem(-80);
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
 }
 
 .s-map-cemetery__zoom-btn {
