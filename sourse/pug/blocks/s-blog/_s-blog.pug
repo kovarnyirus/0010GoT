@@ -1,14 +1,14 @@
 mixin s-blog()
 	// start s-blog
 	+b.s-blog.section#s-blog.lazy-background&attributes(attributes)
-		.container 
+		.container
 			.row
-				- for (var x = 0; x < 6; x++)
+				- for (var x = 0; x < 10; x++)
 					+e.col.col-lg-4.col-md-6
-						+e.item.popup-with-move-anim(href="#modal-blog") 
+						+e.item.popup-with-move-anim(href="#modal-blog")
 							+e.DIV.img-wrap.img-bg
 								img.lazy-bg(src="#" data-src="img/blog.jpg", alt="")
 							+e.DIV.title Появились новые кадры из&nbsp;восьмого сезона Игры престолов
 					// /+e.col.col-lg-4.col-md-6
-				
+
 	// end s-blog

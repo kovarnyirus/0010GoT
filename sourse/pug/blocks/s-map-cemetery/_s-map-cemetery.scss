@@ -8,11 +8,7 @@
   }
 }
 
-.s-map-cemetery__bottom-logo {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
+
 
 .s-map-cemetery__zoom-btns {
   width: 30px;
@@ -42,27 +38,27 @@
 
 
 
-.s-map #map12::before {
-  display: none!important;
-}
-
-.s-map__caption{
-  display: none!important;
-}
-
-.s-map .container::after, .s-map .container::before {
-  display: none;
-}
-
-.s-map .container {
-  max-width: 100%;
-}
-header{
-  display: none;
-}
-
-.s-map {
-
-  height: 100vh!important;
-
-}
+//.s-map #map12::before {
+//  display: none!important;
+//}
+//
+//.s-map__caption{
+//  display: none!important;
+//}
+//
+//.s-map .container::after, .s-map .container::before {
+//  display: none;
+//}
+//
+//.s-map .container {
+//  max-width: 100%;
+//}
+//header{
+//  display: none;
+//}
+//
+//.s-map {
+//
+//  height: 100vh!important;
+//
+//}

@@ -46,7 +46,7 @@ $output-bourbon-deprecation-warnings: false;
 
 
 @import "../pug/blocks/s-form/s-form";
-// @import "../pug/blocks/footer/footer";
+ @import "../pug/blocks/footer/footer";
 @import "../pug/blocks/modal/modal";
 
 @import "media";// Всегда в конце

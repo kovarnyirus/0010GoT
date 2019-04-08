@@ -97,7 +97,7 @@
 			padding-bottom: rem(12)
 		}
 		.form-wrap__text{
-			margin-bottom: rem(65);
+			margin-bottom: rem(20);
 		}
 		.form-wrap__btn{
 			margin-top: rem(49);
@@ -110,13 +110,13 @@
 
 	&--write-time{
 		.form-wrap__head{
-			margin-bottom: rem(60);
+			margin-bottom: rem(50);
 		}
 		.form-wrap__title{
 			padding-bottom: rem(14)
 		}
 		.form-wrap__text{
-			margin-bottom: rem(65);
+			margin-bottom: rem(60);
 		}
 		.form-wrap__btn{
 			max-width: rem(225);
@@ -141,6 +141,9 @@
 		}
 		.mfp-close{
 			display: none;
+		}
+		.form-wrap__text{
+			margin-bottom: rem(10);
 		}
 	}
 
@@ -237,6 +240,9 @@ a {
 @include media-breakpoint-up(md) {
 	.modal-win--hero-blog{
 		max-width: 615px!important;
+		.form-wrap__title{
+			font-size: rem(18);
+		}
 		& .mfp-close{
 			right: 0!important;
 		}
@@ -517,7 +523,7 @@ a {
 
 	.icon {
 		color: transparent;
-		stroke: $primary;
+		stroke: #A49C8B;
 		stroke-width: rem(5);
 		font-size: rem(30);
 

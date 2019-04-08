@@ -89,7 +89,7 @@ body {
 	 position: relative;
 	 @include media-breakpoint-up(md) {
 
-		 min-height: calc(100vh - 70px);
+		 min-height: calc(100vh - 70px - 97px - 70px);
 		}
 		min-height: calc(100vh - 91px);
 }
@@ -446,4 +446,14 @@ input::-webkit-inner-spin-button {
 	height: 4px;
 	border-radius: 100%;
 	box-shadow: 0 0 10px 3px #AB000B;
+}
+
+.bottom-logo {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin-left: 15px;
+}
+.container{
+	position: relative;
 }
