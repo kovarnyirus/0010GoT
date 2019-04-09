@@ -1,17 +1,19 @@
 function graveyard ( config ) {
 
-	var containerSelector   = 'containerSelector'   in config ? config.containerSelector   : '#graveyard';
-	var resetButtonSelector = 'resetButtonSelector' in config ? config.resetButtonSelector : 'button';
-	var mapUrl              = 'mapUrl'              in config ? config.mapUrl              : 'graveyard.jpg';
-	var jsonUrl             = 'jsonUrl'             in config ? config.jsonUrl             : 'graveyard.json';
-	var minZoom             = 'minZoom'             in config ? config.minZoom             : 1/8;
-	var maxZoom             = 'maxZoom'             in config ? config.maxZoom             : 8;
-	var initialZoom         = 'initialZoom'         in config ? config.initialZoom         : 1;
-	var mapWidth            = 'mapWidth'            in config ? config.mapWidth            : 1600;
-	var mapHeight           = 'mapHeight'           in config ? config.mapHeight           : 1200;
-	var centerOffsetX       = 'centerOffsetX'       in config ? config.centerOffsetX       : 0;
-	var centerOffsetY       = 'centerOffsetY'       in config ? config.centerOffsetY       : 0;
-	var onGraveClick        = 'onGraveClick'        in config ? config.onGraveClick        : console.log;
+	var containerSelector     = 'containerSelector'     in config ? config.containerSelector     : '#graveyard';
+	var resetButtonSelector   = 'resetButtonSelector'   in config ? config.resetButtonSelector   : '#graveyard-reset';
+	var zoomInButtonSelector  = 'zoomInButtonSelector'  in config ? config.zoomInButtonSelector  : '#graveyard-zoom-in';
+	var zoomOutButtonSelector = 'zoomOutButtonSelector' in config ? config.zoomOutButtonSelector : '#graveyard-zoom-out';
+	var mapUrl                = 'mapUrl'                in config ? config.mapUrl                : 'graveyard.jpg';
+	var jsonUrl               = 'jsonUrl'               in config ? config.jsonUrl               : 'graveyard.json';
+	var minZoom               = 'minZoom'               in config ? config.minZoom               : 1/8;
+	var maxZoom               = 'maxZoom'               in config ? config.maxZoom               : 8;
+	var initialZoom           = 'initialZoom'           in config ? config.initialZoom           : 1;
+	var mapWidth              = 'mapWidth'              in config ? config.mapWidth              : 1600;
+	var mapHeight             = 'mapHeight'             in config ? config.mapHeight             : 1200;
+	var centerOffsetX         = 'centerOffsetX'         in config ? config.centerOffsetX         : 0;
+	var centerOffsetY         = 'centerOffsetY'         in config ? config.centerOffsetY         : 0;
+	var onGraveClick          = 'onGraveClick'          in config ? config.onGraveClick          : console.log;
 
 	var zoom = d3.zoom()
 		.scaleExtent([minZoom, maxZoom])
@@ -22,8 +24,9 @@ function graveyard ( config ) {
 		.style('overflow', 'hidden')
 		.call(zoom);
 
-	var button = d3.select(resetButtonSelector)
-		.on('click', resetted);
+	var resetButton = d3.select(resetButtonSelector).on('click', resetted);
+	var zoomInButton = d3.select(zoomInButtonSelector).on('click', zoomedIn);
+	var zoomOutButton = d3.select(zoomOutButtonSelector).on('click', zoomedOut);
 
 	var content = container.append('div')
 		.style('transform-origin', '0 0');
@@ -63,10 +66,20 @@ function graveyard ( config ) {
 
 		content.style('transform', 'translate('+xf.x+'px,'+xf.y+'px) scale('+xf.k+')');
 
-		button.attr('disabled', xf.toString() == initialTransform.toString() ? '' : null);
+		resetButton.attr('disabled', xf.toString() == initialTransform.toString() ? '' : null);
+		zoomInButton.attr('disabled', xf.k == maxZoom ? '' : null);
+		zoomOutButton.attr('disabled', xf.k == minZoom ? '' : null);
 	}
 
 	function resetted () {
 		container.transition().duration(500).call(zoom.transform, initialTransform);
+	}
+
+	function zoomedIn () {
+		zoom.scaleBy(container.transition().duration(300), 2);
+	}
+
+	function zoomedOut () {
+		zoom.scaleBy(container.transition().duration(300), 1/2);
 	}
 }

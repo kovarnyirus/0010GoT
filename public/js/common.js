@@ -189,37 +189,82 @@ jQuery(document).ready(function ($) {
 	svg4everybody({});
 	// Custom JS
 
-	if ($("div").is("#s-map-cemetery")) {
-		$(".page-body").css({'background-image': 'none'});
-		graveyard({
-			containerSelector: '#s-map-cemetery',
-			//resetButtonSelector: 'button',
-			mapUrl: 'img/map-cemetery.jpg',
-			jsonUrl: '../libs/graveyard/graveyard.json',
-			minZoom: 2/8,// minZoom: 1/8,
-			maxZoom: 1,//maxZoom: 8,
-			initialZoom: 16/20,//initialZoom: 1,
-			mapWidth: 4000,//mapWidth: 1600,
-			mapHeight: 2512,//mapHeight: 1200,
-			//centerOffsetX: 0,
-			centerOffsetY: -800,
-			onGraveClick: function (d) { window.alert(d.CODE) },//onGraveClick: console.log,
-		});
-	}
-    if ($("div").is("#map12")) {
-        console.log('adasds');
-        $.getScript('//api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js', function(){
-            console.log('adasdssdsd');
-            mapboxgl.accessToken = 'pk.eyJ1IjoieWVsZW5rYTMxOCIsImEiOiJjajc1MDRlcmUwb2o5MzNueHFoaGJyY2QyIn0.SZXLxY7HdQG456B16qSylQ';
-            const map = new mapboxgl.Map({
-                container: 'map12',
-                style: 'mapbox://styles/yelenka318/cjst3ps3v0x5r1flkcyqk2eig',
-                center: [37.667439, 55.755439],
-                zoom: 15.0
-            });
 
-        })
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        if ($("div").is("#s-map-cemetery")) {
+            $(".page-body").css({'background-image': 'none'});
+            graveyard({
+                containerSelector: '#s-map-cemetery',
+				resetButtonSelector: ".s-cemetery__btn--reset",
+				zoomInButtonSelector: 'map-cemetery__zoom-in',
+				zoomOutButtonSelector: '#map-cemetery__zoom-out',
+                mapUrl: 'img/map-cemetery.jpg',
+                jsonUrl: '../libs/graveyard/graveyard.json',
+                minZoom: 2/8,// minZoom: 1/8,
+                maxZoom: 1,//maxZoom: 8,
+                initialZoom: 16/20,//initialZoom: 1,
+                mapWidth: 4000,//mapWidth: 1600,
+                mapHeight: 2512,//mapHeight: 1200,
+                //centerOffsetX: 0,
+                centerOffsetY: -800,
+                onGraveClick: function (d) { window.alert(d.CODE) },//onGraveClick: console.log,
+            });
+        }
+    } else {
+        if ($("div").is("#s-map-cemetery")) {
+            $(".page-body").css({'background-image': 'none'});
+            graveyard({
+                containerSelector: '#s-map-cemetery',
+                //resetButtonSelector: 'button',
+                mapUrl: 'img/map-cemetery.jpg',
+                jsonUrl: '../libs/graveyard/graveyard.json',
+                minZoom: 2/8,// minZoom: 1/8,
+                maxZoom: 1,//maxZoom: 8,
+                initialZoom: 7/20,//initialZoom: 1,
+                mapWidth: 4000,//mapWidth: 1600,
+                mapHeight: 2512,//mapHeight: 1200,
+                //centerOffsetX: 0,
+                centerOffsetY: -1050,
+                onGraveClick: function (d) { window.alert(d.CODE) },//onGraveClick: console.log,
+            });
+        }
     }
+
+	// if ($("div").is("#s-map-cemetery")) {
+	// 	$(".page-body").css({'background-image': 'none'});
+	// 	graveyard({
+	// 		containerSelector: '#s-map-cemetery',
+	// 		//resetButtonSelector: 'button',
+	// 		mapUrl: 'img/map-cemetery.jpg',
+	// 		jsonUrl: '../libs/graveyard/graveyard.json',
+	// 		minZoom: 2/8,// minZoom: 1/8,
+	// 		maxZoom: 1,//maxZoom: 8,
+	// 		initialZoom: 16/20,//initialZoom: 1,
+	// 		mapWidth: 4000,//mapWidth: 1600,
+	// 		mapHeight: 2512,//mapHeight: 1200,
+	// 		//centerOffsetX: 0,
+	// 		centerOffsetY: -800,
+	// 		onGraveClick: function (d) { window.alert(d.CODE) },//onGraveClick: console.log,
+	// 	});
+	// }
+
+
+
+
+    // if ($("div").is("#map12")) {
+    //     console.log('adasds');
+    //     $.getScript('//api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js', function(){
+    //         console.log('adasdssdsd');
+    //         mapboxgl.accessToken = 'pk.eyJ1IjoieWVsZW5rYTMxOCIsImEiOiJjajc1MDRlcmUwb2o5MzNueHFoaGJyY2QyIn0.SZXLxY7HdQG456B16qSylQ';
+    //         const map = new mapboxgl.Map({
+    //             container: 'map12',
+    //             style: 'mapbox://styles/yelenka318/cjst3ps3v0x5r1flkcyqk2eig',
+    //             center: [37.667439, 55.755439],
+    //             zoom: 15.0
+    //         });
+	//
+    //     })
+    // }
 
 	if ($("div").is("#modal-order2")) {
 

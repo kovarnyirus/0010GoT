@@ -1,5 +1,11 @@
 .s-schedule {
 
+		&.section{
+			@include media-breakpoint-up(md) {
+				min-height: calc(100vh - 98px - 67px - 81px);
+			}
+		}
+
 		&__last-event-day{
 			border-bottom: rem(1px) solid #808080;
 		}
