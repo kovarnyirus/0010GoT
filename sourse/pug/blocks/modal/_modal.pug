@@ -226,6 +226,11 @@ mixin modal()
 					| друзьям и близким! Быть может они будут
 					br
 					| не согласны и сделают свою ставку!
+			form
+				.row
+					.col-md-6.ml-auto.mr-auto
+						+input("email","Ваш email")(required)
+				+e.btn.mt-3.mb-4(type="submit")  отправить
 
 			+e.text.text-primary.mb-3 Поделиться:
 			+b.soc

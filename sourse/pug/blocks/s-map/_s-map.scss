@@ -1,3 +1,7 @@
+.main-wrapper{
+    overflow-x: scroll!important;
+}
+
 .s-map {
     background-color: #0b1520;
     //height: calc(100vh - 70px);
@@ -7,13 +11,16 @@
         height: calc(100vh - 91px - 140px);
     }
 
-    #map12 {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100% !important;
-        height: 100% !important;
-    }
+    //#map12 {
+    //    position: absolute;
+    //    left: 0;
+    //    top: 0;
+    //    width: 100% !important;
+    //    height: 100% !important;
+    //}
+
+
+
 
     &__map-img {
         width: 100%;
