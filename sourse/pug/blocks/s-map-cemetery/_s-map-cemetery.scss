@@ -1,79 +1,71 @@
 .s-map-cemetery {
-  max-height: calc(100vh - 91px);
-  min-height: 100%;
-  overflow: hidden;
+    max-height: calc(100vh - 91px);
+    min-height: 100%;
+    overflow: hidden;
 
-  & .container {
-    position: relative;
-  }
-  @include media-breakpoint-down(md) {
-    max-height: calc(100vh - 91px - 137px);
-    .s-cemetery__foot{
-      bottom: 85px;
+    & .container {
+        position: relative;
     }
-  }
-  &-title{
-    position: absolute;
-    z-index: 3;
-    top: 90px;
-    pointer-events: none;
-  }
-}
 
+    @include media-breakpoint-down(md) {
+        max-height: calc(100vh - 91px - 137px);
+        .s-cemetery__foot {
+            //background-image: none;
+            bottom: 85px;
+        }
+    }
+
+    &-title {
+        position: absolute;
+        z-index: 3;
+        top: 90px;
+        pointer-events: none;
+    }
+}
 
 
 .s-map-cemetery__zoom-btns {
-  width: 30px;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  right: 0;
-  top: rem(-80);
-  @include media-breakpoint-down(md) {
-    display: none;
-  }
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: rem(-80);
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
 }
 
 .s-map-cemetery__zoom-btn {
-  background-color: inherit;
-  outline: none;
-  background: rgba(0, 0, 0, .2);
-  border: 1px solid rgba(185, 167, 131, 0.67);
-  margin-bottom: 5px;
-  color: $primary;
-  line-height: 1.7;
-  height: rem(30);
-  width: rem(30);
-  &:last-child{
-    margin-bottom: 0;
-    font-size: 20px;
-    line-height: 1;
-  }
+    background-color: inherit;
+    outline: none;
+    background: rgba(0, 0, 0, .2);
+    border: 1px solid rgba(185, 167, 131, 0.67);
+    margin-bottom: 5px;
+    color: $primary;
+    line-height: 1.7;
+    height: rem(30);
+    width: rem(30);
+
+    &:last-child {
+        margin-bottom: 0;
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    &:hover {
+        background-color: #ab966b;
+        border-color: #a79062;
+        color: #FFFFFF;
+    }
+
+    &:active {
+        color: #fff;
+        background-color: #a79062;
+        border-color: #a18a5b;
+        padding: 0
+    }
+    &:focus{
+        outline: none;
+    }
 }
-
-
-
-//.s-map #map12::before {
-//  display: none!important;
-//}
-//
-//.s-map__caption{
-//  display: none!important;
-//}
-//
-//.s-map .container::after, .s-map .container::before {
-//  display: none;
-//}
-//
-//.s-map .container {
-//  max-width: 100%;
-//}
-//header{
-//  display: none;
-//}
-//
-//.s-map {
-//
-//  height: 100vh!important;
-//
-//}

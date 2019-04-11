@@ -37,7 +37,7 @@
 						right: 100%;
 						background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, #000000 78%, #000000 100%);
 					}
-				 
+
 				}
 		}
 	}
@@ -46,7 +46,7 @@
 		position: fixed;
 		min-width: 750px;
 		@include media-breakpoint-up(md) {
-			
+
 			bottom: 0;
 		}
 		bottom: 60px;
@@ -80,31 +80,33 @@
 		@extend .btn-block;
 		margin-left: auto;
 		margin-right: auto;
+		width: 500px;
 		@include media-breakpoint-up(md) {
-
 			width: 260px;
 		}
 		&--rate{
 			@include media-breakpoint-down(xs) {
-					background-color: transparent;
+					background-color: rgba(13, 15, 21, 0.71);
 					color: $primary;
 					padding-top: rem(8);
 			}
 		}
 		&--reset{
-			width: auto;
+			width: em(42);
+			height: rem(36);
 			padding: 0;
+
 		}
 
 		.icon{
-			font-size: 57px; 
+			font-size: 57px;
 				color:  transparent;
 				stroke: #000000;
 				.path-mark{
 					color: #000000;
 					stroke:  transparent;
-				}	
-				path[stroke-width="3"]{ 
+				}
+				path[stroke-width="3"]{
 					fill: transparent;
 				}
 		}
@@ -115,23 +117,23 @@
 	@include media-breakpoint-up(md) {}
 	@include media-breakpoint-up(sm) {}
 	@include media-breakpoint-up(xs) {}
-	
+
 	//
 	@include media-breakpoint-between(md, xl) { }
-	
-	
+
+
 	//
 	@include media-breakpoint-only(xs) {}
 	@include media-breakpoint-only(sm) {}
 	@include media-breakpoint-only(md) {}
 	@include media-breakpoint-only(lg) {}
 	@include media-breakpoint-only(xl) {}
-	
+
 	//
 	@include media-breakpoint-down(xl) {}
 	@include media-breakpoint-down(lg) {}
 	@include media-breakpoint-down(md) {}
 	@include media-breakpoint-down(sm) {}
-	@include media-breakpoint-down(xs) {} 
+	@include media-breakpoint-down(xs) {}
 
 }

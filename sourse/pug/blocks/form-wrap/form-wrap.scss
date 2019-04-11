@@ -54,6 +54,9 @@
 		margin-top: rem(75px);
 		@extend .btn;
 		padding-top: rem(7);
+		@include media-breakpoint-down(sm) {
+			width: rem(280px);
+		}
 	}
 	&__btn{
 		@extend .btn-primary;

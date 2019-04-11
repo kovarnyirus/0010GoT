@@ -194,8 +194,6 @@ jQuery(document).ready(function ($) {
             graveyard({
                 containerSelector: '#s-map-cemetery',
                 resetButtonSelector: ".s-cemetery__btn--reset",
-                zoomInButtonSelector: 'map-cemetery__zoom-in',
-                zoomOutButtonSelector: '#map-cemetery__zoom-out',
                 mapUrl: 'img/map-cemetery.jpg',
                 jsonUrl: '../libs/graveyard/graveyard.json',
                 minZoom: 2 / 8,// minZoom: 1/8,
@@ -204,7 +202,7 @@ jQuery(document).ready(function ($) {
                 mapWidth: 4000,//mapWidth: 1600,
                 mapHeight: 2512,//mapHeight: 1200,
                 //centerOffsetX: 0,
-                centerOffsetY: -800,
+                centerOffsetY: -450,
                 onGraveClick: function (d) {
                     window.alert(d.CODE)
                 },//onGraveClick: console.log,
@@ -217,6 +215,8 @@ jQuery(document).ready(function ($) {
                 containerSelector: '#s-map-cemetery',
                 //resetButtonSelector: 'button',
                 mapUrl: 'img/map-cemetery.jpg',
+                zoomInButtonSelector: '#map-cemetery__zoom-in',
+                zoomOutButtonSelector: '#map-cemetery__zoom-out',
                 jsonUrl: '../libs/graveyard/graveyard.json',
                 minZoom: 2 / 8,// minZoom: 1/8,
                 maxZoom: 1,//maxZoom: 8,
@@ -262,12 +262,29 @@ jQuery(document).ready(function ($) {
         }
     }
 
+
+    function onSwipeTextInPopupHero(direction) {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            let btnClose = document.querySelector(".mfp-close");
+            if((direction === 'right') || (direction === 'left')){
+                btnClose.click()
+            }
+        }
+    }
+
     $(".choice-block").swipe({
         swipe: function (event, direction) {
             onSwipe(direction);
         },
         threshold: 10
     });
+
+    // $(".form-wrap__body--text-block").swipe({
+    //     swipe: function (event, direction) {
+    //         onSwipeTextInPopupHero(direction);
+    //     },
+    //     threshold: 200
+    // });
 
 
     if ($("div").is("#modal-order2")) {
