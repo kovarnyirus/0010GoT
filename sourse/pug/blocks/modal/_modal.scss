@@ -90,6 +90,7 @@
 	&--write{
 		.form-wrap__head{
 			margin-bottom: rem(65);
+			border-bottom: none;
 		}
 		.form-wrap__title{
 			padding-top: rem(21);
@@ -114,7 +115,11 @@
 				margin-bottom: rem(40);
 			}
 			.form-wrap__btn{
+				width: rem(225);
 				margin-top: rem(20);
+				padding-top: 15px;
+				padding-bottom: 15px;
+				background-color: rgba(156, 142, 115, 0.7);
 			}
 		}
 	}
@@ -181,13 +186,10 @@
 
 	&--warning{
 		& .form-wrap__btn-outline{
-			max-width: rem(250);
+			max-width: rem(280);
 			width: 100%;
 			margin-top: rem(20);
 
-		}
-		& .mfp-close{
-			display: none;
 		}
 		& .form-wrap__title{
 			padding-top: rem(40);
@@ -205,6 +207,9 @@
 			}
 		}
 		@include media-breakpoint-down(md) {
+			.form-wrap__title{
+				margin-bottom: rem(20);
+			}
 			.form-wrap__btn-outline {
 				background-color: rgba(156, 142, 115, 0.75);
 				color: #000000;
@@ -213,6 +218,10 @@
 					color: #FFFFFF;
 					background-color: rgba(156, 142, 115, 0.70);
 				}
+			}
+			.form-wrap__text{
+				padding-left: rem(20);
+				padding-right: rem(20);
 			}
 		}
 	}
@@ -226,6 +235,9 @@
 	}
 
 	&--rate{
+		@include media-breakpoint-down(md) {
+			max-height: calc(100vh - 112px);
+		}
 		.form-wrap__title{
 			font-size: 30px;
 		}
@@ -238,13 +250,13 @@
 
 	&--good{
 		@include media-breakpoint-down(md) {
-			padding-left: rem(40);
-			padding-right: rem(40);
+			padding-left: rem(10);
+			padding-right: rem(10);
 			margin-left: rem(50);
 			margin-right: rem(50);
 			padding-bottom: rem(40);
 			.form-wrap__btn-outline{
-				width: rem(130);
+				width: rem(145);
 				margin-top: rem(40);
 			}
 			.form-wrap__head{
@@ -417,6 +429,9 @@ a {
 
 		padding-left: rem(15);
 		padding-right: rem(15);
+	}
+	.form-wrap__title{
+		margin-right: 20px;
 	}
 
 	@include media-breakpoint-down(xs) {

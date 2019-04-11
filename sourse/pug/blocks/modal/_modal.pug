@@ -45,8 +45,8 @@ mixin modal()
 					+input("text","Имя")(required placeholder="Имя")
 				.col-md-6
 					+input("text","Фамилия")(required placeholder="Фамилия")
-			//- +input("email","Ваше email")(required)
-			//- +text( "Комментарий")
+				.col-md-6.ml-auto.mr-auto
+					+input("email","Ваш email")(required)
 			+e.btn(type="submit"  )  отправить
 	// #modal-order
 
@@ -82,7 +82,7 @@ mixin modal()
 							option(  ) 19 апреля, пт.
 			//- +input("email","Ваше email")(required)
 			//- +text( "Комментарий")
-			+e.btn(type="submit"  )  записаться
+			+e.btn--bg-opacity(type="submit"  )  записаться
 	// #modal-order2
 
 	+b.form-wrap(id="modal-send" class="zoom-anim-dialog mfp-hide modal-win modal-win--sm modal-form" )
@@ -194,16 +194,6 @@ mixin modal()
 						+e.LABEL.label--no(for='no') нет
 							+e.SPAN.small 735
 						+e.SPAN.lab
-
-
-
-						//+e.INPUT.input(type='checkbox')
-						//
-						//+e.SPAN.text да
-						//	+e.SPAN.small 47
-						//+e.SPAN.lab
-						//+e.SPAN.text нет
-						//	+e.SPAN.small 735
 			.col-md-6
 				+e.head.d-none.d-md-block.pl-0.mb-4
 					.text-md-left

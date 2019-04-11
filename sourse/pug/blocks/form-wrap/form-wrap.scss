@@ -62,9 +62,13 @@
 		@extend .btn-primary;
 		margin-top: rem(60px);
 		&--bg-opacity{
-			background-color: rgba(156, 143, 113, 0.8);
+			background-color: rgba(156, 142, 115, 0.76);
 			border-color: #9c8f71;
 			color: #000000;
+			&:hover{
+				background-color: #9c8f71;
+				border-color: #9c8f71;
+			}
 		}
 	}
 	&__btn-outline{
