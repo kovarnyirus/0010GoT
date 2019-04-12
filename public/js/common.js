@@ -376,7 +376,7 @@ jQuery(document).ready(function ($) {
             maxCount: 200,             // максимальное число частиц (влияет на густоту облака)
         },
         particle: {
-            imageUrl: '/libs/smoke/smoke.png',    // URL картинки для частицы
+            imageUrl: './libs/smoke/smoke.png',    // URL картинки для частицы
             startSize: 120,           // [пиксель] начальный размер частицы
             endSize: 800,             // [пиксель] конечный размер частицы
             maxAge: 10,               // [с] сколько времени живёт одна частица (влияет на размер облака)
