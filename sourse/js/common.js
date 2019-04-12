@@ -138,7 +138,7 @@ var JSCCommon = {
             $(this).find("a").magnificPopup({
                 type: 'image',
                 closeOnContentClick: false,
-                closeBtnInside: false,
+                closeBtnInside: true,
                 mainClass: 'mfp-with-zoom mfp-img-mobile',
                 tClose: 'Закрыть (Esc)',
                 image: {
@@ -356,6 +356,46 @@ jQuery(document).ready(function ($) {
             requestAnimationFrame(tick);
         }
     }
+
+
+
+    // анимация дыма
+    var smokeContainer = document.createElement('canvas');
+    smokeContainer.setAttribute( "id", "smoke" );
+    smokeContainer.style = 'pointer-events: none; overflow: hidden; position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%;';
+    document.body.appendChild ( smokeContainer );
+    var canvasEl = document.getElementById("smoke");
+    canvasEl.width = canvasEl.offsetWidth;
+    canvasEl.height = canvasEl.offsetHeight;
+
+    var smoke = initSmoke({
+        canvasElement: canvasEl,
+        emitter: {
+            x: canvasEl.width / 2,    // [пиксель] координата x источника частиц
+            y: canvasEl.height + 100, // [пиксель] координата y источника частиц
+            maxCount: 200,             // максимальное число частиц (влияет на густоту облака)
+        },
+        particle: {
+            imageUrl: '../libs/smoke/smoke.png',    // URL картинки для частицы
+            startSize: 120,           // [пиксель] начальный размер частицы
+            endSize: 800,             // [пиксель] конечный размер частицы
+            maxAge: 10,               // [с] сколько времени живёт одна частица (влияет на размер облака)
+            maxAlpha: 0.3,            // начальная прозрачность частицы
+            xVelocityMean: -0,       // [пиксель/с] горизонтальная скорость разлёта частиц (куда и как быстро летит облако)
+            xVelocityAmp: 80,         // [пиксель/с] амплитуда отклонений этой скорости (насколько сильно рассеивается облако)
+            yVelocityMean: -15,       // [пиксель/с] вертикальная скорость разлёта частиц (куда и как быстро летит облако)
+            yVelocityAmp: 30,         // [пиксель/с] амплитуда отклонений этой скорости (насколько сильно рассеивается облако)
+            angularVelocityAmp: 0.2,  // [рад/с] амплитуда угловой скорости частиц
+        },
+    });
+
+    window.onresize = function () {
+        canvasEl.width = canvasEl.offsetWidth;
+        canvasEl.height = canvasEl.offsetHeight;
+        smoke.moveEmitterTo(canvasEl.width / 2, canvasEl.height + 100)
+    };
+
+
 });
 
 
