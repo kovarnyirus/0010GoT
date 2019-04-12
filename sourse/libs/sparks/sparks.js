@@ -1,4 +1,4 @@
-(function () {
+document.addEventListener('DOMContentLoaded', function() {
 	var div = document.createElement('div');
 	div.style = 'pointer-events: none; overflow: hidden; position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%;';
 	document.body.appendChild ( div );
@@ -136,4 +136,4 @@
 			spawn(particleSpark);
 		}
 	}
-})();
+}, false);

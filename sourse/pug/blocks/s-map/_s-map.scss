@@ -3,9 +3,10 @@
     //height: calc(100vh - 70px);
     height: calc(100vh - 91px - 137px);
     position: relative;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(sx) {
         height: calc(100vh - 91px - 140px);
     }
+
 
     //#map12 {
     //    position: absolute;
@@ -13,13 +14,17 @@
     //    top: 0;
     //    width: 100% !important;
     //    height: 100% !important;
+    //    background-image: url("../img/mobile-map.jpg");
+    //    background-size: cover;
+    //    background-position: center center;
+    //    @include media-breakpoint-up(sx) {
+    //        background-image: url("../img/map.jpg");
+    //    }
     //}
 
-
-
-
     &__map-img {
-        width: 100%;
+        width: auto;
+        height: 100%;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -100,6 +105,25 @@
     }
     @include media-breakpoint-up(md) {
         height: calc(100vh - 70px);
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 220px;
+            height: 100%;
+            z-index: 2;
+            pointer-events: none;
+        }
+        &:before {
+            left: 0;
+            background-image: linear-gradient(to left, rgba(11, 21, 32, 0) 0%, #0b1520 100%);
+        }
+        &:after {
+            right: 0;
+
+            background-image: linear-gradient(to right, rgba(11, 21, 32, 0) 0%, #0b1520 100%);
+        }
     }
     @include media-breakpoint-up(sm) {
     }

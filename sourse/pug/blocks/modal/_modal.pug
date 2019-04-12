@@ -48,6 +48,7 @@ mixin modal()
 				.col-md-6.ml-auto.mr-auto
 					+input("email","Ваш email")(required)
 			+e.btn(type="submit"  )  отправить
+			.form-wrap__foot-text.text-center.mt-4 Отправляя форму вы соглашаетесь с обработкой персональных данных и пользовательским соглашением
 	// #modal-order
 
 	+form-wrap()(id="modal-order2" class="zoom-anim-dialog mfp-hide modal-win modal-form modal-win--write-time" )
@@ -170,7 +171,8 @@ mixin modal()
 								+e.SPAN.text= t
 		+e.foot
 			.text-center.text-white.mt-4 выбрано 5/10
-			+e.btn(type="submit"  ) сделать ставку
+			+e.btn(type="submit") сделать ставку
+			.form-wrap__foot-text.text-center.mt-4 Отправляя форму вы соглашаетесь с обработкой персональных данных и пользовательским соглашением
 	// #modal-order
 
 
