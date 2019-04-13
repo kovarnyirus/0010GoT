@@ -72,10 +72,11 @@
 
     &__caption {
         @include a-cent(x);
+        font-weight: 200;
         @include media-breakpoint-up(md) {
 
-            bottom: 50px;
-            width: 450px;
+            bottom: 100px;
+            width: 560px;
             background-color: rgba($color: #000b15, $alpha: .8);
             &::before {
                 content: '';
@@ -95,6 +96,10 @@
         @include rfs(rem(20));
         z-index: 4;
         color: #9c8e71;
+
+        &-adress{
+            color: #9c8e71;
+        }
 
     }
 

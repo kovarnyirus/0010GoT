@@ -71,9 +71,10 @@
             <source media="(min-width: 768px)" srcset="img/map.jpg" width="165"/><img class="s-map__map-img" src="img/mobile-map.jpg" alt="logo" title=""/>
           </picture>
         </div>
-        <div class="container"><img class="bottom-logo bottom-logo--map" src="img/bottom-logo-amedia.png" width="115" alt="logo"/>
-          <div class="s-map__caption">
-            <div class="ttu">Винзавод,</div>	4-й Сыромятнический пер.,<br/>	1/8 строение 6
+        <div class="container">
+          <div class="s-map__caption"><span class="ttu fw-500">Винзавод,</span><span class="s-map__caption-adress"> 4-й Сыромятнический пер., 1/8, стр. 6.</span>
+            <div class="text-white">Время работы: четверг - пятница 14:00 - 22:00</div>
+            <div class="text-white">суббота - воскресенье 12:00 - 21:00</div>
           </div>
         </div>
       </div>
@@ -106,22 +107,22 @@
           </div>
         </div>
         <div class="form-wrap__body">
-          <div class="form-wrap__text text-primary">Чтобы попасть в Крипту Вам необходимо записаться.
+          <div class="form-wrap__text text-primary mb-md-0">Чтобы избежать возможных очередей<br/>в реальную крипту, вы можете предварительно записаться.
           </div>
-          <div class="form-wrap__text mb-5">Для этого заполните следующие поля и мы вышлем электроныый билет Вам на почту:
+          <div class="form-wrap__text mb-5">Для этого заполните следующие поля, и мы вышлем электронный билет вам на почту:
           </div>
-          <div class="row">
-            <div class="col-md-6">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
               <div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="text" placeholder="Имя" required="required"/>
               </div>
               <!-- +e.input-wrap-->
             </div>
-            <div class="col-md-6">
+            <div class="col-md-8">
               <div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="text" placeholder="Фамилия" required="required"/>
               </div>
               <!-- +e.input-wrap-->
             </div>
-            <div class="col-md-6 ml-auto mr-auto">
+            <div class="col-md-8 ml-auto mr-auto">
               <div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="email" placeholder="Ваш email" required="required"/>
               </div>
               <!-- +e.input-wrap-->
@@ -143,7 +144,7 @@
           </div>
         </div>
         <div class="form-wrap__body">
-          <div class="form-wrap__text">Выберите удобные для Вас<br/>дату и&nbsp;время посещения Крипты:
+          <div class="form-wrap__text">Выберите удобные для вас<br/>дату и время посещения Крипты «Игры Престолов».<br/>Если  вы не увидели подходящего слота, вы можете просто приехать<br/>в любое время работы пространства с 18 апреля  по 19 мая.
           </div>
           <div class="row">
             <div class="col-md-6">
@@ -175,6 +176,9 @@
           </div>
           <button class="form-wrap__btn form-wrap__btn--bg-opacity" type="submit"> записаться
           </button>
+          <p class="text-primary text-center mb-0 mt-5">Время работы Крипты «Игры Престолов»:<br/>четверг – пятница 14:00 – 22:00<br/>суббота – воскресенье 12:00 – 21:00</p>
+          <div class="form-wrap__foot-text text-center mt-4">
+            Отправляя форму вы соглашаетесь с обработкой персональных данных и<a href="#">пользовательским соглашением</a></div>
         </div>
       </form>
     </div>
@@ -247,14 +251,12 @@
       <form novalidate="novalidate">
         <div class="form-wrap__head">
           <div class="text-center">
-            <div class="form-wrap__title h1 text-white">ставка на сезон
+            <div class="form-wrap__title h1">КТО УМРЕТ В ФИНАЛЬНОМ СЕЗОНЕ?
             </div>
           </div>
         </div>
         <div class="form-wrap__body">
-          <div class="form-wrap__title h1 strong text-center py-2">КТО УМРЕТ В ФИНАЛЬНОМ СЕЗОНЕ?
-          </div>
-          <div class="text-center fw-300">Вы можете выбрать от 1 до 10 героев.<br/>Чем больше совпадений —&nbsp;<a class="tdu popup-with-move-anim" href="#modal-rules">тем больше подарок</a>!&nbsp;Ставку можно сделать один раз</div>
+          <div class="text-center fw-300 pt-md-3">Вы можете выбрать от 1 до 10 героев.<br/><a class="tdu popup-with-move-anim" href="#modal-rules">Правила акции</a></div>
           <div class="form-wrap__row-wrap customscrollbar-js">
             <div class="row">
               <div class="col-md-4">
@@ -370,8 +372,9 @@
         </div>
         <div class="form-wrap__foot">
           <div class="text-center text-white mt-4">выбрано 5/10</div>
-          <button class="form-wrap__btn" type="submit">сделать ставку
+          <button class="form-wrap__btn" type="submit">сделать выбор
           </button>
+          <div class="form-wrap__foot-text text-center mt-4">Вы можете сделать выбор только один раз</div>
           <div class="form-wrap__foot-text text-center mt-4">Отправляя форму вы соглашаетесь с обработкой персональных данных и пользовательским соглашением</div>
         </div>
       </form>
@@ -454,14 +457,14 @@
     <div class="form-wrap zoom-anim-dialog mfp-hide modal-win modal-win modal-win--sm modal-win modal-win--rules modal-form" id="modal-rules">
       <div class="form-wrap__head">
         <div class="text-center">
-          <div class="form-wrap__title">Условия розыгрыша
+          <div class="form-wrap__title">Условия получения подписки
           </div>
         </div>
       </div>
       <div class="form-wrap__body">
         <div class="form-wrap__text mb-2">Угадываешь на весь сезон
         </div>
-        <p class="text-primary pt-0">Чем больше совпадение — тем больше подписка в подарок!</p>
+        <p class="text-primary pt-0">Чем больше совпадений,  тем больше подписка в подарок.</p>
         <div class="form-wrap__item">Угадал 9 из 10 – 6 месяцев
         </div>
         <div class="form-wrap__item">Угадал 8 из 10 – 3 месяца
@@ -480,7 +483,7 @@
         </div>
         <div class="form-wrap__item">Угадал 1 из 10 – 1 день
         </div>
-        <p class="tex pt-4">Если же вы поставили «никто не умрет» и в финальном<br/> сезоне действительно никто не умрет, что ж, это будет неожиданность<br/> для всех нас, и тогда мы подарим вам годовую подписку.</p>
+        <p class="tex pt-4">Если вы выбрали «никто не умрет» и в финальном<br/> сезоне действительно никто не умрет, что ж,  это будет неожиданностью<br/> для всех нас, и тогда мы подарим вам годовую подписку.</p>
       </div>
     </div>
     <!-- #modal-rules-->

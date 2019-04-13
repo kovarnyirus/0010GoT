@@ -36,15 +36,17 @@ mixin modal()
             .text-center
                 +e.title.h1 записаться
         +e.body
-            +e.text.text-primary Чтобы попасть в Крипту Вам необходимо записаться.
-            +e.text.mb-5 Для этого заполните следующие поля и мы вышлем электроныый билет Вам на почту:
-            .row
+            +e.text.text-primary.mb-md-0 Чтобы избежать возможных очередей
+                br
+                | в реальную крипту, вы можете предварительно записаться.
+            +e.text.mb-5 Для этого заполните следующие поля, и мы вышлем электронный билет вам на почту:
+            .row.justify-content-center
                 //- +input("text","Имя")( )
-                .col-md-6
+                .col-md-8
                     +input("text","Имя")(required placeholder="Имя")
-                .col-md-6
+                .col-md-8
                     +input("text","Фамилия")(required placeholder="Фамилия")
-                .col-md-6.ml-auto.mr-auto
+                .col-md-8.ml-auto.mr-auto
                     +input("email","Ваш email")(required)
             +e.btn(type="submit"  )  отправить
             .form-wrap__foot-text.text-center.mt-4 Отправляя форму вы соглашаетесь с обработкой персональных данных и пользовательским соглашением
@@ -55,9 +57,13 @@ mixin modal()
             .text-center
                 +e.title.h1 записаться
         +e.body
-            +e.text Выберите удобные для Вас
+            +e.text Выберите удобные для вас
                 br
-                | дату и&nbsp;время посещения Крипты:
+                | дату и время посещения Крипты «Игры Престолов».
+                br
+                | Если  вы не увидели подходящего слота, вы можете просто приехать
+                br
+                | в любое время работы пространства с 18 апреля  по 19 мая.
             .row
                 //- +input("text","Имя")( )
                 .col-md-6
@@ -82,7 +88,15 @@ mixin modal()
                             option(  ) 19 апреля, пт.
             //- +input("email","Ваше email")(required)
             //- +text( "Комментарий")
-            +e.btn--bg-opacity(type="submit"  )  записаться
+            +e.btn--bg-opacity(type="submit")  записаться
+            p.text-primary.text-center.mb-0.mt-5 Время работы Крипты «Игры Престолов»:
+                br
+                | четверг – пятница 14:00 – 22:00
+                br
+                | суббота – воскресенье 12:00 – 21:00
+            .form-wrap__foot-text.text-center.mt-4 Отправляя форму вы соглашаетесь с обработкой персональных данных и
+                |
+                a(href="#") пользовательским соглашением
     // #modal-order2
 
     +b.form-wrap(id="modal-send" class="zoom-anim-dialog mfp-hide modal-win modal-win--sm modal-form" )
@@ -154,14 +168,11 @@ mixin modal()
     +form-wrap()(id="modal-rate" class="zoom-anim-dialog mfp-hide modal-win modal-win--lg modal-form modal-win--rate pb-5" )
         +e.head
             .text-center
-                +e.title.h1.text-white ставка на сезон
+                +e.title.h1 КТО УМРЕТ В ФИНАЛЬНОМ СЕЗОНЕ?
         +e.body
-            +e.title.h1.strong.text-center.py-2 КТО УМРЕТ В ФИНАЛЬНОМ СЕЗОНЕ?
-            .text-center.fw-300 Вы можете выбрать от 1 до 10 героев.
+            .text-center.fw-300.pt-md-3 Вы можете выбрать от 1 до 10 героев.
                 br
-                | Чем больше совпадений —&nbsp;
-                a.tdu.popup-with-move-anim(href="#modal-rules" ) тем больше подарок
-                | !&nbsp;Ставку можно сделать один раз
+                a.tdu.popup-with-move-anim(href="#modal-rules" ) Правила акции
             - var pers= [ 'Дейенерис Таргариен','Яра Грейджой','Мелисандра','Джон Сноу','Бриенна Тарт','Даарио Нахарис','Джейме Ланнистер','Варис','Якен Хгар (безликий)','Серсея Ланнистер','Брон','Тормунд','Тирион Ланнистер','Давос Сиворт','Серый Червь','Санса Старк','Джорах Мормонт','Король Ночи','Арья Старк','Сэмвелл Тарли',' Брандон Старк',' Теон Грейджой','Миссандея','никто не умрёт ','Пёс','Лилли','все умрут' ]
             +e.row-wrap.customscrollbar-js: .row
                 each t in pers
@@ -170,8 +181,10 @@ mixin modal()
                             +e.SPAN.text= t
         +e.foot
             .text-center.text-white.mt-4 выбрано 5/10
-            +e.btn(type="submit") сделать ставку
+            +e.btn(type="submit") сделать выбор
+            .form-wrap__foot-text.text-center.mt-4 Вы можете сделать выбор только один раз
             .form-wrap__foot-text.text-center.mt-4 Отправляя форму вы соглашаетесь с обработкой персональных данных и пользовательским соглашением
+
     // #modal-order
 
 
@@ -246,11 +259,11 @@ mixin modal()
     +b.form-wrap(id="modal-rules" class="zoom-anim-dialog mfp-hide modal-win modal-win--sm modal-win--rules modal-form" )
         +e.head
             .text-center
-                +e.title Условия розыгрыша
+                +e.title Условия получения подписки
         +e.body
             +e.text.mb-2 Угадываешь на весь сезон
 
-            p.text-primary.pt-0 Чем больше совпадение — тем больше подписка в подарок!
+            p.text-primary.pt-0 Чем больше совпадений,  тем больше подписка в подарок.
 
             +e.item Угадал 9 из 10 – 6 месяцев
             +e.item Угадал 8 из 10 – 3 месяца
@@ -262,9 +275,9 @@ mixin modal()
             +e.item Угадал 2 из 10 - 2 дня
             +e.item Угадал 1 из 10 – 1 день
 
-            p.tex.pt-4 Если же вы поставили «никто не умрет» и в финальном
+            p.tex.pt-4 Если вы выбрали «никто не умрет» и в финальном
                 br
-                |  сезоне действительно никто не умрет, что ж, это будет неожиданность
+                |  сезоне действительно никто не умрет, что ж,  это будет неожиданностью
                 br
                 |  для всех нас, и тогда мы подарим вам годовую подписку.
     // #modal-rules
