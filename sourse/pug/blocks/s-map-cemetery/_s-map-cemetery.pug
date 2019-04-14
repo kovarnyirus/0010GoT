@@ -10,7 +10,7 @@ mixin s-map-cemetery()
                 .row
                     .col
                         +e.btn--rate.popup-with-move-anim(href="#modal-rate") сделать выбор
-                .s-map-cemetery__zoom-btns
+                .s-map-cemetery__zoom-btns(data-toggle="tooltip" title="Кнопки зума" data-placement="left")
                     button#map-cemetery__zoom-in.s-map-cemetery__zoom-btn +
                     button#map-cemetery__zoom-out.s-map-cemetery__zoom-btn -
         // скрипт карты сюда
