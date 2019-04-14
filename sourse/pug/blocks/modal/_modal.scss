@@ -115,6 +115,7 @@
         .mfp-close {
             right: 22px;
         }
+
         .form-group {
             margin-bottom: rem(25);
         }
@@ -306,6 +307,50 @@
         }
     }
 
+    &--information {
+
+        .form-wrap__head {
+            margin-bottom: rem(15);
+        }
+
+        .form-wrap__text--adress {
+            font-size: 35px;
+        }
+
+        .form-wrap__support,
+        .form-wrap__tel {
+            display: block;
+            text-align: center;
+            margin-bottom: rem(5);
+            font-size: 35px;
+            color: #FFFFFF;
+            font-weight: 200;
+        }
+
+        .form-wrap__text--work-time,
+        .form-wrap__tel {
+            margin-bottom: rem(70);
+            font-size: 35px;
+        }
+        .form-wrap__text--agreement,
+        .form-wrap__text--organizer{
+            display: block;
+        }
+        .form-wrap__text--agreement{
+            margin-bottom: rem(30);
+            text-decoration: solid;
+        }
+        .form-wrap__text--organizer{
+            color: #FFFFFF;
+            margin-bottom: rem(18);
+            font-weight: 200;
+        }
+        .footer-logo{
+            display: block;
+            margin: auto;
+        }
+    }
+
     .modal-content {
         // max-width: 485px;
         // padding-right: 40px 15px;
@@ -460,9 +505,11 @@ a {
 .modal-win--hero {
     background-repeat: no-repeat;
     background-position: right bottom;
+
     & .form-wrap__body.customscrollbar-js {
         max-height: calc();
     }
+
     @include media-breakpoint-up(md) {
         max-width: 946px;
         background-size: 320px auto;

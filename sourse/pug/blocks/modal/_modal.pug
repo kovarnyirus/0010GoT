@@ -368,4 +368,26 @@ mixin modal()
                 span.fw-300 Во время свадебного пиршества Джоффри был отравлен ядом[23]. Подозрение пало на Тириона и его молодую жену Сансу, хотя позднее Мизинец в разговоре с Сансой назвал себя и Оленну Тирелл. Также есть версия, что к убийству (отравлению) Джоффри приложили руку Безликие, ибо Мизинец имеет связи с Браавосом.
             span.close-popup close
     // #modal-blog
+
+    +b.form-wrap(id="modal-information" class="zoom-anim-dialog mfp-hide modal-win modal-win--sm modal-form modal-win--information" )
+        +e.head.border-0
+            .text-center
+                +e.title.h1 Информация!
+        +e.body
+            +e.text--adress.text-primary Адрес: Винзавод,
+                br
+                | 4-й Сыромятнический пер., 1/8, стр. 6.
+                br
+            +e.text--work-time Время работы:
+                br
+                | четверг – пятница 14:00 – 22:00
+                br
+                | суббота – воскресенье 12:00 – 21:00
+            +e.support(href="support@amediateka.ru") support@amediateka.ru
+            +e.tel(href="tel:+78005001005") 8 (800) 500 100 5
+            +e.text--agreement(href="#") Пользовательское соглашение
+            +e.text--organizer(href="#") Организатор ООО "А Сериал"
+            img.footer-logo(src="img/bottom-logo-amedia.png" width="250" alt="logo")
+
+
     // modal

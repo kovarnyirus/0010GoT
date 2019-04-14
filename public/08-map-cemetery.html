@@ -45,7 +45,7 @@
         <div class="top-nav">
           <div class="container">
             <div class="row">
-              <div class="col-md-auto col"><a class="top-nav__logo" href="#">
+              <div class="col-auto"><a class="top-nav__logo" href="#">
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/desktop-inner-logo.png" width="165"/><img class="top-nav__logo-img" src="img/mobile-inner-logo.png" alt="logo" title=""/>
                 </picture></a>
@@ -54,8 +54,15 @@
                 <div class="nav-menu"><a class="nav-menu__link" href="#">КАРТА КРИПТЫ</a><a class="nav-menu__link nav-menu__link--current" href="#">мероприятия</a><a class="nav-menu__link" href="#">блог</a><a class="nav-menu__link" href="#">как найти?</a>
                 </div>
               </div>
-              <div class="col-auto"><a class="top-nav__btn popup-with-move-anim" href="#modal-order"><span>записаться</span></a><a class="top-nav__btn-out text-primary" href="#">Выйти</a>
+              <div class="col-auto flex-grow-1 flex-md-grow-0"><a class="top-nav__btn popup-with-move-anim" href="#modal-order"><span>записаться</span></a><a class="top-nav__btn-out text-primary d-none d-md-inline" href="#">Выйти</a>
               </div>
+              <div class="col-auto d-md-none"><a class="top-nav__btn-out text-primary popup-with-move-anim" href="#modal-information">
+                  <svg class="icon icon-IGoT_cons-06 ">
+                    <use xlink:href="img/svg/sprite.svg#IGoT_cons-06"></use>
+                  </svg></a><a class="top-nav__btn-out text-primary" href="#">
+                  <svg class="icon icon-IGoT_cons-07 ">
+                    <use xlink:href="img/svg/sprite.svg#IGoT_cons-07"></use>
+                  </svg></a></div>
               <div class="col-auto d-none d-md-block"><img src="img/18+.png" width="43" heighi="43" alt=""/></div>
             </div>
           </div>
@@ -546,6 +553,20 @@
       </div>
     </div>
     <!-- #modal-blog-->
+    <div class="form-wrap zoom-anim-dialog mfp-hide modal-win modal-win modal-win--sm modal-form modal-win modal-win--information" id="modal-information">
+      <div class="form-wrap__head border-0">
+        <div class="text-center">
+          <div class="form-wrap__title h1">Информация!
+          </div>
+        </div>
+      </div>
+      <div class="form-wrap__body">
+        <div class="form-wrap__text form-wrap__text--adress text-primary">Адрес: Винзавод,<br/>4-й Сыромятнический пер., 1/8, стр. 6.<br/>
+        </div>
+        <div class="form-wrap__text form-wrap__text--work-time">Время работы:<br/>четверг – пятница 14:00 – 22:00<br/>суббота – воскресенье 12:00 – 21:00
+        </div><a class="form-wrap__support" href="support@amediateka.ru">support@amediateka.ru</a><a class="form-wrap__tel" href="tel:+78005001005">8 (800) 500 100 5</a><a class="form-wrap__text form-wrap__text--agreement" href="#">Пользовательское соглашение</a><a class="form-wrap__text form-wrap__text--organizer" href="#">Организатор ООО "А Сериал"</a><img class="footer-logo" src="img/bottom-logo-amedia.png" width="250" alt="logo"/>
+      </div>
+    </div>
     <!-- modal-->
     <script src="js/jquery.min.js"></script>
     <!-- modal libs-->

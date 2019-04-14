@@ -20,7 +20,7 @@ mixin top-nav()
 	+b.top-nav
 		.container
 			.row
-				.col-md-auto.col
+				.col-auto
 					+e.logo(href="#")
 						picture
 							source(media='(min-width: 768px)', srcset="img/desktop-inner-logo.png" width='165')
@@ -31,10 +31,16 @@ mixin top-nav()
 						+e.link--current(href="#") мероприятия
 						+e.link(href="#") блог
 						+e.link(href="#") как найти?
-				.col-auto
+				.col-auto.flex-grow-1.flex-md-grow-0
 					+e.btn.popup-with-move-anim(href="#modal-order")
 						span записаться
-					a.top-nav__btn-out.text-primary(href="#") Выйти
+					a.top-nav__btn-out.text-primary.d-none.d-md-inline(href="#") Выйти
+				.col-auto.d-md-none
+					a.top-nav__btn-out.text-primary.popup-with-move-anim(href="#modal-information")
+						+icon('IGoT_cons-06')
+					a.top-nav__btn-out.text-primary(href="#")
+						+icon('IGoT_cons-07')
+
 				.col-auto.d-none.d-md-block
 					img(src="img/18+.png", width="43" heighi="43" alt="")
 
