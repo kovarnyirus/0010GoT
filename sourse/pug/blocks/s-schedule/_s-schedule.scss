@@ -2,12 +2,14 @@
 
     &.section {
         @include media-breakpoint-up(md) {
-            min-height: calc(100vh - 98px - 67px - 81px);
+            min-height: calc(100vh - 98px - 67px - 81px - 58px);
+            padding-bottom: 80px;
         }
     }
 
     &__last-event-day {
         border-bottom: rem(1px) solid #808080;
+        height: 100%;
     }
 
     &__item {

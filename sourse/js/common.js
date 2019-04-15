@@ -188,45 +188,46 @@ jQuery(document).ready(function ($) {
     // Custom JS
 
 
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        if ($("div").is("#s-map-cemetery")) {
-            $(".page-body").css({'background-image': 'none'});
+    if ($("div").is("#s-map-cemetery")) {
+        $(".page-body").css({'background-image': 'none'});
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             graveyard({
                 containerSelector: '#s-map-cemetery',
                 resetButtonSelector: ".s-cemetery__btn--reset",
-                mapUrl: 'img/map-cemetery.jpg',
+                mapUrl: '../img/map-cemetery.jpg',
                 jsonUrl: '../libs/graveyard/graveyard.json',
                 minZoom: 2 / 8,// minZoom: 1/8,
-                maxZoom: 1,//maxZoom: 8,
-                initialZoom: 16 / 20,//initialZoom: 1,
+                maxZoom: 2,//maxZoom: 8,
+                initialZoom: 10 / 20,//initialZoom: 1,
                 mapWidth: 4000,//mapWidth: 1600,
                 mapHeight: 2512,//mapHeight: 1200,
                 //centerOffsetX: 0,
-                centerOffsetY: -350,
+                centerOffsetY: 300,
                 onGraveClick: function (d) {
-                    window.alert(d.CODE)
+
+                    CJSPopup.openHero(d.CODE);
+
                 },//onGraveClick: console.log,
             });
-        }
-    } else {
-        if ($("div").is("#s-map-cemetery")) {
-            $(".page-body").css({'background-image': 'none'});
+        } else {
             graveyard({
                 containerSelector: '#s-map-cemetery',
                 //resetButtonSelector: 'button',
-                mapUrl: 'img/map-cemetery.jpg',
                 zoomInButtonSelector: '#map-cemetery__zoom-in',
                 zoomOutButtonSelector: '#map-cemetery__zoom-out',
+                mapUrl: '../img/map-cemetery.jpg',
                 jsonUrl: '../libs/graveyard/graveyard.json',
                 minZoom: 2 / 8,// minZoom: 1/8,
                 maxZoom: 1,//maxZoom: 8,
-                initialZoom: 7 / 20,//initialZoom: 1,
+                initialZoom: 11 / 40,//initialZoom: 1,
                 mapWidth: 4000,//mapWidth: 1600,
                 mapHeight: 2512,//mapHeight: 1200,
                 //centerOffsetX: 0,
-                centerOffsetY: -1050,
+                centerOffsetY: -1100,
                 onGraveClick: function (d) {
-                    window.alert(d.CODE)
+
+                    CJSPopup.openHero(d.CODE);
+
                 },//onGraveClick: console.log,
             });
         }
@@ -240,7 +241,7 @@ jQuery(document).ready(function ($) {
         let inputNo = document.querySelector(".choice-block__input--no");
 
         if (direction === 'left') {
-            if (activeInputId === 'neutral'){
+            if (activeInputId === 'neutral') {
                 inputNeutral.checked = false;
                 inputYes.checked = true;
                 inputYes.dispatchEvent(new Event('change'));
@@ -250,7 +251,7 @@ jQuery(document).ready(function ($) {
                 inputNeutral.dispatchEvent(new Event('change'));
             }
         } else if (direction === 'right') {
-            if (activeInputId === 'neutral'){
+            if (activeInputId === 'neutral') {
                 inputNeutral.checked = false;
                 inputNo.checked = true;
                 inputNo.dispatchEvent(new Event('change'));
@@ -266,7 +267,7 @@ jQuery(document).ready(function ($) {
     function onSwipeTextInPopupHero(direction) {
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             let btnClose = document.querySelector(".mfp-close");
-            if((direction === 'right') || (direction === 'left')){
+            if ((direction === 'right') || (direction === 'left')) {
                 btnClose.click()
             }
         }
@@ -358,12 +359,11 @@ jQuery(document).ready(function ($) {
     }
 
 
-
     // анимация дыма
     var smokeContainer = document.createElement('canvas');
-    smokeContainer.setAttribute( "id", "smoke" );
+    smokeContainer.setAttribute("id", "smoke");
     smokeContainer.style = 'pointer-events: none; overflow: hidden; position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%;';
-    document.body.appendChild ( smokeContainer );
+    document.body.appendChild(smokeContainer);
     var canvasEl = document.getElementById("smoke");
     canvasEl.width = canvasEl.offsetWidth;
     canvasEl.height = canvasEl.offsetHeight;
@@ -396,11 +396,11 @@ jQuery(document).ready(function ($) {
     };
 
 
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip(
-            'update'
-        )
-    })
+    // $(function () {
+    //     $('[data-toggle="tooltip"]').tooltip(
+    //         'update'
+    //     )
+    // })
 });
 
 

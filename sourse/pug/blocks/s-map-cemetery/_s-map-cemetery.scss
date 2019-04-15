@@ -65,7 +65,102 @@
         border-color: #a18a5b;
         padding: 0
     }
-    &:focus{
+
+    &:focus {
         outline: none;
     }
 }
+
+
+//.tutorial-overlay {
+//    position: relative;
+//
+//    &:before {
+//        position: absolute;
+//        width: 100%;
+//        height: 100%;
+//        display: block;
+//        pointer-events: none;
+//        content: "";
+//        background-color: rgba(0, 0, 0, 0.55);
+//        z-index: 210;
+//        top: 0;
+//        left: 0;
+//        opacity: 1;
+//    }
+//
+//    .s-map-cemetery{
+//        position: relative;
+//    }
+//
+//    .s-map-cemetery__zoom-btn,
+//    .top-nav__btn {
+//        z-index: 3000;
+//        box-shadow: 0 0 120px 30px #fff;
+//    }
+//    .s-map-cemetery__zoom-btns{
+//       &:before{
+//           position: absolute;
+//           display: block;
+//           top: 0;
+//           right: 50px;
+//           content: 'Масштабируйте карту Крипты';
+//           font-weight: 200;
+//           width: 150px;
+//           color: rgb(255, 255, 255);
+//           z-index: 50000;
+//       }
+//    }
+//
+//    //#s-map-cemetery{
+//    //    position: relative;
+//    //    &:before{
+//    //        position: absolute;
+//    //        display: block;
+//    //        top: 50%;
+//    //        left: 45%;
+//    //        z-index: 400;
+//    //        color: #FFFFFF;
+//    //        box-shadow: 0 0 100px 30px #fff, -50px 0 100px 30px #fff;
+//    //        background-color: rgba(255, 255, 255, 0.24);
+//    //    }
+//
+//
+//    .tutorial-dragon{
+//        position: absolute;
+//        top: 62%;
+//        left: 45%;
+//        z-index: 400;
+//        box-shadow: 0 -50px 100px 35px rgba(255, 255, 255, 0.69);
+//        &:after{
+//            position: absolute;
+//            display: block;
+//            top: 50%;
+//            left: 100%;
+//            content: 'Нажимайте на всё, карта кликабельна';
+//            font-weight: 200;
+//            width: 150px;
+//            color: rgb(255, 255, 255);
+//            filter: blur(0)
+//        }
+//    }
+//    .tutorial-grave{
+//        position: absolute;
+//        top: 35%;
+//        left: 50%;
+//        transform: translateX(-350px);
+//        z-index: 400;
+//        box-shadow: -50px 0 100px 55px rgba(255, 255, 255, 0.69);
+//        &:after{
+//            position: absolute;
+//            display: block;
+//            top: 50%;
+//            left: 100%;
+//            content: 'Смотрите, как уходил каждый герой';
+//            font-weight: 200;
+//            width: 150px;
+//            color: rgb(255, 255, 255);
+//            filter: blur(0)
+//        }
+//    }
+//}

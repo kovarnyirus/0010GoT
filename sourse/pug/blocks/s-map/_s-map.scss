@@ -57,7 +57,7 @@
             z-index: 2;
             pointer-events: none;
             width: 100%;
-            height: 400px;
+            height: 500px;
             bottom: 0px;
             left: 0;
             background-image: linear-gradient(to bottom, rgba(11, 21, 32, 0) 0%, rgba(11, 21, 32, 0.83) 40%, #0b1520 100%);
@@ -73,11 +73,17 @@
     &__caption {
         @include a-cent(x);
         font-weight: 200;
+        width: 100%;
+        bottom: rem(100px);
+        text-align: center;
+        @include rfs(rem(19));
+        z-index: 4;
+        color: #9c8e71;
         @include media-breakpoint-up(md) {
-
             bottom: 100px;
             width: 560px;
             background-color: rgba($color: #000b15, $alpha: .8);
+            padding: 20px 20px;
             &::before {
                 content: '';
                 pointer-events: none;
@@ -86,19 +92,15 @@
                 width: calc(100% - 24px);
                 height: calc(100% - 16px);
                 border: 1px solid #8a7e67;
-
             }
-            padding: 20px 20px;
-        }
-        width: 100%;
-        bottom: rem(100px);
-        text-align: center;
-        @include rfs(rem(20));
-        z-index: 4;
-        color: #9c8e71;
 
+            &-adress{
+                font-weight: 200;
+            }
+        }
         &-adress{
             color: #9c8e71;
+            font-weight: 300;
         }
 
     }
