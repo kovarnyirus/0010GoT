@@ -1,6 +1,22 @@
 // Для лэзи загрузки
 
 
+if ($("div").is("#s-map-cemetery")) {
+    console.log("1515");
+    $("body").append("<div class=\"map-tutorial\"><a class=\"map-tutorial__close text-primary\">x</a>\n" +
+        "      <button class=\"form-wrap__btn\">понятно</button>\n" +
+        "    </div>");
+    $('body').on('click', '.form-wrap__btn', function(){
+        console.log("122222");
+        $('.map-tutorial').remove()
+    });
+    $('body').on('click', '.map-tutorial__close', function(){
+        console.log("122222");
+        $('.map-tutorial').remove()
+    });
+}
+});
+
 var JSCCommon = {
 
     LazyFunction: function () {
@@ -418,24 +434,6 @@ jQuery(document).ready(function ($) {
     //     // adaptiveHeight: true,
     //     arrows: false
     // });
-
-
-    if ($("div").is("#s-map-cemetery")) {
-        console.log("1515");
-        $("body").append("<div class=\"map-tutorial\"><a class=\"map-tutorial__close text-primary\">x</a>\n" +
-            "      <button class=\"form-wrap__btn\">понятно</button>\n" +
-            "    </div>");
-        $('body').on('click', '.form-wrap__btn', function(){
-            console.log("122222");
-            $('.map-tutorial').remove()
-        });
-        $('body').on('click', '.map-tutorial__close', function(){
-            console.log("122222");
-            $('.map-tutorial').remove()
-        });
-    }
-
-});
 
 
 
