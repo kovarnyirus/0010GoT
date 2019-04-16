@@ -465,3 +465,15 @@ input::-webkit-inner-spin-button {
 .container{
 	position: relative;
 }
+
+.slick-dots li button{
+	&:before{
+		font-size: 51px;
+		color: $primary;
+		opacity: .6;
+	}
+}
+
+.slick-dots li.slick-active button::before{
+	color: #dcc793;
+}

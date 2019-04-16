@@ -13,6 +13,7 @@
     <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="libs/magnificPopup/magnific-popup.css">
     <link rel="stylesheet" type="text/css" href="libs/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="libs/jQueryFormStyler/dist/jquery.formstyler.css">
     <link rel="stylesheet" type="text/css" href="libs/jQueryFormStyler/dist/jquery.formstyler.theme.css">
     <link rel="stylesheet" type="text/css" href="libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css">
@@ -20,6 +21,9 @@
     <link rel="stylesheet" type="text/css" href="css/main.min.css">
   </head>
   <body class="page-body">
+    <!--.map-tutorial-->
+    <!--	a.map-tutorial__close.text-primary x-->
+    <!--	button.form-wrap__btn понятно-->
     <div class="main-wrapper">
       <div class="nav-menu nav-menu--mobile d-md-none"><a class="nav-menu__link" href="#">
         <svg class="icon icon-IGoT_cons-05 ">
@@ -781,21 +785,16 @@
         </div><a class="form-wrap__support" href="support@amediateka.ru">support@amediateka.ru</a><a class="form-wrap__tel" href="tel:+78005001005">8 (800) 500 100 5</a><a class="form-wrap__text form-wrap__text--agreement" href="#">Пользовательское соглашение</a><a class="form-wrap__text form-wrap__text--organizer" href="#">Организатор ООО "А Сериал"</a><img class="footer-logo" src="img/bottom-logo-amedia.png" width="250" alt="logo"/>
       </div>
     </div>
-    <div class="form-wrap zoom-anim-dialog mfp-hide modal-win modal-win modal-win--sm modal-form modal-win modal-win--information" id="modal-map-mobile-tutorial">
-      <div class="form-wrap__head border-0">
-        <div class="text-center">
-          <div class="form-wrap__title h1">Информация!
-          </div>
-        </div>
-      </div>
+    <div class="form-wrap zoom-anim-dialog mfp-hide modal-win modal-win modal-win--sm modal-form modal-win modal-win--tutorial" id="modal-map-mobile-tutorial">
+      <!--+e.head.border-0-->
+      <!--    .text-center-->
+      <!--        +e.title.h1 Информация!-->
       <div class="form-wrap__list-slider">
-        <div class="form-wrap__item"><img href="img/tutorial/slide-1.png"/>
+        <div class="form-wrap__item"><img src="img/tutorial/slide-1.png"/>
         </div>
-        <div class="form-wrap__item"><img href="img/tutorial/slide-2.png"/>
+        <div class="form-wrap__item"><img src="img/tutorial/slide-2.png"/>
         </div>
-        <div class="form-wrap__item"><img href="img/tutorial/slide-3.png"/>
-        </div>
-        <div class="form-wrap__item"><img href="img/tutorial/slide-4.png"/>
+        <div class="form-wrap__item"><img src="img/tutorial/slide-4.png"/>
         </div>
       </div>
     </div>
@@ -823,6 +822,7 @@
     <script src="libs/smoke/smoke.js"></script>
     <script src="libs/select2/select2.min.js"></script>
     <script src="libs/TouchSwipe/jquery.touchSwipe.min.js"></script>
+    <script src="libs/slick/slick.js"></script>
     <script src="js/common.js"></script>
   </body>
 </html>

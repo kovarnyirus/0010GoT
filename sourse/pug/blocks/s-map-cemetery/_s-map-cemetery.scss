@@ -15,6 +15,13 @@
         }
     }
 
+    //@include media-breakpoint-only(ex) {
+    //    max-height: calc(100vh - 91px);
+    //    .s-cemetery__foot {
+    //        bottom: 0;
+    //    }
+    //}
+
     &-title {
         position: absolute;
         z-index: 3;
@@ -164,3 +171,34 @@
 //        }
 //    }
 //}
+
+.map-tutorial{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+    background-image: url("../img/map-tutorial.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+
+    .form-wrap__btn{
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .map-tutorial__close{
+        position: absolute;
+        top: 2px;
+        left: 83%;
+        font-size: 50px;
+        font-weight: 300;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+    }
+}

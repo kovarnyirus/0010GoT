@@ -351,6 +351,15 @@
         }
     }
 
+    &--tutorial{
+        padding-bottom: 0;
+        & .form-wrap__head{
+            margin-bottom: 0;
+        }
+        & .slick-dots{
+            bottom: 25px;
+        }
+    }
     .modal-content {
         // max-width: 485px;
         // padding-right: 40px 15px;

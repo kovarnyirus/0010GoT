@@ -395,12 +395,46 @@ jQuery(document).ready(function ($) {
         smoke.moveEmitterTo(canvasEl.width / 2, canvasEl.height + 100)
     };
 
+    // function closeTutorial () {
+    //
+    // }
 
-    // $(function () {
-    //     $('[data-toggle="tooltip"]').tooltip(
-    //         'update'
-    //     )
-    // })
+
+    $('body').on('click', '.modal-map-mobile-tutorial', function(){
+        $('.form-wrap__list-slider').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            arrows: false
+        });
+    });
+
+
+    // $('.form-wrap__list-slider').slick({
+    //     dots: true,
+    //     // infinite: true,
+    //     slidesToShow: 1,
+    //     // adaptiveHeight: true,
+    //     arrows: false
+    // });
+
+
+    if ($("div").is("#s-map-cemetery")) {
+        console.log("1515");
+        $("body").append("<div class=\"map-tutorial\"><a class=\"map-tutorial__close text-primary\">x</a>\n" +
+            "      <button class=\"form-wrap__btn\">понятно</button>\n" +
+            "    </div>");
+        $('body').on('click', '.form-wrap__btn', function(){
+            console.log("122222");
+            $('.map-tutorial').remove()
+        });
+        $('body').on('click', '.map-tutorial__close', function(){
+            console.log("122222");
+            $('.map-tutorial').remove()
+        });
+    }
+
 });
 
 
