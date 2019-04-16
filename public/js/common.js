@@ -411,25 +411,23 @@ jQuery(document).ready(function ($) {
     });
 
 
-    // $('.form-wrap__list-slider').slick({
-    //     dots: true,
-    //     // infinite: true,
-    //     slidesToShow: 1,
-    //     // adaptiveHeight: true,
-    //     arrows: false
-    // });
 
 
+    // туториал карты на десктопе
     if ($("div").is("#s-map-cemetery")) {
-        $("body").append("<div class=\"map-tutorial\"><a class=\"map-tutorial__close text-primary\">x</a>\n" +
-            "      <button class=\"form-wrap__btn\">понятно</button>\n" +
-            "    </div>");
-        $('body').on('click', '.form-wrap__btn', function(){
-            $('.map-tutorial').remove()
-        });
-        $('body').on('click', '.map-tutorial__close', function(){
-            $('.map-tutorial').remove()
-        });
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            return
+        } else {
+            $("body").append("<div class=\"map-tutorial\"><a class=\"map-tutorial__close text-primary\">x</a>\n" +
+                "      <button class=\"form-wrap__btn\">понятно</button>\n" +
+                "    </div>");
+            $('body').on('click', '.form-wrap__btn', function(){
+                $('.map-tutorial').remove()
+            });
+            $('body').on('click', '.map-tutorial__close', function(){
+                $('.map-tutorial').remove()
+            });
+        }
     }
 });
 
