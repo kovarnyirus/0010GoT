@@ -3,6 +3,8 @@ html {
 	-webkit-overflow-scrolling: touch;
 	background-position: center top;
 	background-repeat: no-repeat;
+	height: 100%;
+	min-height: 100%;
 	// @include media-breakpoint-up(sm) {
 
 	// 	margin-left: calc(100vw - 100%);
@@ -16,7 +18,7 @@ a{
 }
 body {
 	// opacity: .7;
-	height: 100%;
+	//height: 100%;
 	min-height: 100vh;
 	// min-height: 10000px;
 	// background-color: transparent;
@@ -485,7 +487,7 @@ input::-webkit-inner-spin-button {
 .agreement,
 .agreement__link{
 	text-align: center;
-	font-size: 14px;
+	@include rfs(rem(14));
 	color: #a5a5a5;
 	margin-top: rem(35);
 	line-height: 1.25;
@@ -494,3 +496,11 @@ input::-webkit-inner-spin-button {
 .agreement__link{
 	text-decoration: underline;
 }
+
+//.fb-share-button{
+//	width: 1px;
+//	height: 1px;
+//	margin-left: -1px;
+//	margin-top: -1px;
+//	overflow: hidden;
+//}

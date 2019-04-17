@@ -429,6 +429,15 @@ jQuery(document).ready(function ($) {
             });
         }
     }
+
+
+
+    function shareFB(){
+        var fireOnThis = document.getElementsByClassName('fb-share-button').contentWindow.document.querySelector('button');
+        var evObj = document.createEvent('MouseEvents');
+        evObj.initEvent( 'click', true, true );
+        fireOnThis.dispatchEvent(evObj);
+    }
 });
 
 

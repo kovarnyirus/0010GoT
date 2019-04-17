@@ -15,9 +15,13 @@ function graveyard ( config ) {
 	var centerOffsetY         = 'centerOffsetY'         in config ? config.centerOffsetY         : 0;
 	var onGraveClick          = 'onGraveClick'          in config ? config.onGraveClick          : console.log;
 
+	var mapBounds = [[0, 0], [mapWidth, mapHeight]];
+	if ( centerOffsetX < 0 ) mapBounds[0][0] += centerOffsetX *2; else if ( centerOffsetX > 0 ) mapBounds[1][0] += centerOffsetY *2;
+	if ( centerOffsetY < 0 ) mapBounds[0][1] += centerOffsetY *2; else if ( centerOffsetY > 0 ) mapBounds[1][1] += centerOffsetY *2;
+
 	var zoom = d3.zoom()
 		.scaleExtent([minZoom, maxZoom])
-		.translateExtent([[0, 0], [mapWidth, mapHeight]])
+		.translateExtent(mapBounds)
 		.on('zoom', zoomed);
 
 	var container = d3.select(containerSelector)

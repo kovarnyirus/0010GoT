@@ -33,6 +33,9 @@
 				padding-top: rem(30);
 				padding-bottom: rem(25);
 			}
+			@include media-breakpoint-down(md) {
+				padding-top: rem(20);
+			}
 		}
 	}
 	&__text{

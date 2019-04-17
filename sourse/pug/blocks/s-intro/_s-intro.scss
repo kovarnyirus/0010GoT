@@ -50,6 +50,7 @@
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {
+		padding-bottom: rem(100);
 		//страница логина выше планшета
 		&--login{
 			.form-wrap__text{
@@ -72,6 +73,12 @@
 				margin-top: rem(8) ;
 			}
 		}
+
+		//.form-wrap__text{
+		//	& br{
+		//		display: none;
+		//	}
+		//}
 	}
 	@include media-breakpoint-up(sm) {}
 	@include media-breakpoint-up(xs) {}
@@ -99,7 +106,25 @@
 	//
 	@include media-breakpoint-down(xl) {}
 	@include media-breakpoint-down(lg) {}
-	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(md) {
+		& .form-wrap__btn {
+			max-width: 515px;
+			width: rem(515) ;
+			margin-top: rem(90);
+		}
+		.s-intro__head{
+			padding-bottom: rem(45);
+			padding-top: rem(20);
+		}
+		.title-img{
+			max-width: rem(350);
+			margin-bottom: rem(50);
+		}
+		.form-wrap__text{
+			line-height: 1.1
+		}
+
+	}
 	@include media-breakpoint-down(sm) {}
 	@include media-breakpoint-down(xs) {}
 
@@ -116,4 +141,7 @@
 .form-wrap__restore{
 	font-size: 17px;
 	margin-bottom: rem(20);
+	@include media-breakpoint-down(md) {
+		font-size: 28px;
+	}
 }

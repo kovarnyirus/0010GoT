@@ -105,7 +105,7 @@
 
         .form-wrap__text {
             margin-bottom: rem(40);
-            font-size: 18px;
+            font-size: rfs(18);
             font-weight: 400;
             line-height: 1;
 
@@ -114,7 +114,7 @@
         .form-wrap__btn {
             margin-top: rem(23);
             max-width: rem(260);
-            font-size: 16px;
+            @include rfs(rem(16));
         }
 
         .mfp-close {
@@ -128,8 +128,8 @@
 
         @include media-breakpoint-down(md) {
             .form-wrap__body {
-                padding-left: rem(60);
-                padding-right: rem(60);
+                //padding-left: rem(60);
+                //padding-right: rem(60);
             }
             .form-group {
                 margin-bottom: rem(40);
@@ -156,7 +156,7 @@
         }
 
         .form-wrap__text {
-            font-size: 16px;
+            @include rfs(rem(16));
             margin-bottom: rem(75);
             line-height: 1.118;
         }
@@ -179,8 +179,8 @@
 
         @include media-breakpoint-down(md) {
             .form-wrap__body {
-                padding-left: rem(75);
-                padding-right: rem(75);
+                //padding-left: rem(75);
+                //padding-right: rem(75);
             }
             .form-group {
                 margin-bottom: rem(40);
@@ -291,8 +291,12 @@
     &--rate {
         @include media-breakpoint-down(md) {
             max-height: calc(100vh - 112px);
+            .form-wrap__foot{
+                border-top: 1px solid #2e3946;
+            }
         }
-
+        @include media-breakpoint-down(md) {
+    }
         .form-wrap__title {
             font-size: 30px;
         }
@@ -300,6 +304,14 @@
         @include media-breakpoint-up(md) {
             .form-wrap__title {
                 font-size: 18px;
+            }
+        }
+    }
+
+    &--rate-send{
+        @include media-breakpoint-down(md) {
+            .form-wrap__btn{
+                max-width: 410px;
             }
         }
     }
@@ -332,7 +344,7 @@
     &--information {
 
         .form-wrap__head {
-            margin-bottom: rem(15);
+            margin-bottom: rem(45);
         }
 
         .form-wrap__text--adress {
@@ -349,22 +361,32 @@
             font-weight: 200;
         }
 
-        .form-wrap__text--work-time,
+        .form-wrap__support{
+            margin-bottom: 25px;
+        }
+
+        .form-wrap__text--work-time{
+            margin-bottom: rem(25);
+            font-weight: 200;
+        }
         .form-wrap__tel {
-            margin-bottom: rem(70);
+            margin-bottom: rem(90);
             font-size: 35px;
         }
         .form-wrap__text--agreement,
         .form-wrap__text--organizer{
             display: block;
+            font-size: 30px;
+
         }
         .form-wrap__text--agreement{
-            margin-bottom: rem(30);
-            text-decoration: solid;
+            @extend .agreement__link;
+            font-size: 30px;
+            margin-bottom: rem(25);
         }
         .form-wrap__text--organizer{
             color: #FFFFFF;
-            margin-bottom: rem(18);
+            margin-bottom: rem(5);
             font-weight: 200;
         }
         .footer-logo{
@@ -579,7 +601,7 @@ a {
     @include media-breakpoint-down(xs) {
         background-size: 70%;
         background-position-x: 140%;
-        background-position-y: center;
+        background-position-y: 550px;
     }
 }
 

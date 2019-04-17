@@ -42,11 +42,11 @@ mixin modal()
             +e.text Для этого заполните следующие поля, и мы вышлем электронный билет вам на почту:
             .row.justify-content-center
                 //- +input("text","Имя")( )
-                .col-md-7
+                .col-9.col-md-7
                     +input("text","Имя")(required placeholder="Имя")
-                .col-md-7
+                .col-9.col-md-7
                     +input("text","Фамилия")(required placeholder="Фамилия")
-                .col-md-7.ml-auto.mr-auto
+                .col-9.col-md-7.ml-auto.mr-auto
                     +input("email","Ваш email")(required)
             +e.btn(type="submit"  )  отправить
             .agreement Отправляя форму вы соглашаетесь с обработкой персональных данных и
@@ -67,7 +67,7 @@ mixin modal()
                 | в любое время работы пространства с 18 апреля  по 19 мая.
             .row
                 //- +input("text","Имя")( )
-                .col-md-6
+                .col-7.col-md-6.ml-auto.mr-auto
                     +e.input-wrap.form-group
                         +e.SELECT.input.form-control.js-select-date(name="" style="width: 100%")
                             option( selected disabled) Выберите день
@@ -77,7 +77,7 @@ mixin modal()
                             option(  ) 17 апреля, ср.
                             option(  ) 18 апреля, чт
                             option(  ) 19 апреля, пт.
-                .col-md-6
+                .col-7.col-md-6.ml-auto.mr-auto
                     +e.input-wrap.form-group
                         +e.SELECT.input.form-control.js-select-time(name="" style="width: 100%")
                             option( selected disabled) Выберите время
@@ -174,6 +174,7 @@ mixin modal()
             .text-center.fw-300.pt-md-3 Вы можете выбрать от 1 до 10 героев.
                 br
                 a.tdu.popup-with-move-anim(href="#modal-rules" ) Правила акции
+                a.tdu.popup-with-move-anim(href="#modal-rules" )  и условия получения подписки
             - var pers= [ 'Дейенерис Таргариен','Яра Грейджой','Мелисандра','Джон Сноу','Бриенна Тарт','Даарио Нахарис','Джейме Ланнистер','Варис','Якен Хгар (безликий)','Серсея Ланнистер','Брон','Тормунд','Тирион Ланнистер','Давос Сиворт','Серый Червь','Санса Старк','Джорах Мормонт','Король Ночи','Арья Старк','Сэмвелл Тарли',' Брандон Старк',' Теон Грейджой','Миссандея','никто не умрёт ','Пёс','Лилли','все умрут' ]
             +e.row-wrap.customscrollbar-js: .row
                 each t in pers
@@ -184,7 +185,6 @@ mixin modal()
             .text-center.text-white.mt-4 выбрано 5/10
             +e.btn(type="submit") сделать выбор
             .form-wrap__foot-text.text-center.mt-4 Вы можете сделать выбор только один раз
-            .form-wrap__foot-text.text-center.mt-4 Отправляя форму вы соглашаетесь с обработкой персональных данных и пользовательским соглашением
 
     // #modal-order
 
@@ -231,7 +231,7 @@ mixin modal()
     // #modal-hero
 
 
-    +b.form-wrap(id="modal-rate-send" class="zoom-anim-dialog mfp-hide modal-win modal-win--sm modal-form" )
+    +b.form-wrap(id="modal-rate-send" class="zoom-anim-dialog mfp-hide modal-win modal-win--sm modal-form modal-win--rate-send" )
         +e.head.border-0.mb-1
             .text-center
                 +e.title.h1.form-wrap__title--rate-send выбор сделан!
@@ -241,7 +241,7 @@ mixin modal()
                 | кто-нибудь согласен?
             form
                 .row
-                    .col-md-8.ml-auto.mr-auto
+                    .col-9.col-md-8.ml-auto.mr-auto
                         +input("email","Ваш email")(required)
                 +e.btn.mt-4.mb-5(type="submit")  отправить
 
@@ -376,6 +376,8 @@ mixin modal()
             +e.text--adress.text-primary Адрес: Винзавод,
                 br
                 | 4-й Сыромятнический пер., 1/8, стр. 6.
+                br
+                | 18 апреля – 19 мая.
                 br
             +e.text--work-time Время работы:
                 br
