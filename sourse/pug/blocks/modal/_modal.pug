@@ -39,17 +39,18 @@ mixin modal()
             +e.text.text-primary.mb-md-0 Чтобы избежать возможных очередей
                 br
                 | в реальную крипту, вы можете предварительно записаться.
-            +e.text.mb-5 Для этого заполните следующие поля, и мы вышлем электронный билет вам на почту:
+            +e.text Для этого заполните следующие поля, и мы вышлем электронный билет вам на почту:
             .row.justify-content-center
                 //- +input("text","Имя")( )
-                .col-md-8
+                .col-md-7
                     +input("text","Имя")(required placeholder="Имя")
-                .col-md-8
+                .col-md-7
                     +input("text","Фамилия")(required placeholder="Фамилия")
-                .col-md-8.ml-auto.mr-auto
+                .col-md-7.ml-auto.mr-auto
                     +input("email","Ваш email")(required)
             +e.btn(type="submit"  )  отправить
-            .form-wrap__foot-text.text-center.mt-4 Отправляя форму вы соглашаетесь с обработкой персональных данных и пользовательским соглашением
+            .agreement Отправляя форму вы соглашаетесь с обработкой персональных данных и
+                a.agreement__link(href="#")  пользовательским соглашением
     // #modal-order
 
     +form-wrap()(id="modal-order2" class="zoom-anim-dialog mfp-hide modal-win modal-form modal-win--write-time" )
@@ -89,14 +90,14 @@ mixin modal()
             //- +input("email","Ваше email")(required)
             //- +text( "Комментарий")
             +e.btn--bg-opacity(type="submit")  записаться
-            p.text-primary.text-center.mb-0.mt-5 Время работы Крипты «Игры Престолов»:
+            +e.working-hours Время работы Крипты «Игры Престолов»:
                 br
                 | четверг – пятница 14:00 – 22:00
                 br
                 | суббота – воскресенье 12:00 – 21:00
-            .form-wrap__foot-text.text-center.mt-4 Отправляя форму вы соглашаетесь с обработкой персональных данных и
+            .agreement Отправляя форму вы соглашаетесь с обработкой персональных данных и
                 |
-                a(href="#") пользовательским соглашением
+                a.agreement__link(href="#") пользовательским соглашением
     // #modal-order2
 
     +b.form-wrap(id="modal-send" class="zoom-anim-dialog mfp-hide modal-win modal-win--sm modal-form" )
@@ -149,9 +150,9 @@ mixin modal()
             .text-center
                 +e.title.h1 поздравляем!
         +e.body
-            +e.text.text-center Ждём Вас
+            +e.text.text-center
                 |
-                strong.text-primary  17 апреля в 16:30 &nbsp;
+                span.text-primary Ждём Вас 17 апреля в 16:30 &nbsp;
             +e.text Ваш билет отправлен на&nbsp;указанный
                 br
                 | Вами адрес почты
@@ -233,20 +234,18 @@ mixin modal()
     +b.form-wrap(id="modal-rate-send" class="zoom-anim-dialog mfp-hide modal-win modal-win--sm modal-form" )
         +e.head.border-0.mb-1
             .text-center
-                +e.title.h1.form-wrap__title--rate-send ставка сделана!
+                +e.title.h1.form-wrap__title--rate-send выбор сделан!
         +e.body
-            +e.text.pb-3.mb-4 Расскажите о ваших прогнозах
+            +e.text.pb-4.mb-4 Как думаете, с вашим прогнозом
                 br
-                | друзьям и близким! Быть может они будут
-                br
-                | не согласны и сделают свою ставку!
+                | кто-нибудь согласен?
             form
                 .row
-                    .col-md-6.ml-auto.mr-auto
+                    .col-md-8.ml-auto.mr-auto
                         +input("email","Ваш email")(required)
-                +e.btn.mt-3.mb-4(type="submit")  отправить
+                +e.btn.mt-4.mb-5(type="submit")  отправить
 
-            +e.text.text-primary.mb-3 Поделиться:
+            +e.text.text-primary.mb-3 Поделиться в соц сетях:
             +b.soc
                 +e.item(href="#")
                     +icon('fb')

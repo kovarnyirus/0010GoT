@@ -24,9 +24,17 @@ block pagecontent
 					+e.text Введите пароль и войдите в Крипту
 					+input("email","E-mail")(required)
 					+input("password","Пароль")()
+					+e.restore.text-center
+						a.link-underlined.text-white.d-inline-block(href="") Забыли пароль?
 					+e.btn--bg-opacity.mt-0(href="#") войти
+				+b.soc
+					+e.text.text-center.w-100 или
+					+e.item(href="#")
+						+icon('fb')
 
-					+e.foot-text--login.text-center При входе вы соглашаетесь на&nbsp;
-						|
-						a.link-underlined.text-white.d-inline-block.popup-with-move-anim(href="#modal-policy") обработку персональных данных
+					+e.item(href="#")
+						+icon('vk')
+				+e.foot-text.text-center При входе на сайт вы соглашаетесь на &nbsp;
+					|
+					a.link-underlined.text-white.d-inline-block.popup-with-move-anim(href="#modal-policy") обработку персональных данных
 

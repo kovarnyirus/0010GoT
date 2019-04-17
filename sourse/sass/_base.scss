@@ -477,3 +477,20 @@ input::-webkit-inner-spin-button {
 .slick-dots li.slick-active button::before{
 	color: #dcc793;
 }
+
+.grave{
+	cursor: pointer;
+}
+
+.agreement,
+.agreement__link{
+	text-align: center;
+	font-size: 14px;
+	color: #a5a5a5;
+	margin-top: rem(35);
+	line-height: 1.25;
+}
+
+.agreement__link{
+	text-decoration: underline;
+}

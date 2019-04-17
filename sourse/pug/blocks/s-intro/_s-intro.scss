@@ -1,10 +1,12 @@
 .s-intro {
 	padding-bottom: rem(60);
 	&__head{
-
 		text-align: center;
 		padding-top: rem(23);
-		padding-bottom: rem(45);
+		padding-bottom: rem(70);
+		&--reg{
+			padding-bottom: rem(50);
+		}
 	}
 	&__col-head{
 		width: rem(99);
@@ -16,8 +18,8 @@
 		margin-bottom: rem(34);
 	}
 	.soc{
-		margin-top: rem(25) ;
-		margin-bottom: rem(33) ;
+		margin-top: rem(15) ;
+		margin-bottom: rem(27) ;
 	}
 	.form-wrap__foot-text{
 		// max-width: rem(520);
@@ -30,21 +32,44 @@
 	}
 
 	&__head-logo{
-		margin-top: 20px;
+		margin-top: 9px;
 	}
+
+	& .form-wrap__btn{
+		margin-top: rem(75);
+		max-width: 260px;
+	}
+
+	//страница логина
 	&--login{
 		.form-wrap__text{
 			margin-bottom: rem(50);
 		}
 	}
 
-	//
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {
+		//страница логина выше планшета
 		&--login{
 			.form-wrap__text{
-				margin-bottom: rem(80);
+				margin-bottom: rem(35);
+			}
+			.title-img{
+				max-width: 577px;
+				margin-bottom: rem(35);
+			}
+			.s-intro__head{
+				padding-bottom: rem(40);
+			}
+			.form-wrap__input-wrap{
+				margin-bottom: rem(38);
+				&--login{
+					margin-bottom: rem(21);
+				}
+			}
+			.soc{
+				margin-top: rem(8) ;
 			}
 		}
 	}
@@ -81,9 +106,14 @@
 }
 
 .title-img{
-	max-width: rem(615);
-	margin-bottom: rem(60);
+	max-width: rem(677);
+	margin-bottom: rem(72);
 	&--reg{
-		margin-bottom: rem(40);
+		margin-bottom: rem(50);
 	}
+}
+
+.form-wrap__restore{
+	font-size: 17px;
+	margin-bottom: rem(20);
 }

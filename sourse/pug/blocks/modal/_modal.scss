@@ -91,7 +91,7 @@
 
     &--write {
         .form-wrap__head {
-            margin-bottom: rem(44);
+            margin-bottom: rem(46);
             @include media-breakpoint-down(md) {
                 border-bottom: none;
                 margin-bottom: rem(25);
@@ -104,12 +104,17 @@
         }
 
         .form-wrap__text {
-            margin-bottom: rem(20);
+            margin-bottom: rem(40);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1;
+
         }
 
         .form-wrap__btn {
-            margin-top: rem(49);
+            margin-top: rem(23);
             max-width: rem(260);
+            font-size: 16px;
         }
 
         .mfp-close {
@@ -119,6 +124,7 @@
         .form-group {
             margin-bottom: rem(25);
         }
+
 
         @include media-breakpoint-down(md) {
             .form-wrap__body {
@@ -151,12 +157,20 @@
 
         .form-wrap__text {
             font-size: 16px;
-            margin-bottom: rem(60);
+            margin-bottom: rem(75);
+            line-height: 1.118;
         }
 
         .form-wrap__btn {
             max-width: rem(260);
             width: rem(260);
+            margin-top: rem(35);
+        }
+        .form-wrap__working-hours{
+            color: $primary;
+            text-align: center;
+            margin-top: rem(40);
+            line-height: 1.214;
         }
 
         .mfp-close {
@@ -180,6 +194,11 @@
     }
 
     &--taken {
+        @include media-breakpoint-up(md) {
+            br{
+                display: none;
+            }
+        }
         .form-wrap__title {
             padding-top: rem(35);
         }
@@ -199,7 +218,10 @@
         }
 
         .form-wrap__text {
-            margin-bottom: rem(10);
+            margin-bottom: rem(8);
+        }
+        .form-wrap__btn-outline{
+            margin-top: rem(53);
         }
 
         @include media-breakpoint-down(md) {

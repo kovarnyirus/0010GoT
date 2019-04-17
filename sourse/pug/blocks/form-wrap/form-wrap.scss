@@ -29,6 +29,10 @@
 		&--rate-send{
 			padding-top: rem(50);
 			padding-bottom: rem(15);
+			@include media-breakpoint-up(md) {
+				padding-top: rem(30);
+				padding-bottom: rem(25);
+			}
 		}
 	}
 	&__text{
@@ -42,7 +46,13 @@
 		margin-bottom: rem(20);
 		line-height: 1.25;
 		&--reg{
-			margin-bottom: rem(35);
+			margin-bottom: rem(25);
+			& br{
+				display: none;
+			}
+			@include media-breakpoint-up(md) {
+				margin-bottom: rem(55);
+			}
 		}
 	}
 	&__btn-outline,
@@ -54,9 +64,9 @@
 		margin-top: rem(75px);
 		@extend .btn;
 		padding-top: rem(7);
-		@include media-breakpoint-down(sm) {
-			width: rem(280px);
-		}
+		//@include media-breakpoint-down(sm) {
+		//	width: rem(280);
+		//}
 	}
 	&__btn{
 		@extend .btn-primary;
@@ -161,9 +171,6 @@
 @include media-breakpoint-down(sm) {}
 
 @include media-breakpoint-down(xs) {
-	//.form-wrap__text{
-	//	max-width: 80%;
-	//}
 
 	.form-wrap__blog-text{
 		padding-left: rem(15);

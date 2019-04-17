@@ -72,16 +72,16 @@
 
     &__caption {
         @include a-cent(x);
-        font-weight: 200;
+        font-weight: 400;
         width: 100%;
         bottom: rem(100px);
         text-align: center;
-        @include rfs(rem(19));
+        @include rfs(rem(16));
         z-index: 4;
         color: #9c8e71;
         @include media-breakpoint-up(md) {
-            bottom: 100px;
-            width: 560px;
+            bottom: 115px;
+            width: 558px;
             background-color: rgba($color: #000b15, $alpha: .8);
             padding: 20px 20px;
             &::before {
@@ -95,7 +95,7 @@
             }
 
             &-adress{
-                font-weight: 200;
+                font-weight: 400;
             }
         }
         &-adress{
