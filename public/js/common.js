@@ -188,7 +188,13 @@ jQuery(document).ready(function ($) {
     // Custom JS
 
 
-    if ($("div").is("#s-map-cemetery")) {
+
+
+
+    if ($("div").is(".s-map-cemetery")) {
+        var mapCemeteryContainer = document.createElement('div');
+        mapCemeteryContainer.setAttribute("id", "s-map-cemetery");
+        document.body.appendChild(mapCemeteryContainer);
         $(".page-body").css({'background-image': 'none'});
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             graveyard({
@@ -202,7 +208,7 @@ jQuery(document).ready(function ($) {
                 mapWidth: 4000,//mapWidth: 1600,
                 mapHeight: 2512,//mapHeight: 1200,
                 //centerOffsetX: 0,
-                // centerOffsetY: 300,
+                centerOffsetY: 300,
                 onGraveClick: function (d) {
 
                     CJSPopup.openHero(d.CODE);
@@ -223,7 +229,7 @@ jQuery(document).ready(function ($) {
                 mapWidth: 4000,//mapWidth: 1600,
                 mapHeight: 2512,//mapHeight: 1200,
                 //centerOffsetX: 0,
-                // centerOffsetY: 500,
+                centerOffsetY: 500,
                 onGraveClick: function (d) {
 
                     CJSPopup.openHero(d.CODE);
