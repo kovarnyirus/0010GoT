@@ -223,7 +223,7 @@ jQuery(document).ready(function ($) {
                 mapWidth: 4000,//mapWidth: 1600,
                 mapHeight: 2512,//mapHeight: 1200,
                 //centerOffsetX: 0,
-                centerOffsetY: -1100,
+                // centerOffsetY: 500,
                 onGraveClick: function (d) {
 
                     CJSPopup.openHero(d.CODE);
@@ -264,14 +264,14 @@ jQuery(document).ready(function ($) {
     }
 
 
-    function onSwipeTextInPopupHero(direction) {
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            let btnClose = document.querySelector(".mfp-close");
-            if ((direction === 'right') || (direction === 'left')) {
-                btnClose.click()
-            }
-        }
-    }
+    // function onSwipeTextInPopupHero(direction) {
+    //     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    //         let btnClose = document.querySelector(".mfp-close");
+    //         if ((direction === 'right') || (direction === 'left')) {
+    //             btnClose.click()
+    //         }
+    //     }
+    // }
 
     $(".choice-block").swipe({
         swipe: function (event, direction) {
@@ -299,13 +299,12 @@ jQuery(document).ready(function ($) {
     }
 
     $(document).on("select2:open", "select", function() {
-        $('.customscrollbar-js').mCustomScrollbar({
-            mouseWheel: true,
-            advanced: {
-                updateOnContentResize: true
-            }
-        });
+        $('.customscrollbar-js').mCustomScrollbar();
     });
+
+
+
+    //QR
 
     if ($("div").is(".s-qr")) {
         $(".main-wrapper").css('padding-bottom', '0');
@@ -366,6 +365,8 @@ jQuery(document).ready(function ($) {
         }
     }
 
+    //QR close
+
 
     // анимация дыма
     var smokeContainer = document.createElement('canvas');
@@ -403,10 +404,6 @@ jQuery(document).ready(function ($) {
         smoke.moveEmitterTo(canvasEl.width / 2, canvasEl.height + 100)
     };
 
-    // function closeTutorial () {
-    //
-    // }
-
 
     $('body').on('click', '.modal-map-mobile-tutorial', function(){
         $('.form-wrap__list-slider').slick({
@@ -422,21 +419,21 @@ jQuery(document).ready(function ($) {
 
 
     // туториал карты на десктопе
-    if ($("div").is("#s-map-cemetery")) {
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            return
-        } else {
-            $("body").append("<div class=\"map-tutorial\"><a class=\"map-tutorial__close text-primary\">x</a>\n" +
-                "      <button class=\"form-wrap__btn\">понятно</button>\n" +
-                "    </div>");
-            $('body').on('click', '.form-wrap__btn', function(){
-                $('.map-tutorial').remove()
-            });
-            $('body').on('click', '.map-tutorial__close', function(){
-                $('.map-tutorial').remove()
-            });
-        }
-    }
+    // if ($("div").is("#s-map-cemetery")) {
+    //     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    //         return
+    //     } else {
+    //         $("body").append("<div class=\"map-tutorial\"><a class=\"map-tutorial__close text-primary\">x</a>\n" +
+    //             "      <button class=\"form-wrap__btn\">понятно</button>\n" +
+    //             "    </div>");
+    //         $('body').on('click', '.form-wrap__btn', function(){
+    //             $('.map-tutorial').remove()
+    //         });
+    //         $('body').on('click', '.map-tutorial__close', function(){
+    //             $('.map-tutorial').remove()
+    //         });
+    //     }
+    // }
 
 
 
@@ -447,6 +444,5 @@ jQuery(document).ready(function ($) {
         fireOnThis.dispatchEvent(evObj);
     }
 });
-
 
 
