@@ -298,6 +298,14 @@ jQuery(document).ready(function ($) {
         });
     }
 
+    $(document).on("select2:open", "select", function() {
+        $('.customscrollbar-js').mCustomScrollbar({
+            mouseWheel: true,
+            advanced: {
+                updateOnContentResize: true
+            }
+        });
+    });
 
     if ($("div").is(".s-qr")) {
         $(".main-wrapper").css('padding-bottom', '0');

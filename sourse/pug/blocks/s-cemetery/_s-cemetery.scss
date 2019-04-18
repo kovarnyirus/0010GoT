@@ -46,7 +46,7 @@
 		position: absolute;
 		min-width: 750px;
 		@include media-breakpoint-up(md) {
-
+			padding-bottom: rem(80);
 			bottom: 0;
 		}
 		bottom: 60px;

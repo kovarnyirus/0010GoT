@@ -166,7 +166,8 @@
             width: rem(260);
             margin-top: rem(35);
         }
-        .form-wrap__working-hours{
+
+        .form-wrap__working-hours {
             color: $primary;
             text-align: center;
             margin-top: rem(40);
@@ -190,15 +191,15 @@
                 margin-top: rem(25);
             }
         }
-
     }
 
     &--taken {
         @include media-breakpoint-up(md) {
-            br{
+            br {
                 display: none;
             }
         }
+
         .form-wrap__title {
             padding-top: rem(35);
         }
@@ -220,7 +221,8 @@
         .form-wrap__text {
             margin-bottom: rem(8);
         }
-        .form-wrap__btn-outline{
+
+        .form-wrap__btn-outline {
             margin-top: rem(53);
         }
 
@@ -291,12 +293,13 @@
     &--rate {
         @include media-breakpoint-down(md) {
             max-height: calc(100vh - 112px);
-            .form-wrap__foot{
+            .form-wrap__foot {
                 border-top: 1px solid #2e3946;
             }
         }
         @include media-breakpoint-down(md) {
-    }
+        }
+
         .form-wrap__title {
             font-size: 30px;
         }
@@ -308,9 +311,9 @@
         }
     }
 
-    &--rate-send{
+    &--rate-send {
         @include media-breakpoint-down(md) {
-            .form-wrap__btn{
+            .form-wrap__btn {
                 max-width: 410px;
             }
         }
@@ -361,49 +364,57 @@
             font-weight: 200;
         }
 
-        .form-wrap__support{
+        .form-wrap__support {
             margin-bottom: 25px;
         }
 
-        .form-wrap__text--work-time{
+        .form-wrap__text--work-time {
             margin-bottom: rem(25);
             font-weight: 200;
         }
+
         .form-wrap__tel {
             margin-bottom: rem(90);
             font-size: 35px;
         }
+
         .form-wrap__text--agreement,
-        .form-wrap__text--organizer{
+        .form-wrap__text--organizer {
             display: block;
             font-size: 30px;
 
         }
-        .form-wrap__text--agreement{
+
+        .form-wrap__text--agreement {
             @extend .agreement__link;
             font-size: 30px;
             margin-bottom: rem(25);
         }
-        .form-wrap__text--organizer{
+
+        .form-wrap__text--organizer {
             color: #FFFFFF;
             margin-bottom: rem(5);
             font-weight: 200;
         }
-        .footer-logo{
+
+        .footer-logo {
             display: block;
             margin: auto;
         }
     }
 
-    &--tutorial{
+    &--tutorial {
         padding-bottom: 0;
-        & .form-wrap__head{
+
+        & .form-wrap__head {
             margin-bottom: 0;
         }
-        & .slick-dots{
+
+        & .slick-dots {
             bottom: 25px;
         }
     }
+
     .modal-content {
         // max-width: 485px;
         // padding-right: 40px 15px;
@@ -801,4 +812,29 @@ a {
 
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
     background-color: $primary;
+}
+
+.is-invalid::-webkit-input-placeholder,
+.is-invalid::-moz-placeholder {
+    color: red;
+}
+
+.form-control.is-invalid {
+    color: #ffffff;
+}
+
+.customscrollbar-js--select {
+    max-height: 215px;
+
+    .mCSB_container {
+        margin-right: 15px;
+    }
+    @include media-breakpoint-down(md) {
+        max-height: 350px;
+    }
+}
+
+.select2-dropdown {
+    background-color: #12202f;
+
 }
