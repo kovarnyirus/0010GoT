@@ -202,7 +202,7 @@ jQuery(document).ready(function ($) {
                 mapWidth: 4000,//mapWidth: 1600,
                 mapHeight: 2512,//mapHeight: 1200,
                 //centerOffsetX: 0,
-                centerOffsetY: 300,
+                // centerOffsetY: 300,
                 onGraveClick: function (d) {
 
                     CJSPopup.openHero(d.CODE);
