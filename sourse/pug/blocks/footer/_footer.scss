@@ -24,10 +24,13 @@
     &__support{
        color: #6e6e6e;
     }
+
     &__developed{
         color: #6e6e6e;
         font-size: 12px;
-        display: none;
+        &--wrap{
+            display: none;
+        }
     }
     &__tel{
         color: #bebebe;
@@ -37,7 +40,7 @@
         & .footer-logo {
             margin-right: 0;
         }
-        & .footer__developed{
+        & .footer__developed-wrap{
             display: block;
         }
     }
