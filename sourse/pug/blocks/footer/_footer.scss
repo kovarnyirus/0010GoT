@@ -24,8 +24,18 @@
     &__support{
        color: #6e6e6e;
     }
+    &__developed{
+        color: #6e6e6e;
+        font-size: 12px;
+    }
     &__tel{
         color: #bebebe;
+    }
+
+    &--developed{
+        & .footer-logo {
+            margin-right: 0;
+        }
     }
 
     //
