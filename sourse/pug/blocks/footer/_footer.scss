@@ -27,6 +27,7 @@
     &__developed{
         color: #6e6e6e;
         font-size: 12px;
+        display: none;
     }
     &__tel{
         color: #bebebe;
@@ -35,6 +36,9 @@
     &--developed{
         & .footer-logo {
             margin-right: 0;
+        }
+        & .footer__developed{
+            display: block;
         }
     }
 
