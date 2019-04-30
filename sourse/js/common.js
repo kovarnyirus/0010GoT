@@ -422,7 +422,13 @@ jQuery(document).ready(function ($) {
         $(".mfp-bg").addClass("tutorial-overlay")
     });
 
+    function closePopupLottery() {
+        $(".close-popup-lottery").on("click", function(){
+            $('button.mfp-close').click();
+        });
+    }
 
+    closePopupLottery();
 
 
     // туториал карты на десктопе

@@ -417,8 +417,13 @@
 
     &--lottery-tickets{
         max-width: 710px;
-        .mfp-close{
-            display: none;
+        .mfp-close,
+        .fancybox-button{
+           position: absolute;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            margin:-1px;
         }
         .form-wrap__title{
             @include rfs(rem(23));
