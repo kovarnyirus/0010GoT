@@ -415,6 +415,54 @@
         }
     }
 
+    &--lottery-tickets{
+        max-width: 710px;
+        .mfp-close{
+            display: none;
+        }
+        .form-wrap__title{
+            @include rfs(rem(23));
+            line-height: rem(26);
+            text-transform: none;
+            font-weight: 400;
+            padding-top: rem(100);
+            padding-bottom: rem(45);
+        }
+        .form-wrap__btn-outline{
+            margin-top: rem(80);
+            max-width: 335px;
+        }
+        .form-wrap__rules{
+            display: block;
+            text-align: center;
+            color: #cacaca;
+            margin-top: rem(50);
+            cursor: pointer;
+        }
+        .form-wrap__text{
+            line-height: rem(31);
+            font-weight: 300;
+            @include rfs(rem(20));
+        }
+
+        @include media-breakpoint-up(md) {
+            max-width: 615px;
+            padding-bottom: rem(60);
+            .form-wrap__title{
+                @include rfs(rem(20));
+                padding-top: rem(70);
+                padding-bottom: rem(37);
+            }
+            .form-wrap__btn-outline{
+                margin-top: rem(62);
+                max-width: 230px;
+            }
+            .form-wrap__rules{
+                margin-top: rem(40);
+            }
+        }
+    }
+
     .modal-content {
         // max-width: 485px;
         // padding-right: 40px 15px;

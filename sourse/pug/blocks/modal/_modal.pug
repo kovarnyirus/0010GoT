@@ -408,3 +408,22 @@ mixin modal()
 
 
     // modal
+
+    +b.form-wrap(id="modal-lottery-tickets" class="zoom-anim-dialog mfp-hide modal-win modal-win--sm modal-form modal-win--lottery-tickets" )
+        +e.head.border-0.mb-0
+            .text-center
+                +e.title.text-white Приходи в крипту «Игры престолов»
+                    br
+                    | с 1 по 19 мая —
+                    br
+                    | выиграй билеты на показ
+                    br
+                    | финальнойсерии на стадионе
+        +e.body
+            +e.text.text-primary.ttu розыгрыш билетов
+                br
+                | каждый день
+            +e.btn-outline(href="#" )  ок
+            +e.rules.tdu.popup-with-move-anim.text-white(href="#modal-rules" ) Правила акции
+
+    // #modal-warning
